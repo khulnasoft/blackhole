@@ -509,7 +509,7 @@ def sort_sources(sources):
 
     # Steven Black's repositories/files/lists should be on top!
     steven_black_positions = [
-        x for x, y in enumerate(result) if "stevenblack" in y.lower()
+        x for x, y in enumerate(result) if "boss-net" in y.lower()
     ]
 
     for index in steven_black_positions:
@@ -1156,7 +1156,7 @@ def write_opening_header(final_file, **header_params):
             if len(header_params["extensions"]) > 1:
                 write_data(
                     final_file,
-                    "# Title: StevenBlack/hosts extensions {0} and {1} \n#\n".format(
+                    "# Title: boss-net/blackhole extensions {0} and {1} \n#\n".format(
                         ", ".join(header_params["extensions"][:-1]),
                         header_params["extensions"][-1],
                     ),
@@ -1164,7 +1164,7 @@ def write_opening_header(final_file, **header_params):
             else:
                 write_data(
                     final_file,
-                    "# Title: StevenBlack/hosts extension {0}\n#\n".format(
+                    "# Title: boss-net/blackhole extension {0}\n#\n".format(
                         ", ".join(header_params["extensions"])
                     ),
                 )
@@ -1172,7 +1172,7 @@ def write_opening_header(final_file, **header_params):
             if len(header_params["extensions"]) > 1:
                 write_data(
                     final_file,
-                    "# Title: StevenBlack/hosts with the {0} and {1} extensions\n#\n".format(
+                    "# Title: boss-net/blackhole with the {0} and {1} extensions\n#\n".format(
                         ", ".join(header_params["extensions"][:-1]),
                         header_params["extensions"][-1],
                     ),
@@ -1180,12 +1180,12 @@ def write_opening_header(final_file, **header_params):
             else:
                 write_data(
                     final_file,
-                    "# Title: StevenBlack/hosts with the {0} extension\n#\n".format(
+                    "# Title: boss-net/blackhole with the {0} extension\n#\n".format(
                         ", ".join(header_params["extensions"])
                     ),
                 )
     else:
-        write_data(final_file, "# Title: StevenBlack/hosts\n#\n")
+        write_data(final_file, "# Title: boss-net/blackhole\n#\n")
 
     write_data(
         final_file,
@@ -1226,16 +1226,16 @@ def write_opening_header(final_file, **header_params):
     write_data(
         final_file,
         "# Fetch the latest version of this file: "
-        "https://raw.githubusercontent.com/StevenBlack/hosts/master/"
+        "https://raw.githubusercontent.com/boss-net/blackhole/master/"
         + path_join_robust(header_params["outputsubfolder"], "").replace("\\", "/")
         + "hosts\n",
     )
     write_data(
-        final_file, "# Project home page: https://github.com/StevenBlack/hosts\n"
+        final_file, "# Project home page: https://github.com/boss-net/blackhole\n"
     )
     write_data(
         final_file,
-        "# Project releases: https://github.com/StevenBlack/hosts/releases\n#\n",
+        "# Project releases: https://github.com/boss-net/blackhole/releases\n#\n",
     )
     write_data(
         final_file,
