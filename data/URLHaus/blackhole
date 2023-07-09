@@ -1,6 +1,6 @@
 ################################################################
 # abuse.ch URLhaus Host file                                   #
-# Last updated: 2023-07-09 21:27:06 (UTC)                      #
+# Last updated: 2023-07-09 21:31:08 (UTC)                      #
 #                                                              #
 # Terms Of Use: https://urlhaus.abuse.ch/api/                  #
 # For questions please contact urlhaus [at] abuse.ch           #
@@ -32,16 +32,13 @@
 127.0.0.1	api.baimless.com
 127.0.0.1	api.seeingoholidays.com
 127.0.0.1	aquapools.in
-127.0.0.1	ashaltech.net
 127.0.0.1	ask6.awt.com.pk
 127.0.0.1	athadnw.com
 127.0.0.1	atomm.com.br
 127.0.0.1	bawatingbarter.com
 127.0.0.1	bbc-s.news
 127.0.0.1	bencevendeghaz.hu
-127.0.0.1	bethelmbcarvada.org
 127.0.0.1	bigbirdmarketing.com
-127.0.0.1	bigmikesupplies.co.za
 127.0.0.1	bisnesservis-fk.ru
 127.0.0.1	bleu.rfc.zitoprohealth.com
 127.0.0.1	bloom-artists.com
@@ -68,7 +65,6 @@
 127.0.0.1	cgjmz.rfc.zitoprohealth.com
 127.0.0.1	chuckozeas.com
 127.0.0.1	cityoftransformation.com
-127.0.0.1	citypharmacylv.com
 127.0.0.1	cnom.sante.gov.ml
 127.0.0.1	coadymarine.com
 127.0.0.1	cointra.ac.ug
@@ -88,16 +84,13 @@
 127.0.0.1	ddlakava.ac.ug
 127.0.0.1	deine-bewerbung.com
 127.0.0.1	demirelmarka.com
-127.0.0.1	demo-re-usables.inertiasoft.net
 127.0.0.1	demo.omnitech.co.ug
 127.0.0.1	demonware.online
 127.0.0.1	dental.xiaoxiao.media
 127.0.0.1	derekludlow.com
 127.0.0.1	destinymc.co.za
-127.0.0.1	devises-dz.com
 127.0.0.1	dhnconstrucciones.com.ar
 127.0.0.1	dl.9xu.com
-127.0.0.1	dlqsclub.com
 127.0.0.1	dominiqueimmora.com
 127.0.0.1	donkeytourscroatia.com
 127.0.0.1	down.udashi.com
@@ -110,7 +103,6 @@
 127.0.0.1	ebfertility.com
 127.0.0.1	ecotree.co.in
 127.0.0.1	edgeguard.business
-127.0.0.1	educajuris.cl
 127.0.0.1	egwis.com
 127.0.0.1	emaids.co.za
 127.0.0.1	erkaradyator.com.tr
@@ -127,6 +119,7 @@
 127.0.0.1	flamenewton.com
 127.0.0.1	florent-webdev.com
 127.0.0.1	fran.ac.ug
+127.0.0.1	funletters.net
 127.0.0.1	gapegape.co.za
 127.0.0.1	gccon.in
 127.0.0.1	globalautomobileshop.com
@@ -158,11 +151,11 @@
 127.0.0.1	intellectproactive.com
 127.0.0.1	ishahcouture.com
 127.0.0.1	itrevolution.in
-127.0.0.1	ji.ase6gasdegkk.com
 127.0.0.1	ji.jaoaaoas11.com
 127.0.0.1	jobcity.com
 127.0.0.1	jointings.org
 127.0.0.1	jp.imgjeoighw.com
+127.0.0.1	jr-software-web.net
 127.0.0.1	jsl.com.ng
 127.0.0.1	justplay.asia
 127.0.0.1	karapinarhaber.com.tr
@@ -170,12 +163,13 @@
 127.0.0.1	kevinley.com
 127.0.0.1	kimjikuk.luxeone.cn
 127.0.0.1	kimyen.net
+127.0.0.1	lameguard.ru
 127.0.0.1	lastimaners.ug
 127.0.0.1	library.arihantmbainstitute.ac.in
 127.0.0.1	lindnerelektroanlagen.de
-127.0.0.1	londontownlink.com
 127.0.0.1	lopespublicidade.com
 127.0.0.1	lostheaven.com.cn
+127.0.0.1	ltc.typoten.com
 127.0.0.1	madicon.co.za
 127.0.0.1	main.cloudfronts.net
 127.0.0.1	makeupuccino.com
@@ -193,15 +187,14 @@
 127.0.0.1	mepstein.com
 127.0.0.1	mesoftwares.app
 127.0.0.1	microsecurityupdate.com
-127.0.0.1	mindfree.co.za
 127.0.0.1	mistitis.ug
+127.0.0.1	mistydeblasiophotography.com
 127.0.0.1	mithransilks.com
 127.0.0.1	mkblaboratoire.com
-127.0.0.1	moarkgcc.com
 127.0.0.1	modern-city.by
 127.0.0.1	moodle.corplearning.net
 127.0.0.1	mysura.it
-127.0.0.1	mytheacademy.com
+127.0.0.1	namthaibinh.net
 127.0.0.1	newinvestingonline.com
 127.0.0.1	nhatheptienchebinhduong.com
 127.0.0.1	nhorangtreem.com
@@ -215,11 +208,9 @@
 127.0.0.1	olugun.co.za
 127.0.0.1	opencart.notebookparcalari.com
 127.0.0.1	opesjk.ug
-127.0.0.1	oraxsoft.com
 127.0.0.1	orderedami.com
 127.0.0.1	origins-france.fr
 127.0.0.1	ozelmimarsinanmtal.com
-127.0.0.1	palharesinformatica.com.br
 127.0.0.1	parallel.rockvideos.at
 127.0.0.1	parrotbay.net
 127.0.0.1	partadino.ac.ug
@@ -242,7 +233,6 @@
 127.0.0.1	quizbn.com
 127.0.0.1	ramactools.net
 127.0.0.1	records.dennisign.se
-127.0.0.1	red.mk
 127.0.0.1	redmag-dz.com
 127.0.0.1	retailexpertscloud.com
 127.0.0.1	rewe-coupouns.com
@@ -253,6 +243,7 @@
 127.0.0.1	rretoques.cl
 127.0.0.1	scarletespinal.com
 127.0.0.1	scientific.pk
+127.0.0.1	sealicensing.com
 127.0.0.1	secretmindcontrol.com
 127.0.0.1	senbiaojita.com
 127.0.0.1	senderolunarejo.com
@@ -275,13 +266,11 @@
 127.0.0.1	src1.minibai.com
 127.0.0.1	srv-fattureincloud.de
 127.0.0.1	ss.tanye.online
-127.0.0.1	sshd.run
 127.0.0.1	stablewin32.app
 127.0.0.1	static.cz01.cn
 127.0.0.1	stayinoceancitymd.com
 127.0.0.1	sungeomatics.com
 127.0.0.1	superstar.tibolts.co.uk
-127.0.0.1	support.clz.kr
 127.0.0.1	t.honker.info
 127.0.0.1	techniguitare.com
 127.0.0.1	techvibeo.com
@@ -302,6 +291,7 @@
 127.0.0.1	ukguk71.ru
 127.0.0.1	unapromo.com
 127.0.0.1	unicorpbrunei.com
+127.0.0.1	unigifts.net
 127.0.0.1	unioneterna.com
 127.0.0.1	unlockingdreamsfinancial.com
 127.0.0.1	vashovskycorp.com
@@ -325,20 +315,23 @@
 127.0.0.1	www.globallaborsupply.com
 127.0.0.1	www.hseda.com
 127.0.0.1	www.idpminic.org
+127.0.0.1	www.ingonherbal.com
 127.0.0.1	www.institut-corps-a-ligne.fr
+127.0.0.1	www.jyotigroup.co.in
 127.0.0.1	www.ks.cn
 127.0.0.1	www.lasikofmichigan.com
 127.0.0.1	www.maxmoney.com
+127.0.0.1	www.mediakomen.com
 127.0.0.1	www.moninediy.com
 127.0.0.1	www.movidoc.com.br
 127.0.0.1	www.mrjaques.fr
 127.0.0.1	www.neshuafoods.com
-127.0.0.1	www.nprlogistica.com.br
 127.0.0.1	www.opolis.io
 127.0.0.1	www.palharesinformatica.com.br
 127.0.0.1	www.reifenquick.de
 127.0.0.1	www.reiwo-service.de
 127.0.0.1	www.roofing.galacticleads.com
+127.0.0.1	www.saf-oil.ru
 127.0.0.1	www.snappyshop.it
 127.0.0.1	www.torq.qa
 127.0.0.1	www.TradeInsights.net
@@ -347,6 +340,7 @@
 127.0.0.1	wynecare.com
 127.0.0.1	xn----7sbhgfcdscaa3cdd6dq3e3dvf.xn--p1ai
 127.0.0.1	xt.lykj988.com
+127.0.0.1	yeichner.com
 127.0.0.1	yesdeko.com
 127.0.0.1	yp.hnggzyjy.cn
 127.0.0.1	yzkzixun.com
@@ -354,4 +348,4 @@
 127.0.0.1	zf.gouzapay.cn
 127.0.0.1	zummil.com
 127.0.0.1	zzz.fhauiehgha.com
-# Number of entries: 348
+# Number of entries: 342
