@@ -1,3 +1,23 @@
+# Title: boss-net/blackhole extension porn
+#
+# This hosts file is a merged collection of hosts from reputable sources,
+# with a dash of crowd sourcing via GitHub
+#
+# Date: 09 July 2023 18:19:42 (GMT)
+# The unified hosts file was not used while generating this file.
+# Extensions used to generate this file: porn
+# Number of unique domains: 3,388
+#
+# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-porn-only/hosts
+# Project home page: https://github.com/boss-net/blackhole
+# Project releases: https://github.com/boss-net/blackhole/releases
+#
+# ===============================================================
+
+# Custom host records are listed here.
+
+
+# End of custom host records.
 # Title: hostsVN Adult
 # Last modified: 09 Jul 2023 23:15 UTC+7
 # Version: 2307092315
@@ -3398,3 +3418,11 @@
 0.0.0.0 zsex.pro
 0.0.0.0 zsexmoi.com
 0.0.0.0 zsexmoi.net
+# blacklist
+#
+# The contents of this file (containing a listing of additional domains in
+# 'hosts' file format) are appended to the unified hosts file during the
+# update process. For example, uncomment the following line to block
+# 'example.com':
+
+# 0.0.0.0 example.com

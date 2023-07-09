@@ -1,0 +1,26 @@
+# Title: boss-net/blackhole
+#
+# This hosts file is a merged collection of hosts from reputable sources,
+# with a dash of crowd sourcing via GitHub
+#
+# Date: 09 July 2023 18:19:41 (GMT)
+# Number of unique domains: 0
+#
+# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-only/hosts
+# Project home page: https://github.com/boss-net/blackhole
+# Project releases: https://github.com/boss-net/blackhole/releases
+#
+# ===============================================================
+
+# Custom host records are listed here.
+
+
+# End of custom host records.
+# blacklist
+#
+# The contents of this file (containing a listing of additional domains in
+# 'hosts' file format) are appended to the unified hosts file during the
+# update process. For example, uncomment the following line to block
+# 'example.com':
+
+# 0.0.0.0 example.com
