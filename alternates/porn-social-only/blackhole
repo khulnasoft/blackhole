@@ -3,7 +3,7 @@
 # This blackhole file is a merged collection of blackhole from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
-# Date: 09 July 2023 22:53:48 (GMT)
+# Date: 09 July 2023 23:15:38 (GMT)
 # The unified blackhole file was not used while generating this file.
 # Extensions used to generate this file: porn, social
 # Number of unique domains: 51,982
@@ -52084,7 +52084,7 @@
 # blacklist
 #
 # The contents of this file (containing a listing of additional domains in
-# 'hosts' file format) are appended to the unified hosts file during the
+# 'blackhole' file format) are appended to the unified blackhole file during the
 # update process. For example, uncomment the following line to block
 # 'example.com':
 
