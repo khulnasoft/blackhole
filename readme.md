@@ -33,7 +33,7 @@ files are provided.
 - Last updated: **July 09 2023**.
 - Here's the
   [raw blackhole file Unified blackhole file with base extensions](https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole)
-  containing 372 entries.
+  containing 362 entries.
 
 ![Size history](https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole_file_size_history.png)
 
@@ -49,7 +49,7 @@ with GitHub download links.
 
 | Host file recipe | Readme | Raw blackhole | Unique domains | Non GitHub mirror |
 | ---------------- | :----: | :-------: | :------------: | :---------------: |
-Unified blackhole = **(adware + malware)** | [Readme](https://github.com/boss-net/blackhole/blob/master/readme.md) | [link](https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole) | 372 | [link](http://sbc.io/blackhole/blackhole)
+Unified blackhole = **(adware + malware)** | [Readme](https://github.com/boss-net/blackhole/blob/master/readme.md) | [link](https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole) | 362 | [link](http://sbc.io/blackhole/blackhole)
 Unified blackhole **+ fakenews** | [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews/readme.md) | [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews/blackhole) | 2,566 | [link](http://sbc.io/blackhole/alternates/fakenews/blackhole)
 **fakenews** | [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-only/readme.md) | [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-only/blackhole) | 2,194 | [link](http://sbc.io/blackhole/alternates/fakenews-only/blackhole)
 Unified blackhole **+ gambling** | [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling/readme.md) | [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling/blackhole) | 372 | [link](http://sbc.io/blackhole/alternates/gambling/blackhole)
