@@ -21,7 +21,7 @@ alternates/social
 lists="
 data/Adguard-cname
 data/Badd-Boyz-Hosts
-data/KADhosts
+data/KADblackhole
 data/MetaMask
 data/StevenBlack
 data/URLHaus
@@ -31,10 +31,10 @@ data/add.2o7Net
 data/add.Dead
 data/add.Risk
 data/add.Spam
-data/hostsVN
-data/minecraft-hosts
+data/blackholeVN
+data/minecraft-blackhole
 data/mvps.org
-data/shady-hosts
+data/shady-blackhole
 data/someonewhocares.org
 data/tiuxo
 data/yoyo.org

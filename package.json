@@ -1,12 +1,12 @@
 {
   "name": "blackhole",
   "version": "5.0.2",
-  "description": "Extending and consolidating hosts files from several well-curated sources like adaway.org, mvps.org, malwaredomainlist.com, someonewhocares.org, and potentially others. You can optionally invoke extensions to block additional sites by category.",
+  "description": "Extending and consolidating blackhole files from several well-curated sources like adaway.org, mvps.org, malwaredomainlist.com, someonewhocares.org, and potentially others. You can optionally invoke extensions to block additional sites by category.",
   "main": "",
   "private": true,
   "scripts": {
-    "test": "python3 testUpdateHostsFile.py",
-    "start": "python3 makeHosts.py",
+    "test": "python3 testUpdateBlackholeFile.py",
+    "start": "python3 makeBlackhole.py",
     "release": "release-it"
   },
   "repository": {
@@ -15,12 +15,12 @@
   },
   "keywords": [
     "python",
-    "unified-hosts",
+    "unified-blackhole",
     "malware",
     "ad-blocker",
     "porn-filter",
     "social-media-filter",
-    "hosts",
+    "blackhole",
     "privacy",
     "protection",
     "pornblocker",

@@ -1,9 +1,9 @@
 {
-    "name": "BigDargon's gambling domain blocking hosts file",
-    "description": "Extension from the project hostsVN",
-    "homeurl": "https://github.com/bigdargon/hostsVN/",
+    "name": "BigDargon's gambling domain blocking blackhole file",
+    "description": "Extension from the project blackholeVN",
+    "homeurl": "https://github.com/bigdargon/blackholeVN/",
     "frequency": "occasional",
-    "issues": "https://github.com/bigdargon/hostsVN/issues",
-    "url": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/gambling/hosts-VN",
+    "issues": "https://github.com/bigdargon/blackholeVN/issues",
+    "url": "https://raw.githubusercontent.com/bigdargon/blackholeVN/master/extensions/gambling/blackhole-VN",
     "license": "MIT"
 }

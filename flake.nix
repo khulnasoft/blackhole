@@ -1,5 +1,5 @@
 {
-  description = "Unified hosts file with base extensions.";
+  description = "Unified blackhole file with base extensions.";
   inputs.flake-utils.url = "github:numtide/flake-utils";
   outputs = { self, nixpkgs, flake-utils }: {
     nixosModule = { config, ... }:
@@ -14,16 +14,16 @@
       in
       {
         options.networking.bossnetBlackHole = {
-          enable = mkEnableOption "Use Steven Black's hosts file as extra hosts.";
-          blockFakenews = mkEnableOption "Additionally block fakenews hosts.";
-          blockGambling = mkEnableOption "Additionally block gambling hosts.";
-          blockPorn = mkEnableOption "Additionally block porn hosts.";
-          blockSocial = mkEnableOption "Additionally block social hosts.";
+          enable = mkEnableOption "Use Steven Black's blackhole file as extra blackhole.";
+          blockFakenews = mkEnableOption "Additionally block fakenews blackhole.";
+          blockGambling = mkEnableOption "Additionally block gambling blackhole.";
+          blockPorn = mkEnableOption "Additionally block porn blackhole.";
+          blockSocial = mkEnableOption "Additionally block social blackhole.";
         };
         config = mkIf cfg.enable {
-          networking.extraHosts =
+          networking.extraBlackhole =
             builtins.readFile (
-              "${self}/" + (if alternatesList != [] then alternatesPath else "") + "hosts"
+              "${self}/" + (if alternatesList != [] then alternatesPath else "") + "blackhole"
             );
         };
       };

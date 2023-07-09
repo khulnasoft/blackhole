@@ -1,4 +1,4 @@
-# This hosts file is brought to you by Mitchell Krog
+# This blackhole file is brought to you by Mitchell Krog
 # Copyright: https://github.com/mitchellkrogza
 # Source: https://github.com/mitchellkrogza/Badd-Boyz-Hosts
 
@@ -18,7 +18,7 @@
 # Please forward any additions, corrections or comments by logging an issue at
 # https://github.com/mitchellkrogza/Badd-Boyz-Hosts/issues
 
-# This list of hosts is compiled from server logs on my own servers
+# This list of blackhole is compiled from server logs on my own servers
 # and forms the basis of the bad referrers domain lists for
 # The Nginx Ultimate Bad Bot Blocker at: 
 # https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
@@ -31,17 +31,17 @@
 ##### Version Information ##
 
 # Use this file to prevent your computer or server from connecting to selected
-# internet hosts. This is an easy and effective way to protect you from 
+# internet blackhole. This is an easy and effective way to protect you from 
 # many types of spyware, adware, malware, click-jacking and porn sites and reduces 
 # bandwidth use. 
 
-# The file should be named "hosts" NOT "hosts.txt"
+# The file should be named "blackhole" NOT "blackhole.txt"
 
-# For Linux based Operating systems place this file at "/etc/hosts"
+# For Linux based Operating systems place this file at "/etc/blackhole"
 
 # For Windows based systems this is placed either at
-# C:\windows\system32\drivers\etc\hosts
-# or C:\Windows\System32\drivers\etc\hosts
+# C:\windows\system32\drivers\etc\blackhole
+# or C:\Windows\System32\drivers\etc\blackhole
 
 127.0.0.1 localhost
 ::1 localhost #[IPv6]
@@ -685,7 +685,7 @@
 0.0.0.0 freehealthpoints.com
 0.0.0.0 freehomosexual.com
 0.0.0.0 freehornygirls.com
-0.0.0.0 freehostservers.com
+0.0.0.0 freeblackholeervers.com
 0.0.0.0 freeindiangals.com
 0.0.0.0 freeuploader.ml
 0.0.0.0 futurouomo.it
@@ -1325,7 +1325,7 @@
 0.0.0.0 www.free-groupsex.com
 0.0.0.0 www.freehanbam.net
 0.0.0.0 www.freehornygirls.com
-0.0.0.0 www.freehostservers.com
+0.0.0.0 www.freeblackholeervers.com
 0.0.0.0 www.freeindiangals.com
 0.0.0.0 www.freeuploader.ml
 0.0.0.0 www.futurouomo.it

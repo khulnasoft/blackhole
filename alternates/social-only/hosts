@@ -1,14 +1,14 @@
 # Title: boss-net/blackhole extension social
 #
-# This hosts file is a merged collection of hosts from reputable sources,
+# This blackhole file is a merged collection of blackhole from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
 # Date: 09 July 2023 20:26:15 (GMT)
-# The unified hosts file was not used while generating this file.
+# The unified blackhole file was not used while generating this file.
 # Extensions used to generate this file: social
 # Number of unique domains: 2,841
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/social-only/hosts
+# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/social-only/blackhole
 # Project home page: https://github.com/boss-net/blackhole
 # Project releases: https://github.com/boss-net/blackhole/releases
 #
@@ -18,7 +18,7 @@
 
 
 # End of custom host records.
-# Title: Social media hosts
+# Title: Social media blackhole
 # Updated: June 27, 2021
 
 # Google Plus
@@ -2878,7 +2878,7 @@
 0.0.0.0 testflight.joinclubhouse.com
 
 # Dating sites
-# from https://github.com/StevenBlack/hosts/issues/2023
+# from https://github.com/StevenBlack/blackhole/issues/2023
 0.0.0.0 tinder.com
 0.0.0.0 bumble.com
 0.0.0.0 badoo.com
@@ -2897,7 +2897,7 @@
 # blacklist
 #
 # The contents of this file (containing a listing of additional domains in
-# 'hosts' file format) are appended to the unified hosts file during the
+# 'blackhole' file format) are appended to the unified blackhole file during the
 # update process. For example, uncomment the following line to block
 # 'example.com':
 
