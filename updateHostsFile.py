@@ -68,15 +68,15 @@ def get_defaults():
         "freshen": True,
         "replace": False,
         "backup": False,
-        "skipstatichosts": False,
+        "skipstaticblackhole": False,
         "keepdomaincomments": True,
         "extensionspath": path_join_robust(BASEDIR_PATH, "extensions"),
         "extensions": [],
-        "nounifiedhosts": False,
+        "nounifiedblackhole": False,
         "compress": False,
         "minimise": False,
         "outputsubfolder": "",
-        "hostfilename": "hosts",
+        "hostfilename": "blackhole",
         "targetip": "0.0.0.0",
         "sourcedatafilename": "update.json",
         "sourcesdata": [],
@@ -98,8 +98,8 @@ def get_defaults():
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Creates a unified hosts "
-        "file from hosts stored in the data subfolders."
+        description="Creates a unified blackhole "
+        "file from blackhole stored in the data subfolders."
     )
     parser.add_argument(
         "--auto",
@@ -115,7 +115,7 @@ def main():
         dest="backup",
         default=False,
         action="store_true",
-        help="Backup the hosts files before they are overridden.",
+        help="Backup the blackhole files before they are overridden.",
     )
     parser.add_argument(
         "--extensions",
@@ -123,14 +123,14 @@ def main():
         dest="extensions",
         default=[],
         nargs="*",
-        help="Host extensions to include in the final hosts file.",
+        help="Host extensions to include in the final blackhole file.",
     )
     parser.add_argument(
-        "--nounifiedhosts",
-        dest="nounifiedhosts",
+        "--nounifiedblackhole",
+        dest="nounifiedblackhole",
         default=False,
         action="store_true",
-        help="Do not include the unified hosts file in the final hosts file. Usually used together with `--extensions`.",
+        help="Do not include the unified blackhole file in the final blackhole file. Usually used together with `--extensions`.",
     )
     parser.add_argument(
         "--ip",
@@ -156,12 +156,12 @@ def main():
         help="Don't update from host data sources.",
     )
     parser.add_argument(
-        "--skipstatichosts",
+        "--skipstaticblackhole",
         "-s",
-        dest="skipstatichosts",
+        dest="skipstaticblackhole",
         default=False,
         action="store_true",
-        help="Skip static localhost entries in the final hosts file.",
+        help="Skip static localhost entries in the final blackhole file.",
     )
     parser.add_argument(
         "--nogendata",
@@ -176,7 +176,7 @@ def main():
         "-o",
         dest="outputsubfolder",
         default="",
-        help="Output subfolder for generated hosts file.",
+        help="Output subfolder for generated blackhole file.",
     )
     parser.add_argument(
         "--replace",
@@ -184,7 +184,7 @@ def main():
         dest="replace",
         default=False,
         action="store_true",
-        help="Replace your active hosts file with this new hosts file.",
+        help="Replace your active blackhole file with this new blackhole file.",
     )
     parser.add_argument(
         "--flush-dns-cache",
@@ -192,7 +192,7 @@ def main():
         dest="flushdnscache",
         default=False,
         action="store_true",
-        help="Attempt to flush DNS cache after replacing the hosts file.",
+        help="Attempt to flush DNS cache after replacing the blackhole file.",
     )
     parser.add_argument(
         "--compress",
@@ -200,7 +200,7 @@ def main():
         dest="compress",
         default=False,
         action="store_true",
-        help="Compress the hosts file ignoring non-necessary lines "
+        help="Compress the blackhole file ignoring non-necessary lines "
         "(empty lines and comments) and putting multiple domains in "
         "each line. Improve the performance under Windows.",
     )
@@ -210,7 +210,7 @@ def main():
         dest="minimise",
         default=False,
         action="store_true",
-        help="Minimise the hosts file ignoring non-necessary lines "
+        help="Minimise the blackhole file ignoring non-necessary lines "
         "(empty lines and comments).",
     )
     parser.add_argument(
@@ -218,14 +218,14 @@ def main():
         "-w",
         dest="whitelistfile",
         default=path_join_robust(BASEDIR_PATH, "whitelist"),
-        help="Whitelist file to use while generating hosts files.",
+        help="Whitelist file to use while generating blackhole files.",
     )
     parser.add_argument(
         "--blacklist",
         "-x",
         dest="blacklistfile",
         default=path_join_robust(BASEDIR_PATH, "blacklist"),
-        help="Blacklist file to use while generating hosts files.",
+        help="Blacklist file to use while generating blackhole files.",
     )
 
     global settings
@@ -256,7 +256,7 @@ def main():
     auto = settings["auto"]
     exclusion_regexes = settings["exclusionregexes"]
     source_data_filename = settings["sourcedatafilename"]
-    no_unified_hosts = settings["nounifiedhosts"]
+    no_unified_blackhole = settings["nounifiedblackhole"]
 
     update_sources = prompt_for_update(freshen=settings["freshen"], update_auto=auto)
     if update_sources:
@@ -280,20 +280,20 @@ def main():
         extensions=extensions,
         extensionspath=extensions_path,
         sourcedatafilename=source_data_filename,
-        nounifiedhosts=no_unified_hosts,
+        nounifiedblackhole=no_unified_blackhole,
     )
 
     merge_file = create_initial_file(
-        nounifiedhosts=no_unified_hosts,
+        nounifiedblackhole=no_unified_blackhole,
     )
-    remove_old_hosts_file(settings["outputpath"], "hosts", settings["backup"])
+    remove_old_blackhole_file(settings["outputpath"], "blackhole", settings["backup"])
     if settings["compress"]:
-        final_file = open(path_join_robust(settings["outputpath"], "hosts"), "w+b")
+        final_file = open(path_join_robust(settings["outputpath"], "blackhole"), "w+b")
         compressed_file = tempfile.NamedTemporaryFile()
         remove_dups_and_excl(merge_file, exclusion_regexes, compressed_file)
         compress_file(compressed_file, settings["targetip"], final_file)
     elif settings["minimise"]:
-        final_file = open(path_join_robust(settings["outputpath"], "hosts"), "w+b")
+        final_file = open(path_join_robust(settings["outputpath"], "blackhole"), "w+b")
         minimised_file = tempfile.NamedTemporaryFile()
         remove_dups_and_excl(merge_file, exclusion_regexes, minimised_file)
         minimise_file(minimised_file, settings["targetip"], final_file)
@@ -302,15 +302,15 @@ def main():
 
     number_of_rules = settings["numberofrules"]
     output_subfolder = settings["outputsubfolder"]
-    skip_static_hosts = settings["skipstatichosts"]
+    skip_static_blackhole = settings["skipstaticblackhole"]
 
     write_opening_header(
         final_file,
         extensions=extensions,
         numberofrules=number_of_rules,
         outputsubfolder=output_subfolder,
-        skipstatichosts=skip_static_hosts,
-        nounifiedhosts=no_unified_hosts,
+        skipstaticblackhole=skip_static_blackhole,
+        nounifiedblackhole=no_unified_blackhole,
     )
     final_file.close()
 
@@ -321,11 +321,11 @@ def main():
             numberofrules=number_of_rules,
             outputsubfolder=output_subfolder,
             sourcesdata=sources_data,
-            nounifiedhosts=no_unified_hosts,
+            nounifiedblackhole=no_unified_blackhole,
         )
 
     print_success(
-        "Success! The hosts file has been saved in folder "
+        "Success! The blackhole file has been saved in folder "
         + output_subfolder
         + "\nIt contains "
         + "{:,}".format(number_of_rules)
@@ -336,11 +336,11 @@ def main():
         final_file,
         auto=auto,
         replace=settings["replace"],
-        skipstatichosts=skip_static_hosts,
+        skipstaticblackhole=skip_static_blackhole,
     )
 
     # We only flush the DNS cache if we have
-    # moved a new hosts file into place.
+    # moved a new blackhole file into place.
     if move_file:
         prompt_for_flush_dns_cache(
             flush_cache=settings["flushdnscache"], prompt_flush=not auto
@@ -350,10 +350,10 @@ def main():
 # Prompt the User
 def prompt_for_update(freshen, update_auto):
     """
-    Prompt the user to update all hosts files.
+    Prompt the user to update all blackhole files.
 
     If requested, the function will update all data sources after it
-    checks that a hosts file does indeed exist.
+    checks that a blackhole file does indeed exist.
 
     Parameters
     ----------
@@ -369,18 +369,18 @@ def prompt_for_update(freshen, update_auto):
         Whether or not we should update data sources for exclusion files.
     """
 
-    # Create a hosts file if it doesn't exist.
-    hosts_file = path_join_robust(BASEDIR_PATH, "hosts")
+    # Create a blackhole file if it doesn't exist.
+    blackhole_file = path_join_robust(BASEDIR_PATH, "blackhole")
 
-    if not os.path.isfile(hosts_file):
+    if not os.path.isfile(blackhole_file):
         try:
-            open(hosts_file, "w+").close()
+            open(blackhole_file, "w+").close()
         except (IOError, OSError):
             # Starting in Python 3.3, IOError is aliased
             # OSError. However, we have to catch both for
             # Python 2.x failures.
             print_failure(
-                "ERROR: No 'hosts' file in the folder. Try creating one manually."
+                "ERROR: No 'blackhole' file in the folder. Try creating one manually."
             )
 
     if not freshen:
@@ -450,39 +450,39 @@ def prompt_for_flush_dns_cache(flush_cache, prompt_flush):
 
 def prompt_for_move(final_file, **move_params):
     """
-    Prompt the user to move the newly created hosts file to its designated
+    Prompt the user to move the newly created blackhole file to its designated
     location in the OS.
 
     Parameters
     ----------
     final_file : file
-        The file object that contains the newly created hosts data.
+        The file object that contains the newly created blackhole data.
     move_params : kwargs
-        Dictionary providing additional parameters for moving the hosts file
+        Dictionary providing additional parameters for moving the blackhole file
         into place. Currently, those fields are:
 
         1) auto
         2) replace
-        3) skipstatichosts
+        3) skipstaticblackhole
 
     Returns
     -------
     move_file : bool
-        Whether or not the final hosts file was moved.
+        Whether or not the final blackhole file was moved.
     """
 
-    skip_static_hosts = move_params["skipstatichosts"]
+    skip_static_blackhole = move_params["skipstaticblackhole"]
 
-    if move_params["replace"] and not skip_static_hosts:
+    if move_params["replace"] and not skip_static_blackhole:
         move_file = True
-    elif move_params["auto"] or skip_static_hosts:
+    elif move_params["auto"] or skip_static_blackhole:
         move_file = False
     else:
-        prompt = "Do you want to replace your existing hosts file with the newly generated file?"
+        prompt = "Do you want to replace your existing blackhole file with the newly generated file?"
         move_file = query_yes_no(prompt)
 
     if move_file:
-        move_file = move_hosts_file_into_place(final_file)
+        move_file = move_blackhole_file_into_place(final_file)
 
     return move_file
 
@@ -632,7 +632,7 @@ def matches_exclusions(stripped_rule, exclusion_regexes):
     Check whether a rule matches an exclusion rule we already provided.
 
     If this function returns True, that means this rule should be excluded
-    from the final hosts file.
+    from the final blackhole file.
 
     Parameters
     ----------
@@ -680,7 +680,7 @@ def update_sources_data(sources_data, **sources_params):
         2) extensions
         3) extensionspath
         4) sourcedatafilename
-        5) nounifiedhosts
+        5) nounifiedblackhole
 
     Returns
     -------
@@ -690,7 +690,7 @@ def update_sources_data(sources_data, **sources_params):
 
     source_data_filename = sources_params["sourcedatafilename"]
 
-    if not sources_params["nounifiedhosts"]:
+    if not sources_params["nounifiedblackhole"]:
         for source in sort_sources(
             recursive_glob(sources_params["datapath"], source_data_filename)
         ):
@@ -718,7 +718,7 @@ def update_sources_data(sources_data, **sources_params):
 
 def jsonarray(json_array_string):
     """
-    Transformer, converts a json array string hosts into one host per
+    Transformer, converts a json array string blackhole into one host per
     line, prefixing each line with "127.0.0.1 ".
 
     Parameters
@@ -759,7 +759,7 @@ def update_all_sources(source_data_filename, host_filename):
         update_data = json.load(update_file)
         update_file.close()
 
-        # we can pause updating any given hosts source.
+        # we can pause updating any given blackhole source.
         # if the update.json "pause" key is missing, don't pause.
         if update_data.get('pause', False):
             continue
@@ -781,12 +781,12 @@ def update_all_sources(source_data_filename, host_filename):
             # get rid of carriage-return symbols
             updated_file = updated_file.replace("\r", "")
 
-            hosts_file = open(
+            blackhole_file = open(
                 path_join_robust(BASEDIR_PATH, os.path.dirname(source), host_filename),
                 "wb",
             )
-            write_data(hosts_file, updated_file)
-            hosts_file.close()
+            write_data(blackhole_file, updated_file)
+            blackhole_file.close()
         except Exception:
             print("Error in updating source: ", update_url)
 
@@ -805,12 +805,12 @@ def create_initial_file(**initial_file_params):
         Dictionary providing additional parameters for populating the initial file
         information. Currently, those fields are:
 
-        1) nounifiedhosts
+        1) nounifiedblackhole
     """
 
     merge_file = tempfile.NamedTemporaryFile()
 
-    if not initial_file_params["nounifiedhosts"]:
+    if not initial_file_params["nounifiedblackhole"]:
         # spin the sources for the base file
         for source in sort_sources(
             recursive_glob(settings["datapath"], settings["hostfilename"])
@@ -917,7 +917,7 @@ def minimise_file(input_file, target_ip, output_file):
 
 def remove_dups_and_excl(merge_file, exclusion_regexes, output_file=None):
     """
-    Remove duplicates and remove hosts that we are excluding.
+    Remove duplicates and remove blackhole that we are excluding.
 
     We check for duplicate hostnames as well as remove any hostnames that
     have been explicitly excluded by the user.
@@ -947,7 +947,7 @@ def remove_dups_and_excl(merge_file, exclusion_regexes, output_file=None):
         os.makedirs(settings["outputpath"])
 
     if output_file is None:
-        final_file = open(path_join_robust(settings["outputpath"], "hosts"), "w+b")
+        final_file = open(path_join_robust(settings["outputpath"], "blackhole"), "w+b")
     else:
         final_file = output_file
 
@@ -1109,7 +1109,7 @@ def normalize_rule(rule, target_ip, keep_domain_comments):
 
 def strip_rule(line):
     """
-    Sanitize a rule string provided before writing it to the output hosts file.
+    Sanitize a rule string provided before writing it to the output blackhole file.
 
     Parameters
     ----------
@@ -1127,12 +1127,12 @@ def strip_rule(line):
 
 def write_opening_header(final_file, **header_params):
     """
-    Write the header information into the newly-created hosts file.
+    Write the header information into the newly-created blackhole file.
 
     Parameters
     ----------
     final_file : file
-        The file object that points to the newly-created hosts file.
+        The file object that points to the newly-created blackhole file.
     header_params : kwargs
         Dictionary providing additional parameters for populating the header
         information. Currently, those fields are:
@@ -1140,8 +1140,8 @@ def write_opening_header(final_file, **header_params):
         1) extensions
         2) numberofrules
         3) outputsubfolder
-        4) skipstatichosts
-        5) nounifiedhosts
+        4) skipstaticblackhole
+        5) nounifiedblackhole
     """
 
     final_file.seek(0)  # Reset file pointer.
@@ -1149,10 +1149,10 @@ def write_opening_header(final_file, **header_params):
 
     final_file.seek(0)  # Write at the top.
 
-    no_unified_hosts = header_params["nounifiedhosts"]
+    no_unified_blackhole = header_params["nounifiedblackhole"]
 
     if header_params["extensions"]:
-        if no_unified_hosts:
+        if no_unified_blackhole:
             if len(header_params["extensions"]) > 1:
                 write_data(
                     final_file,
@@ -1189,8 +1189,8 @@ def write_opening_header(final_file, **header_params):
 
     write_data(
         final_file,
-        "# This hosts file is a merged collection "
-        "of hosts from reputable sources,\n",
+        "# This blackhole file is a merged collection "
+        "of blackhole from reputable sources,\n",
     )
     write_data(final_file, "# with a dash of crowd sourcing via GitHub\n#\n")
     write_data(
@@ -1199,10 +1199,10 @@ def write_opening_header(final_file, **header_params):
     )
 
     if header_params["extensions"]:
-        if header_params["nounifiedhosts"]:
+        if header_params["nounifiedblackhole"]:
             write_data(
                 final_file,
-                "# The unified hosts file was not used while generating this file.\n"
+                "# The unified blackhole file was not used while generating this file.\n"
                 "# Extensions used to generate this file: "
                 + ", ".join(header_params["extensions"])
                 + "\n",
@@ -1228,7 +1228,7 @@ def write_opening_header(final_file, **header_params):
         "# Fetch the latest version of this file: "
         "https://raw.githubusercontent.com/boss-net/blackhole/master/"
         + path_join_robust(header_params["outputsubfolder"], "").replace("\\", "/")
-        + "hosts\n",
+        + "blackhole\n",
     )
     write_data(
         final_file, "# Project home page: https://github.com/boss-net/blackhole\n"
@@ -1243,7 +1243,7 @@ def write_opening_header(final_file, **header_params):
     )
     write_data(final_file, "\n")
 
-    if not header_params["skipstatichosts"]:
+    if not header_params["skipstaticblackhole"]:
         write_data(final_file, "127.0.0.1 localhost\n")
         write_data(final_file, "127.0.0.1 localhost.localdomain\n")
         write_data(final_file, "127.0.0.1 local\n")
@@ -1256,7 +1256,7 @@ def write_opening_header(final_file, **header_params):
         write_data(final_file, "ff00::0 ip6-mcastprefix\n")
         write_data(final_file, "ff02::1 ip6-allnodes\n")
         write_data(final_file, "ff02::2 ip6-allrouters\n")
-        write_data(final_file, "ff02::3 ip6-allhosts\n")
+        write_data(final_file, "ff02::3 ip6-allblackhole\n")
         write_data(final_file, "0.0.0.0 0.0.0.0\n")
 
         if platform.system() == "Linux":
@@ -1265,7 +1265,7 @@ def write_opening_header(final_file, **header_params):
 
         write_data(final_file, "\n")
 
-    preamble = path_join_robust(BASEDIR_PATH, "myhosts")
+    preamble = path_join_robust(BASEDIR_PATH, "myblackhole")
     maybe_copy_example_file(preamble)
 
     if os.path.isfile(preamble):
@@ -1291,22 +1291,22 @@ def update_readme_data(readme_file, **readme_updates):
         2) sourcesdata
         3) numberofrules
         4) outputsubfolder
-        5) nounifiedhosts
+        5) nounifiedblackhole
     """
 
     extensions_key = "base"
     extensions = readme_updates["extensions"]
-    no_unified_hosts = readme_updates["nounifiedhosts"]
+    no_unified_blackhole = readme_updates["nounifiedblackhole"]
 
     if extensions:
         extensions_key = "-".join(extensions)
-        if no_unified_hosts:
+        if no_unified_blackhole:
             extensions_key = extensions_key + "-only"
 
     output_folder = readme_updates["outputsubfolder"]
     generation_data = {
         "location": path_join_robust(output_folder, ""),
-        "no_unified_hosts": no_unified_hosts,
+        "no_unified_blackhole": no_unified_blackhole,
         "entries": readme_updates["numberofrules"],
         "sourcesdata": readme_updates["sourcesdata"],
     }
@@ -1324,12 +1324,12 @@ def update_readme_data(readme_file, **readme_updates):
         json.dump(readme_data, f)
 
 
-def move_hosts_file_into_place(final_file):
+def move_blackhole_file_into_place(final_file):
     """
-    Move the newly-created hosts file into its correct location on the OS.
+    Move the newly-created blackhole file into its correct location on the OS.
 
-    For UNIX systems, the hosts file is "etc/hosts." On Windows, it's
-    "C:\Windows\System32\drivers\etc\hosts."
+    For UNIX systems, the blackhole file is "etc/blackhole." On Windows, it's
+    "C:\Windows\System32\drivers\etc\blackhole."
 
     For this move to work, you must have administrator privileges to do this.
     On UNIX systems, this means having "sudo" access, and on Windows, it
@@ -1338,7 +1338,7 @@ def move_hosts_file_into_place(final_file):
     Parameters
     ----------
     final_file : file object
-        The newly-created hosts file to move.
+        The newly-created blackhole file to move.
     """  # noqa: W605
 
     filename = os.path.abspath(final_file.name)
@@ -1351,12 +1351,12 @@ def move_hosts_file_into_place(final_file):
         return False
 
     if platform.system() == "Windows":
-        target_file = str(Path(os.getenv("SystemRoot")) / "system32" / "drivers" / "etc" / "hosts")
+        target_file = str(Path(os.getenv("SystemRoot")) / "system32" / "drivers" / "etc" / "blackhole")
     else:
-        target_file = "/etc/hosts"
+        target_file = "/etc/blackhole"
 
     if os.getenv("IN_CONTAINER"):
-        # It's not allowed to remove/replace a mounted /etc/hosts, so we replace the content.
+        # It's not allowed to remove/replace a mounted /etc/blackhole, so we replace the content.
         # This requires running the container user as root, as is the default.
         print(f"Running in container, so we will replace the content of {target_file}.")
         try:
@@ -1385,7 +1385,7 @@ def flush_dns_cache():
     Flush the DNS cache.
     """
 
-    print("Flushing the DNS cache to utilize new hosts file...")
+    print("Flushing the DNS cache to utilize new blackhole file...")
     print(
         "Flushing the DNS cache requires administrative privileges. You might need to enter your password."
     )
@@ -1471,17 +1471,17 @@ def flush_dns_cache():
             print_failure("Unable to determine DNS management tool.")
 
 
-def remove_old_hosts_file(path_to_file, file_name, backup):
+def remove_old_blackhole_file(path_to_file, file_name, backup):
     """
-    Remove the old hosts file.
+    Remove the old blackhole file.
 
-    This is a hotfix because merging with an already existing hosts file leads
+    This is a hotfix because merging with an already existing blackhole file leads
     to artifacts and duplicates.
 
     Parameters
     ----------
     backup : boolean, default False
-        Whether or not to backup the existing hosts file.
+        Whether or not to backup the existing blackhole file.
     """
 
     full_file_path = path_join_robust(path_to_file, file_name)
@@ -1501,7 +1501,7 @@ def remove_old_hosts_file(path_to_file, file_name, backup):
     if not os.path.exists(path_to_file):
         os.makedirs(path_to_file)
 
-    # Create new empty hosts file
+    # Create new empty blackhole file
     open(full_file_path, "a").close()
 
 
@@ -1610,7 +1610,7 @@ def maybe_copy_example_file(file_path):
 
 def get_file_by_url(url, params=None, **kwargs):
     """
-    Retrieve the contents of the hosts file at the URL, then pass it through domain_to_idna().
+    Retrieve the contents of the blackhole file at the URL, then pass it through domain_to_idna().
 
     Parameters are passed to the requests.get() function.
 

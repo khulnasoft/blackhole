@@ -59,12 +59,12 @@ for item in $lists; do
     # echo $item $HASH_DATE
     IFS=" "
     split=(${HASH_DATE//,/ })
-    git checkout ${split[0]} ${item}/hosts 1> /dev/null 2> /dev/null
-    domains=$(rh -q -m $item/hosts)
+    git checkout ${split[0]} ${item}/blackhole 1> /dev/null 2> /dev/null
+    domains=$(rh -q -m $item/blackhole)
     echo  $item ${split[1]} ${domains}
     echo ${split[1]},${domains} >> ${item}/stats.out
     IFS='
 '
   done
-  git checkout HEAD^ ${item}/hosts 1> /dev/null 2> /dev/null
+  git checkout HEAD^ ${item}/blackhole 1> /dev/null 2> /dev/null
 done
