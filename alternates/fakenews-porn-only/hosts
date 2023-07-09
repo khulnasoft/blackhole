@@ -2212,15 +2212,15 @@
 0.0.0.0 youtubecensorship.com
 0.0.0.0 yubasuttertimes.com
 0.0.0.0 zombie.news
-# Title: blackholeVN Adult
+# Title: hostsVN Adult
 # Last modified: 09 Jul 2023 23:15 UTC+7
 # Version: 2307092315
 # Blocked: 3,388 domains
 # Only include adult domains (Vietnamese language)
-# Homepage: https://bigdargon.github.io/blackholeVN/
-# GitHub: https://github.com/bigdargon/blackholeVN
-# Report issues: https://github.com/bigdargon/blackholeVN/issues
-# Download: https://github.com/bigdargon/blackholeVN/raw/master/extensions/adult/blackhole-VN
+# Homepage: https://bigdargon.github.io/hostsVN/
+# GitHub: https://github.com/bigdargon/hostsVN
+# Report issues: https://github.com/bigdargon/hostsVN/issues
+# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/adult/blackhole-VN
 #
 # =====================================================
 
@@ -5844,7 +5844,7 @@
 0.0.0.0 wetwetpics.com
 0.0.0.0 www.assxplanet.com
 # Last Updated: 2021-10-05 21:46:15 +0200 (CEST) Build: 278
-## Clefspeare13 pornblackhole
+## Clefspeare13 pornhosts
 # This is a custom blackhole file with all the porn sites I could find.
 #
 # Domains with no duplicates. Note that www.* versions of domains and
@@ -5852,19 +5852,19 @@
 # both be present.
 #
 # Project home page:
-# https://github.com/Clefspeare13/pornblackhole
+# https://github.com/Clefspeare13/pornhosts
 #
 # License:
-# MIT (https://github.com/Clefspeare13/pornblackhole/blob/master/LICENSE)
+# MIT (https://github.com/Clefspeare13/pornhosts/blob/master/LICENSE)
 #
 # Contributions by:
 # @Spirillen: https://www.mypdns.org/p/Spirillen/
 # Niclas (@Clefspeare13): https://github.com/Clefspeare13
 # Further changes and contributors maintained in the commit history at
-# https://github.com/Clefspeare13/pornblackhole/commits/master
+# https://github.com/Clefspeare13/pornhosts/commits/master
 #
 # Contribute:
-# Create an issue at https://github.com/Clefspeare13/pornblackhole/issues
+# Create an issue at https://github.com/Clefspeare13/pornhosts/issues
 #
 
 # localhost

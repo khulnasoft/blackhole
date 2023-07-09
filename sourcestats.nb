@@ -35,7 +35,7 @@ Cell[BoxData[{
       "\"\<data/UncheckyAds/\>\"", ",", "\"\<data/adaway.org/\>\"", ",", 
       "\"\<data/add.2o7Net/\>\"", ",", "\"\<data/add.Dead/\>\"", ",", 
       "\"\<data/add.Risk/\>\"", ",", "\"\<data/add.Spam/\>\"", ",", 
-      "\"\<data/blackholeVN/\>\"", ",", "\"\<data/minecraft-blackhole/\>\"", ",", 
+      "\"\<data/hostsVN/\>\"", ",", "\"\<data/minecraft-blackhole/\>\"", ",", 
       "\"\<data/mvps.org/\>\"", ",", "\"\<data/shady-blackhole/\>\"", ",", 
       "\"\<data/someonewhocares.org/\>\"", ",", "\"\<data/tiuxo/\>\"", ",", 
       "\"\<data/yoyo.org/\>\"", ",", "\"\<extensions/fakenews/\>\"", ",", 
@@ -5533,7 +5533,7 @@ JJE=
       TagBox[
        GridBox[{{
           StyleBox[
-          "\"data/blackholeVN/ domaicontribution history\"", 16, Bold, 
+          "\"data/hostsVN/ domaicontribution history\"", 16, Bold, 
            StripOnInput -> False]}, {
           StyleBox[
           "\"updated: Sat 30 Jul 2022 02:52:09 UTC\"", 12, StripOnInput -> 

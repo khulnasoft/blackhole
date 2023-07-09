@@ -31,7 +31,7 @@ data/add.2o7Net
 data/add.Dead
 data/add.Risk
 data/add.Spam
-data/blackholeVN
+data/hostsVN
 data/minecraft-blackhole
 data/mvps.org
 data/shady-blackhole

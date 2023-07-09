@@ -2212,15 +2212,15 @@
 0.0.0.0 youtubecensorship.com
 0.0.0.0 yubasuttertimes.com
 0.0.0.0 zombie.news
-# Title: blackholeVN Gambling
+# Title: hostsVN Gambling
 # Last modified: 09 Jul 2023 23:15 UTC+7
 # Version: 2307092315
 # Blocked: 4,700 domains
 # Only include gambling domains (Vietnamese language)
-# Homepage: https://bigdargon.github.io/blackholeVN/
-# GitHub: https://github.com/bigdargon/blackholeVN
-# Report issues: https://github.com/bigdargon/blackholeVN/issues
-# Download: https://github.com/bigdargon/blackholeVN/raw/master/extensions/gambling/blackhole-VN
+# Homepage: https://bigdargon.github.io/hostsVN/
+# GitHub: https://github.com/bigdargon/hostsVN
+# Report issues: https://github.com/bigdargon/hostsVN/issues
+# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/gambling/blackhole-VN
 #
 # =====================================================
 
@@ -6926,7 +6926,7 @@
 0.0.0.0 zvhlv.com
 
 # <http://www.top100bookmakers.com/completelist.php>
-# <https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/anti-casino-and-betting-blackhole-file.txt>
+# <https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/anti-casino-and-betting-hosts-file.txt>
 # <https://www.reddit.com/r/GlobalOffensiveGamble/comments/3d5fmr/list_of_csgo_gambling_websites/>
 # Title: Gambling blackhole
 # Updated March 12, 2023
@@ -12365,7 +12365,7 @@
 0.0.0.0 testflight.joinclubhouse.com
 
 # Dating sites
-# from https://github.com/StevenBlack/blackhole/issues/2023
+# from https://github.com/StevenBlack/hosts/issues/2023
 0.0.0.0 tinder.com
 0.0.0.0 bumble.com
 0.0.0.0 badoo.com

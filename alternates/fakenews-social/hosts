@@ -8008,7 +8008,7 @@ ff02::3 ip6-allblackhole
 0.0.0.0 testflight.joinclubhouse.com
 
 # Dating sites
-# from https://github.com/StevenBlack/blackhole/issues/2023
+# from https://github.com/StevenBlack/hosts/issues/2023
 0.0.0.0 tinder.com
 0.0.0.0 bumble.com
 0.0.0.0 badoo.com

@@ -18,15 +18,15 @@
 
 
 # End of custom host records.
-# Title: blackholeVN Gambling
+# Title: hostsVN Gambling
 # Last modified: 09 Jul 2023 23:15 UTC+7
 # Version: 2307092315
 # Blocked: 4,700 domains
 # Only include gambling domains (Vietnamese language)
-# Homepage: https://bigdargon.github.io/blackholeVN/
-# GitHub: https://github.com/bigdargon/blackholeVN
-# Report issues: https://github.com/bigdargon/blackholeVN/issues
-# Download: https://github.com/bigdargon/blackholeVN/raw/master/extensions/gambling/blackhole-VN
+# Homepage: https://bigdargon.github.io/hostsVN/
+# GitHub: https://github.com/bigdargon/hostsVN
+# Report issues: https://github.com/bigdargon/hostsVN/issues
+# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/gambling/blackhole-VN
 #
 # =====================================================
 
@@ -4732,7 +4732,7 @@
 0.0.0.0 zvhlv.com
 
 # <http://www.top100bookmakers.com/completelist.php>
-# <https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/anti-casino-and-betting-blackhole-file.txt>
+# <https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/anti-casino-and-betting-hosts-file.txt>
 # <https://www.reddit.com/r/GlobalOffensiveGamble/comments/3d5fmr/list_of_csgo_gambling_websites/>
 # Title: Gambling blackhole
 # Updated March 12, 2023
@@ -7311,15 +7311,15 @@
 0.0.0.0 zetpoker.eu
 0.0.0.0 zodiacu.com
 0.0.0.0 zpisportbk.com
-# Title: blackholeVN Adult
+# Title: hostsVN Adult
 # Last modified: 09 Jul 2023 23:15 UTC+7
 # Version: 2307092315
 # Blocked: 3,388 domains
 # Only include adult domains (Vietnamese language)
-# Homepage: https://bigdargon.github.io/blackholeVN/
-# GitHub: https://github.com/bigdargon/blackholeVN
-# Report issues: https://github.com/bigdargon/blackholeVN/issues
-# Download: https://github.com/bigdargon/blackholeVN/raw/master/extensions/adult/blackhole-VN
+# Homepage: https://bigdargon.github.io/hostsVN/
+# GitHub: https://github.com/bigdargon/hostsVN
+# Report issues: https://github.com/bigdargon/hostsVN/issues
+# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/adult/blackhole-VN
 #
 # =====================================================
 
@@ -10943,7 +10943,7 @@
 0.0.0.0 wetwetpics.com
 0.0.0.0 www.assxplanet.com
 # Last Updated: 2021-10-05 21:46:15 +0200 (CEST) Build: 278
-## Clefspeare13 pornblackhole
+## Clefspeare13 pornhosts
 # This is a custom blackhole file with all the porn sites I could find.
 #
 # Domains with no duplicates. Note that www.* versions of domains and
@@ -10951,19 +10951,19 @@
 # both be present.
 #
 # Project home page:
-# https://github.com/Clefspeare13/pornblackhole
+# https://github.com/Clefspeare13/pornhosts
 #
 # License:
-# MIT (https://github.com/Clefspeare13/pornblackhole/blob/master/LICENSE)
+# MIT (https://github.com/Clefspeare13/pornhosts/blob/master/LICENSE)
 #
 # Contributions by:
 # @Spirillen: https://www.mypdns.org/p/Spirillen/
 # Niclas (@Clefspeare13): https://github.com/Clefspeare13
 # Further changes and contributors maintained in the commit history at
-# https://github.com/Clefspeare13/pornblackhole/commits/master
+# https://github.com/Clefspeare13/pornhosts/commits/master
 #
 # Contribute:
-# Create an issue at https://github.com/Clefspeare13/pornblackhole/issues
+# Create an issue at https://github.com/Clefspeare13/pornhosts/issues
 #
 
 # localhost
@@ -59358,7 +59358,7 @@
 0.0.0.0 testflight.joinclubhouse.com
 
 # Dating sites
-# from https://github.com/StevenBlack/blackhole/issues/2023
+# from https://github.com/StevenBlack/hosts/issues/2023
 0.0.0.0 tinder.com
 0.0.0.0 bumble.com
 0.0.0.0 badoo.com
