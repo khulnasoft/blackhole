@@ -33,7 +33,7 @@ exit /b
 :SCset
 :: VALUE
 :: 2 (Automatic) (DEFAULT)
-:: 4 (Disabled) (to prevent network freeze after applying a huge hosts file)
+:: 4 (Disabled) (to prevent network freeze after applying a huge blackhole file)
 ::
 :: See https://superuser.com/a/1277960
 ::

@@ -1,0 +1,27 @@
+# Title: boss-net/blackhole extension gambling
+#
+# This blackhole file is a merged collection of blackhole from reputable sources,
+# with a dash of crowd sourcing via GitHub
+#
+# Date: 09 July 2023 20:58:19 (GMT)
+# The unified blackhole file was not used while generating this file.
+# Extensions used to generate this file: gambling
+# Number of unique domains: 0
+#
+# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-only/blackhole
+# Project home page: https://github.com/boss-net/blackhole
+# Project releases: https://github.com/boss-net/blackhole/releases
+#
+# ===============================================================
+
+# Custom host records are listed here.
+
+
+# End of custom host records.
+#
+# The contents of this file (containing a listing of additional domains in
+# 'hosts' file format) are appended to the unified hosts file during the
+# update process. For example, uncomment the following line to block
+# 'example.com':
+
+# 0.0.0.0 example.com

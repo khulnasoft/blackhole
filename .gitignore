@@ -1,9 +1,9 @@
 .idea
 *.iml
-myhosts
+myblackhole
 blacklist
 whitelist
-hosts-*
+blackhole-*
 /web.config
 /__pycache__
 /node_modules/

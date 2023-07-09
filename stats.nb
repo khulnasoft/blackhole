@@ -28,7 +28,7 @@ Cell[BoxData[{
    RowBox[{"Import", "[", "\"\<stats.out\>\"", "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"graphtitle", "=", "\"\<Hosts file size history\>\""}], 
+  RowBox[{"graphtitle", "=", "\"\<Blackhole file size history\>\""}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
@@ -854,7 +854,7 @@ YKWYnJffVwjWmka3/B/Mag2l
     TagBox[
      GridBox[{{
         StyleBox[
-        "\"Hosts file size history\"", 16, Bold, StripOnInput -> False]}, {
+        "\"Blackhole file size history\"", 16, Bold, StripOnInput -> False]}, {
         StyleBox[
         "\"base version: (adware + malware) only\"", 12, Bold, StripOnInput -> 
          False]}, {

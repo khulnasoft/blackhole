@@ -19,8 +19,8 @@ from io import BytesIO, StringIO
 
 import requests
 
-import updateHostsFile
-from updateHostsFile import (
+import updateBlackholeFile
+from updateBlackholeFile import (
     Colors,
     colorize,
     display_exclusion_options,
@@ -32,7 +32,7 @@ from updateHostsFile import (
     get_file_by_url,
     is_valid_user_provided_domain_format,
     matches_exclusions,
-    move_hosts_file_into_place,
+    move_blackhole_file_into_place,
     normalize_rule,
     path_join_robust,
     print_failure,
@@ -43,7 +43,7 @@ from updateHostsFile import (
     prompt_for_update,
     query_yes_no,
     recursive_glob,
-    remove_old_hosts_file,
+    remove_old_blackhole_file,
     sort_sources,
     strip_rule,
     supports_color,
@@ -100,8 +100,8 @@ class BaseMockDir(Base):
 # Project Settings
 class TestGetDefaults(Base):
     def test_get_defaults(self):
-        with self.mock_property("updateHostsFile.BASEDIR_PATH"):
-            updateHostsFile.BASEDIR_PATH = "foo"
+        with self.mock_property("updateBlackholeFile.BASEDIR_PATH"):
+            updateBlackholeFile.BASEDIR_PATH = "foo"
             actual = get_defaults()
             expected = {
                 "numberofrules": 0,
@@ -109,15 +109,15 @@ class TestGetDefaults(Base):
                 "freshen": True,
                 "replace": False,
                 "backup": False,
-                "skipstatichosts": False,
+                "skipstaticblackhole": False,
                 "keepdomaincomments": True,
                 "extensionspath": "foo" + self.sep + "extensions",
                 "extensions": [],
-                "nounifiedhosts": False,
+                "nounifiedblackhole": False,
                 "compress": False,
                 "minimise": False,
                 "outputsubfolder": "",
-                "hostfilename": "hosts",
+                "hostfilename": "blackhole",
                 "targetip": "0.0.0.0",
                 "sourcedatafilename": "update.json",
                 "sourcesdata": [],
@@ -154,7 +154,7 @@ class TestSortSources(Base):
 
     def test_live_data(self):
         given = [
-            "data/KADhosts/update.json",
+            "data/KADblackhole/update.json",
             "data/someonewhocares.org/update.json",
             "data/boss-net/update.json",
             "data/adaway.org/update.json",
@@ -189,7 +189,7 @@ class TestSortSources(Base):
             "data/add.Spam/update.json",
             "data/Badd-Boyz-Hosts/update.json",
             "data/hostsVN/update.json",
-            "data/KADhosts/update.json",
+            "data/KADblackhole/update.json",
             "data/malwaredomainlist.com/update.json",
             "data/mvps.org/update.json",
             "data/someonewhocares.org/update.json",
@@ -219,14 +219,14 @@ class TestPromptForUpdate(BaseStdout, BaseMockDir):
         BaseMockDir.setUp(self)
 
     def test_no_freshen_no_new_file(self):
-        hosts_file = os.path.join(self.test_dir, "hosts")
-        hosts_data = "This data should not be overwritten"
+        blackhole_file = os.path.join(self.test_dir, "blackhole")
+        blackhole_data = "This data should not be overwritten"
 
-        with self.mock_property("updateHostsFile.BASEDIR_PATH"):
-            updateHostsFile.BASEDIR_PATH = self.test_dir
+        with self.mock_property("updateBlackholeFile.BASEDIR_PATH"):
+            updateBlackholeFile.BASEDIR_PATH = self.test_dir
 
-            with open(hosts_file, "w") as f:
-                f.write(hosts_data)
+            with open(blackhole_file, "w") as f:
+                f.write(blackhole_data)
 
         for update_auto in (False, True):
             dir_count = self.dir_count
@@ -239,15 +239,15 @@ class TestPromptForUpdate(BaseStdout, BaseMockDir):
 
             self.assertEqual(self.dir_count, dir_count)
 
-            with open(hosts_file, "r") as f:
+            with open(blackhole_file, "r") as f:
                 contents = f.read()
-                self.assertEqual(contents, hosts_data)
+                self.assertEqual(contents, blackhole_data)
 
     def test_no_freshen_new_file(self):
-        hosts_file = os.path.join(self.test_dir, "hosts")
+        blackhole_file = os.path.join(self.test_dir, "blackhole")
 
-        with self.mock_property("updateHostsFile.BASEDIR_PATH"):
-            updateHostsFile.BASEDIR_PATH = self.test_dir
+        with self.mock_property("updateBlackholeFile.BASEDIR_PATH"):
+            updateBlackholeFile.BASEDIR_PATH = self.test_dir
 
             dir_count = self.dir_count
             prompt_for_update(freshen=False, update_auto=False)
@@ -259,7 +259,7 @@ class TestPromptForUpdate(BaseStdout, BaseMockDir):
 
             self.assertEqual(self.dir_count, dir_count + 1)
 
-            with open(hosts_file, "r") as f:
+            with open(blackhole_file, "r") as f:
                 contents = f.read()
                 self.assertEqual(contents, "")
 
@@ -268,29 +268,29 @@ class TestPromptForUpdate(BaseStdout, BaseMockDir):
         for exc in (IOError, OSError):
             mock_open.side_effect = exc("failed open")
 
-            with self.mock_property("updateHostsFile.BASEDIR_PATH"):
-                updateHostsFile.BASEDIR_PATH = self.test_dir
+            with self.mock_property("updateBlackholeFile.BASEDIR_PATH"):
+                updateBlackholeFile.BASEDIR_PATH = self.test_dir
                 prompt_for_update(freshen=False, update_auto=False)
 
                 output = sys.stdout.getvalue()
                 expected = (
-                    "ERROR: No 'hosts' file in the folder. "
+                    "ERROR: No 'blackhole' file in the folder. "
                     "Try creating one manually."
                 )
                 self.assertIn(expected, output)
 
                 sys.stdout = StringIO()
 
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
     def test_freshen_no_update(self, _):
-        hosts_file = os.path.join(self.test_dir, "hosts")
-        hosts_data = "This data should not be overwritten"
+        blackhole_file = os.path.join(self.test_dir, "blackhole")
+        blackhole_data = "This data should not be overwritten"
 
-        with self.mock_property("updateHostsFile.BASEDIR_PATH"):
-            updateHostsFile.BASEDIR_PATH = self.test_dir
+        with self.mock_property("updateBlackholeFile.BASEDIR_PATH"):
+            updateBlackholeFile.BASEDIR_PATH = self.test_dir
 
-            with open(hosts_file, "w") as f:
-                f.write(hosts_data)
+            with open(blackhole_file, "w") as f:
+                f.write(blackhole_data)
 
             dir_count = self.dir_count
 
@@ -305,20 +305,20 @@ class TestPromptForUpdate(BaseStdout, BaseMockDir):
 
             self.assertEqual(self.dir_count, dir_count)
 
-            with open(hosts_file, "r") as f:
+            with open(blackhole_file, "r") as f:
                 contents = f.read()
-                self.assertEqual(contents, hosts_data)
+                self.assertEqual(contents, blackhole_data)
 
-    @mock.patch("updateHostsFile.query_yes_no", return_value=True)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=True)
     def test_freshen_update(self, _):
-        hosts_file = os.path.join(self.test_dir, "hosts")
-        hosts_data = "This data should not be overwritten"
+        blackhole_file = os.path.join(self.test_dir, "blackhole")
+        blackhole_data = "This data should not be overwritten"
 
-        with self.mock_property("updateHostsFile.BASEDIR_PATH"):
-            updateHostsFile.BASEDIR_PATH = self.test_dir
+        with self.mock_property("updateBlackholeFile.BASEDIR_PATH"):
+            updateBlackholeFile.BASEDIR_PATH = self.test_dir
 
-            with open(hosts_file, "w") as f:
-                f.write(hosts_data)
+            with open(blackhole_file, "w") as f:
+                f.write(blackhole_data)
 
             dir_count = self.dir_count
 
@@ -335,16 +335,16 @@ class TestPromptForUpdate(BaseStdout, BaseMockDir):
 
                 self.assertEqual(self.dir_count, dir_count)
 
-                with open(hosts_file, "r") as f:
+                with open(blackhole_file, "r") as f:
                     contents = f.read()
-                    self.assertEqual(contents, hosts_data)
+                    self.assertEqual(contents, blackhole_data)
 
     def tearDown(self):
         BaseStdout.tearDown(self)
 
 
 class TestPromptForExclusions(BaseStdout):
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
     def testSkipPrompt(self, mock_query):
         gather_exclusions = prompt_for_exclusions(skip_prompt=True)
         self.assertFalse(gather_exclusions)
@@ -354,7 +354,7 @@ class TestPromptForExclusions(BaseStdout):
 
         mock_query.assert_not_called()
 
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
     def testNoSkipPromptNoDisplay(self, mock_query):
         gather_exclusions = prompt_for_exclusions(skip_prompt=False)
         self.assertFalse(gather_exclusions)
@@ -365,7 +365,7 @@ class TestPromptForExclusions(BaseStdout):
 
         self.assert_called_once(mock_query)
 
-    @mock.patch("updateHostsFile.query_yes_no", return_value=True)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=True)
     def testNoSkipPromptDisplay(self, mock_query):
         gather_exclusions = prompt_for_exclusions(skip_prompt=False)
         self.assertTrue(gather_exclusions)
@@ -377,8 +377,8 @@ class TestPromptForExclusions(BaseStdout):
 
 
 class TestPromptForFlushDnsCache(Base):
-    @mock.patch("updateHostsFile.flush_dns_cache", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
+    @mock.patch("updateBlackholeFile.flush_dns_cache", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
     def testFlushCache(self, mock_query, mock_flush):
         for prompt_flush in (False, True):
             prompt_for_flush_dns_cache(flush_cache=True, prompt_flush=prompt_flush)
@@ -389,24 +389,24 @@ class TestPromptForFlushDnsCache(Base):
             mock_query.reset_mock()
             mock_flush.reset_mock()
 
-    @mock.patch("updateHostsFile.flush_dns_cache", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
+    @mock.patch("updateBlackholeFile.flush_dns_cache", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
     def testNoFlushCacheNoPrompt(self, mock_query, mock_flush):
         prompt_for_flush_dns_cache(flush_cache=False, prompt_flush=False)
 
         mock_query.assert_not_called()
         mock_flush.assert_not_called()
 
-    @mock.patch("updateHostsFile.flush_dns_cache", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
+    @mock.patch("updateBlackholeFile.flush_dns_cache", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
     def testNoFlushCachePromptNoFlush(self, mock_query, mock_flush):
         prompt_for_flush_dns_cache(flush_cache=False, prompt_flush=True)
 
         self.assert_called_once(mock_query)
         mock_flush.assert_not_called()
 
-    @mock.patch("updateHostsFile.flush_dns_cache", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=True)
+    @mock.patch("updateBlackholeFile.flush_dns_cache", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=True)
     def testNoFlushCachePromptFlush(self, mock_query, mock_flush):
         prompt_for_flush_dns_cache(flush_cache=False, prompt_flush=True)
 
@@ -422,13 +422,13 @@ class TestPromptForMove(Base):
     def prompt_for_move(self, **move_params):
         return prompt_for_move(self.final_file, **move_params)
 
-    @mock.patch("updateHostsFile.move_hosts_file_into_place", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
-    def testSkipStaticHosts(self, mock_query, mock_move):
+    @mock.patch("updateBlackholeFile.move_blackhole_file_into_place", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
+    def testSkipStaticBlackhole(self, mock_query, mock_move):
         for replace in (False, True):
             for auto in (False, True):
                 move_file = self.prompt_for_move(
-                    replace=replace, auto=auto, skipstatichosts=True
+                    replace=replace, auto=auto, skipstaticblackhole=True
                 )
                 self.assertFalse(move_file)
 
@@ -438,12 +438,12 @@ class TestPromptForMove(Base):
                 mock_query.reset_mock()
                 mock_move.reset_mock()
 
-    @mock.patch("updateHostsFile.move_hosts_file_into_place", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
-    def testReplaceNoSkipStaticHosts(self, mock_query, mock_move):
+    @mock.patch("updateBlackholeFile.move_blackhole_file_into_place", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
+    def testReplaceNoSkipStaticBlackhole(self, mock_query, mock_move):
         for auto in (False, True):
             move_file = self.prompt_for_move(
-                replace=True, auto=auto, skipstatichosts=False
+                replace=True, auto=auto, skipstaticblackhole=False
             )
             self.assertFalse(move_file)
 
@@ -453,12 +453,12 @@ class TestPromptForMove(Base):
             mock_query.reset_mock()
             mock_move.reset_mock()
 
-    @mock.patch("updateHostsFile.move_hosts_file_into_place", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
-    def testAutoNoSkipStaticHosts(self, mock_query, mock_move):
+    @mock.patch("updateBlackholeFile.move_blackhole_file_into_place", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
+    def testAutoNoSkipStaticBlackhole(self, mock_query, mock_move):
         for replace in (False, True):
             move_file = self.prompt_for_move(
-                replace=replace, auto=True, skipstatichosts=True
+                replace=replace, auto=True, skipstaticblackhole=True
             )
             self.assertFalse(move_file)
 
@@ -468,22 +468,22 @@ class TestPromptForMove(Base):
             mock_query.reset_mock()
             mock_move.reset_mock()
 
-    @mock.patch("updateHostsFile.move_hosts_file_into_place", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=False)
+    @mock.patch("updateBlackholeFile.move_blackhole_file_into_place", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=False)
     def testPromptNoMove(self, mock_query, mock_move):
         move_file = self.prompt_for_move(
-            replace=False, auto=False, skipstatichosts=False
+            replace=False, auto=False, skipstaticblackhole=False
         )
         self.assertFalse(move_file)
 
         self.assert_called_once(mock_query)
         mock_move.assert_not_called()
 
-    @mock.patch("updateHostsFile.move_hosts_file_into_place", return_value=0)
-    @mock.patch("updateHostsFile.query_yes_no", return_value=True)
+    @mock.patch("updateBlackholeFile.move_blackhole_file_into_place", return_value=0)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=True)
     def testPromptMove(self, mock_query, mock_move):
         move_file = self.prompt_for_move(
-            replace=False, auto=False, skipstatichosts=False
+            replace=False, auto=False, skipstaticblackhole=False
         )
         self.assertFalse(move_file)
 
@@ -496,9 +496,9 @@ class TestPromptForMove(Base):
 
 # Exclusion Logic
 class TestDisplayExclusionsOptions(Base):
-    @mock.patch("updateHostsFile.query_yes_no", return_value=0)
-    @mock.patch("updateHostsFile.exclude_domain", return_value=None)
-    @mock.patch("updateHostsFile.gather_custom_exclusions", return_value=None)
+    @mock.patch("updateBlackholeFile.query_yes_no", return_value=0)
+    @mock.patch("updateBlackholeFile.exclude_domain", return_value=None)
+    @mock.patch("updateBlackholeFile.gather_custom_exclusions", return_value=None)
     def test_no_exclusions(self, mock_gather, mock_exclude, _):
         common_exclusions = []
         display_exclusion_options(common_exclusions, "foo", [])
@@ -506,9 +506,9 @@ class TestDisplayExclusionsOptions(Base):
         mock_gather.assert_not_called()
         mock_exclude.assert_not_called()
 
-    @mock.patch("updateHostsFile.query_yes_no", side_effect=[1, 1, 0])
-    @mock.patch("updateHostsFile.exclude_domain", return_value=None)
-    @mock.patch("updateHostsFile.gather_custom_exclusions", return_value=None)
+    @mock.patch("updateBlackholeFile.query_yes_no", side_effect=[1, 1, 0])
+    @mock.patch("updateBlackholeFile.exclude_domain", return_value=None)
+    @mock.patch("updateBlackholeFile.gather_custom_exclusions", return_value=None)
     def test_only_common_exclusions(self, mock_gather, mock_exclude, _):
         common_exclusions = ["foo", "bar"]
         display_exclusion_options(common_exclusions, "foo", [])
@@ -518,9 +518,9 @@ class TestDisplayExclusionsOptions(Base):
         exclude_calls = [mock.call("foo", "foo", []), mock.call("bar", "foo", None)]
         mock_exclude.assert_has_calls(exclude_calls)
 
-    @mock.patch("updateHostsFile.query_yes_no", side_effect=[0, 0, 1])
-    @mock.patch("updateHostsFile.exclude_domain", return_value=None)
-    @mock.patch("updateHostsFile.gather_custom_exclusions", return_value=None)
+    @mock.patch("updateBlackholeFile.query_yes_no", side_effect=[0, 0, 1])
+    @mock.patch("updateBlackholeFile.exclude_domain", return_value=None)
+    @mock.patch("updateBlackholeFile.gather_custom_exclusions", return_value=None)
     def test_gather_exclusions(self, mock_gather, mock_exclude, _):
         common_exclusions = ["foo", "bar"]
         display_exclusion_options(common_exclusions, "foo", [])
@@ -528,9 +528,9 @@ class TestDisplayExclusionsOptions(Base):
         mock_exclude.assert_not_called()
         self.assert_called_once(mock_gather)
 
-    @mock.patch("updateHostsFile.query_yes_no", side_effect=[1, 0, 1])
-    @mock.patch("updateHostsFile.exclude_domain", return_value=None)
-    @mock.patch("updateHostsFile.gather_custom_exclusions", return_value=None)
+    @mock.patch("updateBlackholeFile.query_yes_no", side_effect=[1, 0, 1])
+    @mock.patch("updateBlackholeFile.exclude_domain", return_value=None)
+    @mock.patch("updateBlackholeFile.gather_custom_exclusions", return_value=None)
     def test_mixture_gather_exclusions(self, mock_gather, mock_exclude, _):
         common_exclusions = ["foo", "bar"]
         display_exclusion_options(common_exclusions, "foo", [])
@@ -543,9 +543,9 @@ class TestGatherCustomExclusions(BaseStdout):
 
     # Can only test in the invalid domain case
     # because of the settings global variable.
-    @mock.patch("updateHostsFile.input", side_effect=["foo", "no"])
+    @mock.patch("updateBlackholeFile.input", side_effect=["foo", "no"])
     @mock.patch(
-        "updateHostsFile.is_valid_user_provided_domain_format", return_value=False
+        "updateBlackholeFile.is_valid_user_provided_domain_format", return_value=False
     )
     def test_basic(self, *_):
         gather_custom_exclusions("foo", [])
@@ -554,9 +554,9 @@ class TestGatherCustomExclusions(BaseStdout):
         output = sys.stdout.getvalue()
         self.assertIn(expected, output)
 
-    @mock.patch("updateHostsFile.input", side_effect=["foo", "yes", "bar", "no"])
+    @mock.patch("updateBlackholeFile.input", side_effect=["foo", "yes", "bar", "no"])
     @mock.patch(
-        "updateHostsFile.is_valid_user_provided_domain_format", return_value=False
+        "updateBlackholeFile.is_valid_user_provided_domain_format", return_value=False
     )
     def test_multiple(self, *_):
         gather_custom_exclusions("foo", [])
@@ -680,7 +680,7 @@ class TestUpdateSourcesData(Base):
             datapath=self.data_path,
             extensionspath=self.extensions_path,
             sourcedatafilename=self.source_data_filename,
-            nounifiedhosts=False,
+            nounifiedblackhole=False,
         )
 
     def update_sources_data(self, sources_data, extensions):
@@ -688,8 +688,8 @@ class TestUpdateSourcesData(Base):
             sources_data[:], extensions=extensions, **self.update_kwargs
         )
 
-    @mock.patch("updateHostsFile.recursive_glob", return_value=[])
-    @mock.patch("updateHostsFile.path_join_robust", return_value="dirpath")
+    @mock.patch("updateBlackholeFile.recursive_glob", return_value=[])
+    @mock.patch("updateBlackholeFile.path_join_robust", return_value="dirpath")
     @mock.patch("builtins.open", return_value=mock.Mock())
     def test_no_update(self, mock_open, mock_join_robust, _):
         extensions = []
@@ -712,12 +712,12 @@ class TestUpdateSourcesData(Base):
         mock_open.assert_not_called()
 
     @mock.patch(
-        "updateHostsFile.recursive_glob",
+        "updateBlackholeFile.recursive_glob",
         side_effect=[[], ["update1.txt", "update2.txt"]],
     )
     @mock.patch("json.load", return_value={"mock_source": "mock_source.ext"})
     @mock.patch("builtins.open", return_value=mock.Mock())
-    @mock.patch("updateHostsFile.path_join_robust", return_value="dirpath")
+    @mock.patch("updateBlackholeFile.path_join_robust", return_value="dirpath")
     def test_update_only_extensions(self, mock_join_robust, *_):
         extensions = [".json"]
         sources_data = [{"source": "source1.txt"}, {"source": "source2.txt"}]
@@ -728,7 +728,7 @@ class TestUpdateSourcesData(Base):
         self.assert_called_once(mock_join_robust)
 
     @mock.patch(
-        "updateHostsFile.recursive_glob",
+        "updateBlackholeFile.recursive_glob",
         side_effect=[["update1.txt", "update2.txt"], ["update3.txt", "update4.txt"]],
     )
     @mock.patch(
@@ -741,7 +741,7 @@ class TestUpdateSourcesData(Base):
         ],
     )
     @mock.patch("builtins.open", return_value=mock.Mock())
-    @mock.patch("updateHostsFile.path_join_robust", return_value="dirpath")
+    @mock.patch("updateBlackholeFile.path_join_robust", return_value="dirpath")
     def test_update_both_pathways(self, mock_join_robust, *_):
         extensions = [".json"]
         sources_data = [{"source": "source1.txt"}, {"source": "source2.txt"}]
@@ -762,19 +762,19 @@ class TestUpdateAllSources(BaseStdout):
         BaseStdout.setUp(self)
 
         self.source_data_filename = "data.json"
-        self.host_filename = "hosts.txt"
+        self.host_filename = "blackhole.txt"
 
     @mock.patch("builtins.open")
-    @mock.patch("updateHostsFile.recursive_glob", return_value=[])
+    @mock.patch("updateBlackholeFile.recursive_glob", return_value=[])
     def test_no_sources(self, _, mock_open):
         update_all_sources(self.source_data_filename, self.host_filename)
         mock_open.assert_not_called()
 
     @mock.patch("builtins.open", return_value=mock.Mock())
     @mock.patch("json.load", return_value={"url": "example.com"})
-    @mock.patch("updateHostsFile.recursive_glob", return_value=["foo"])
-    @mock.patch("updateHostsFile.write_data", return_value=0)
-    @mock.patch("updateHostsFile.get_file_by_url", return_value="file_data")
+    @mock.patch("updateBlackholeFile.recursive_glob", return_value=["foo"])
+    @mock.patch("updateBlackholeFile.write_data", return_value=0)
+    @mock.patch("updateBlackholeFile.get_file_by_url", return_value="file_data")
     def test_one_source(self, mock_get, mock_write, *_):
         update_all_sources(self.source_data_filename, self.host_filename)
         self.assert_called_once(mock_write)
@@ -787,9 +787,9 @@ class TestUpdateAllSources(BaseStdout):
 
     @mock.patch("builtins.open", return_value=mock.Mock())
     @mock.patch("json.load", return_value={"url": "example.com"})
-    @mock.patch("updateHostsFile.recursive_glob", return_value=["foo"])
-    @mock.patch("updateHostsFile.write_data", return_value=0)
-    @mock.patch("updateHostsFile.get_file_by_url", return_value=Exception("fail"))
+    @mock.patch("updateBlackholeFile.recursive_glob", return_value=["foo"])
+    @mock.patch("updateBlackholeFile.write_data", return_value=0)
+    @mock.patch("updateBlackholeFile.get_file_by_url", return_value=Exception("fail"))
     def test_source_fail(self, mock_get, mock_write, *_):
         update_all_sources(self.source_data_filename, self.host_filename)
         mock_write.assert_not_called()
@@ -807,10 +807,10 @@ class TestUpdateAllSources(BaseStdout):
     @mock.patch(
         "json.load", side_effect=[{"url": "example.com"}, {"url": "example2.com"}]
     )
-    @mock.patch("updateHostsFile.recursive_glob", return_value=["foo", "bar"])
-    @mock.patch("updateHostsFile.write_data", return_value=0)
+    @mock.patch("updateBlackholeFile.recursive_glob", return_value=["foo", "bar"])
+    @mock.patch("updateBlackholeFile.write_data", return_value=0)
     @mock.patch(
-        "updateHostsFile.get_file_by_url", side_effect=[Exception("fail"), "file_data"]
+        "updateBlackholeFile.get_file_by_url", side_effect=[Exception("fail"), "file_data"]
     )
     def test_sources_fail_succeed(self, mock_get, mock_write, *_):
         update_all_sources(self.source_data_filename, self.host_filename)
@@ -992,7 +992,7 @@ class TestWriteOpeningHeader(BaseMockDir):
 
     def test_missing_keyword(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstatichosts=False, nounifiedhosts=False
+            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=False, nounifiedblackhole=False
         )
 
         for k in kwargs.keys():
@@ -1005,7 +1005,7 @@ class TestWriteOpeningHeader(BaseMockDir):
 
     def test_basic(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstatichosts=True, nounifiedhosts=False
+            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=True, nounifiedblackhole=False
         )
         write_opening_header(self.final_file, **kwargs)
 
@@ -1014,7 +1014,7 @@ class TestWriteOpeningHeader(BaseMockDir):
 
         # Expected contents.
         for expected in (
-            "# This hosts file is a merged collection",
+            "# This blackhole file is a merged collection",
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
@@ -1032,9 +1032,9 @@ class TestWriteOpeningHeader(BaseMockDir):
         ):
             self.assertNotIn(expected, contents)
 
-    def test_basic_include_static_hosts(self):
+    def test_basic_include_static_blackhole(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstatichosts=False, nounifiedhosts=False
+            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=False, nounifiedblackhole=False
         )
         with self.mock_property("platform.system") as obj:
             obj.return_value = "Windows"
@@ -1047,7 +1047,7 @@ class TestWriteOpeningHeader(BaseMockDir):
         for expected in (
             "127.0.0.1 local",
             "127.0.0.1 localhost",
-            "# This hosts file is a merged collection",
+            "# This blackhole file is a merged collection",
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
@@ -1059,15 +1059,15 @@ class TestWriteOpeningHeader(BaseMockDir):
         for expected in ("# Extensions added to this file:", "127.0.0.53", "127.0.1.1"):
             self.assertNotIn(expected, contents)
 
-    def test_basic_include_static_hosts_linux(self):
+    def test_basic_include_static_blackhole_linux(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstatichosts=False, nounifiedhosts=False
+            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=False, nounifiedblackhole=False
         )
         with self.mock_property("platform.system") as system:
             system.return_value = "Linux"
 
             with self.mock_property("socket.gethostname") as hostname:
-                hostname.return_value = "steven-hosts"
+                hostname.return_value = "steven-blackhole"
                 write_opening_header(self.final_file, **kwargs)
 
         contents = self.final_file.getvalue()
@@ -1077,10 +1077,10 @@ class TestWriteOpeningHeader(BaseMockDir):
         for expected in (
             "127.0.1.1",
             "127.0.0.53",
-            "steven-hosts",
+            "steven-blackhole",
             "127.0.0.1 local",
             "127.0.0.1 localhost",
-            "# This hosts file is a merged collection",
+            "# This blackhole file is a merged collection",
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
@@ -1097,8 +1097,8 @@ class TestWriteOpeningHeader(BaseMockDir):
             extensions=["epsilon", "gamma", "mu", "phi"],
             outputsubfolder="",
             numberofrules=5,
-            skipstatichosts=True,
-            nounifiedhosts=False,
+            skipstaticblackhole=True,
+            nounifiedblackhole=False,
         )
         write_opening_header(self.final_file, **kwargs)
 
@@ -1109,7 +1109,7 @@ class TestWriteOpeningHeader(BaseMockDir):
         for expected in (
             ", ".join(kwargs["extensions"]),
             "# Extensions added to this file:",
-            "# This hosts file is a merged collection",
+            "# This blackhole file is a merged collection",
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
@@ -1126,13 +1126,13 @@ class TestWriteOpeningHeader(BaseMockDir):
         ):
             self.assertNotIn(expected, contents)
 
-    def test_no_unified_hosts(self):
+    def test_no_unified_blackhole(self):
         kwargs = dict(
             extensions=["epsilon", "gamma"],
             outputsubfolder="",
             numberofrules=5,
-            skipstatichosts=True,
-            nounifiedhosts=True,
+            skipstaticblackhole=True,
+            nounifiedblackhole=True,
         )
         write_opening_header(self.final_file, **kwargs)
 
@@ -1142,9 +1142,9 @@ class TestWriteOpeningHeader(BaseMockDir):
         # Expected contents.
         for expected in (
             ", ".join(kwargs["extensions"]),
-            "# The unified hosts file was not used while generating this file.",
+            "# The unified blackhole file was not used while generating this file.",
             "# Extensions used to generate this file:",
-            "# This hosts file is a merged collection",
+            "# This blackhole file is a merged collection",
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
@@ -1162,18 +1162,18 @@ class TestWriteOpeningHeader(BaseMockDir):
             self.assertNotIn(expected, contents)
 
     def _check_preamble(self, check_copy):
-        hosts_file = os.path.join(self.test_dir, "myhosts")
-        hosts_file += ".example" if check_copy else ""
+        blackhole_file = os.path.join(self.test_dir, "myblackhole")
+        blackhole_file += ".example" if check_copy else ""
 
-        with open(hosts_file, "w") as f:
+        with open(blackhole_file, "w") as f:
             f.write("peter-piper-picked-a-pepper")
 
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstatichosts=True, nounifiedhosts=False
+            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=True, nounifiedblackhole=False
         )
 
-        with self.mock_property("updateHostsFile.BASEDIR_PATH"):
-            updateHostsFile.BASEDIR_PATH = self.test_dir
+        with self.mock_property("updateBlackholeFile.BASEDIR_PATH"):
+            updateBlackholeFile.BASEDIR_PATH = self.test_dir
             write_opening_header(self.final_file, **kwargs)
 
         contents = self.final_file.getvalue()
@@ -1182,7 +1182,7 @@ class TestWriteOpeningHeader(BaseMockDir):
         # Expected contents.
         for expected in (
             "peter-piper-picked-a-pepper",
-            "# This hosts file is a merged collection",
+            "# This blackhole file is a merged collection",
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
@@ -1218,7 +1218,7 @@ class TestUpdateReadmeData(BaseMockDir):
 
     def test_missing_keyword(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules="", sourcesdata="", nounifiedhosts=False
+            extensions="", outputsubfolder="", numberofrules="", sourcesdata="", nounifiedblackhole=False
         )
 
         for k in kwargs.keys():
@@ -1234,7 +1234,7 @@ class TestUpdateReadmeData(BaseMockDir):
             json.dump({"foo": "bar"}, f)
 
         kwargs = dict(
-            extensions=None, outputsubfolder="foo", numberofrules=5, sourcesdata="hosts", nounifiedhosts=False
+            extensions=None, outputsubfolder="foo", numberofrules=5, sourcesdata="blackhole", nounifiedblackhole=False
         )
         update_readme_data(self.readme_file, **kwargs)
 
@@ -1244,7 +1244,7 @@ class TestUpdateReadmeData(BaseMockDir):
             sep = self.sep
 
         expected = {
-            "base": {"location": "foo" + sep, 'no_unified_hosts': False, "sourcesdata": "hosts", "entries": 5},
+            "base": {"location": "foo" + sep, 'no_unified_blackhole': False, "sourcesdata": "blackhole", "entries": 5},
             "foo": "bar",
         }
 
@@ -1257,7 +1257,7 @@ class TestUpdateReadmeData(BaseMockDir):
             json.dump({"base": "soprano"}, f)
 
         kwargs = dict(
-            extensions=None, outputsubfolder="foo", numberofrules=5, sourcesdata="hosts", nounifiedhosts=False
+            extensions=None, outputsubfolder="foo", numberofrules=5, sourcesdata="blackhole", nounifiedblackhole=False
         )
         update_readme_data(self.readme_file, **kwargs)
 
@@ -1267,7 +1267,7 @@ class TestUpdateReadmeData(BaseMockDir):
             sep = self.sep
 
         expected = {
-            "base": {"location": "foo" + sep, 'no_unified_hosts': False, "sourcesdata": "hosts", "entries": 5},
+            "base": {"location": "foo" + sep, 'no_unified_blackhole': False, "sourcesdata": "blackhole", "entries": 5},
         }
 
         with open(self.readme_file, "r") as f:
@@ -1282,8 +1282,8 @@ class TestUpdateReadmeData(BaseMockDir):
             extensions=["com", "org"],
             outputsubfolder="foo",
             numberofrules=5,
-            sourcesdata="hosts",
-            nounifiedhosts=False,
+            sourcesdata="blackhole",
+            nounifiedblackhole=False,
         )
         update_readme_data(self.readme_file, **kwargs)
 
@@ -1293,14 +1293,14 @@ class TestUpdateReadmeData(BaseMockDir):
             sep = self.sep
 
         expected = {
-            "com-org": {"location": "foo" + sep, 'no_unified_hosts': False, "sourcesdata": "hosts", "entries": 5}
+            "com-org": {"location": "foo" + sep, 'no_unified_blackhole': False, "sourcesdata": "blackhole", "entries": 5}
         }
 
         with open(self.readme_file, "r") as f:
             actual = json.load(f)
             self.assertEqual(actual, expected)
 
-    def test_set_no_unified_hosts(self):
+    def test_set_no_unified_blackhole(self):
         with open(self.readme_file, "w") as f:
             json.dump({}, f)
 
@@ -1308,8 +1308,8 @@ class TestUpdateReadmeData(BaseMockDir):
             extensions=["com", "org"],
             outputsubfolder="foo",
             numberofrules=5,
-            sourcesdata="hosts",
-            nounifiedhosts=True,
+            sourcesdata="blackhole",
+            nounifiedblackhole=True,
         )
         update_readme_data(self.readme_file, **kwargs)
 
@@ -1319,7 +1319,7 @@ class TestUpdateReadmeData(BaseMockDir):
             sep = self.sep
 
         expected = {
-            "com-org-only": {"location": "foo" + sep, 'no_unified_hosts': True, "sourcesdata": "hosts", "entries": 5}
+            "com-org-only": {"location": "foo" + sep, 'no_unified_blackhole': True, "sourcesdata": "blackhole", "entries": 5}
         }
 
         with open(self.readme_file, "r") as f:
@@ -1327,14 +1327,14 @@ class TestUpdateReadmeData(BaseMockDir):
             self.assertEqual(actual, expected)
 
 
-class TestMoveHostsFile(BaseStdout):
+class TestMoveBlackholeFile(BaseStdout):
     @mock.patch("os.path.abspath", side_effect=lambda f: f)
-    def test_move_hosts_no_name(self, _):  # TODO: Create test which tries to move actual file
+    def test_move_blackhole_no_name(self, _):  # TODO: Create test which tries to move actual file
         with self.mock_property("platform.system") as obj:
             obj.return_value = "foo"
 
             mock_file = mock.Mock(name="foo")
-            move_hosts_file_into_place(mock_file)
+            move_blackhole_file_into_place(mock_file)
 
             expected = "does not exist"
             output = sys.stdout.getvalue()
@@ -1342,12 +1342,12 @@ class TestMoveHostsFile(BaseStdout):
             self.assertIn(expected, output)
 
     @mock.patch("os.path.abspath", side_effect=lambda f: f)
-    def test_move_hosts_windows(self, _):
+    def test_move_blackhole_windows(self, _):
         with self.mock_property("platform.system") as obj:
             obj.return_value = "Windows"
 
             mock_file = mock.Mock(name="foo")
-            move_hosts_file_into_place(mock_file)
+            move_blackhole_file_into_place(mock_file)
 
             expected = ""
             output = sys.stdout.getvalue()
@@ -1355,12 +1355,12 @@ class TestMoveHostsFile(BaseStdout):
 
     @mock.patch("os.path.abspath", side_effect=lambda f: f)
     @mock.patch("subprocess.call", return_value=0)
-    def test_move_hosts_posix(self, *_):  # TODO: create test which tries to move an actual file
+    def test_move_blackhole_posix(self, *_):  # TODO: create test which tries to move an actual file
         with self.mock_property("platform.system") as obj:
             obj.return_value = "Linux"
 
             mock_file = mock.Mock(name="foo")
-            move_hosts_file_into_place(mock_file)
+            move_blackhole_file_into_place(mock_file)
 
             expected = "does not exist."
             output = sys.stdout.getvalue()
@@ -1368,12 +1368,12 @@ class TestMoveHostsFile(BaseStdout):
 
     @mock.patch("os.path.abspath", side_effect=lambda f: f)
     @mock.patch("subprocess.call", return_value=1)
-    def test_move_hosts_posix_fail(self, *_):
+    def test_move_blackhole_posix_fail(self, *_):
         with self.mock_property("platform.system") as obj:
             obj.return_value = "Linux"
 
             mock_file = mock.Mock(name="foo")
-            move_hosts_file_into_place(mock_file)
+            move_blackhole_file_into_place(mock_file)
 
             expected = "does not exist."
             output = sys.stdout.getvalue()
@@ -1388,7 +1388,7 @@ class TestFlushDnsCache(BaseStdout):
             flush_dns_cache()
 
             expected = (
-                "Flushing the DNS cache to utilize new hosts "
+                "Flushing the DNS cache to utilize new blackhole "
                 "file...\nFlushing the DNS cache requires "
                 "administrative privileges. You might need to "
                 "enter your password."
@@ -1486,58 +1486,58 @@ class TestFlushDnsCache(BaseStdout):
                     self.assertIn(expected, output)
 
 
-class TestRemoveOldHostsFile(BaseMockDir):
+class TestRemoveOldBlackholeFile(BaseMockDir):
     def setUp(self):
-        super(TestRemoveOldHostsFile, self).setUp()
-        self.hosts_file = "hosts"
-        self.full_hosts_path = os.path.join(self.test_dir, "hosts")
+        super(TestRemoveOldBlackholeFile, self).setUp()
+        self.blackhole_file = "blackhole"
+        self.full_blackhole_path = os.path.join(self.test_dir, "blackhole")
 
-    def test_remove_hosts_file(self):
+    def test_remove_blackhole_file(self):
         old_dir_count = self.dir_count
 
-        remove_old_hosts_file(self.test_dir, self.hosts_file, backup=False)
+        remove_old_blackhole_file(self.test_dir, self.blackhole_file, backup=False)
 
         new_dir_count = old_dir_count + 1
         self.assertEqual(self.dir_count, new_dir_count)
 
-        with open(self.full_hosts_path, "r") as f:
+        with open(self.full_blackhole_path, "r") as f:
             contents = f.read()
             self.assertEqual(contents, "")
 
-    def test_remove_hosts_file_exists(self):
-        with open(self.full_hosts_path, "w") as f:
+    def test_remove_blackhole_file_exists(self):
+        with open(self.full_blackhole_path, "w") as f:
             f.write("foo")
 
         old_dir_count = self.dir_count
 
-        remove_old_hosts_file(self.test_dir, self.hosts_file, backup=False)
+        remove_old_blackhole_file(self.test_dir, self.blackhole_file, backup=False)
 
         new_dir_count = old_dir_count
         self.assertEqual(self.dir_count, new_dir_count)
 
-        with open(self.full_hosts_path, "r") as f:
+        with open(self.full_blackhole_path, "r") as f:
             contents = f.read()
             self.assertEqual(contents, "")
 
     @mock.patch("time.strftime", return_value="new")
-    def test_remove_hosts_file_backup(self, _):
-        with open(self.full_hosts_path, "w") as f:
+    def test_remove_blackhole_file_backup(self, _):
+        with open(self.full_blackhole_path, "w") as f:
             f.write("foo")
 
         old_dir_count = self.dir_count
 
-        remove_old_hosts_file(self.test_dir, self.hosts_file, backup=True)
+        remove_old_blackhole_file(self.test_dir, self.blackhole_file, backup=True)
 
         new_dir_count = old_dir_count + 1
         self.assertEqual(self.dir_count, new_dir_count)
 
-        with open(self.full_hosts_path, "r") as f:
+        with open(self.full_blackhole_path, "r") as f:
             contents = f.read()
             self.assertEqual(contents, "")
 
-        new_hosts_file = self.full_hosts_path + "-new"
+        new_blackhole_file = self.full_blackhole_path + "-new"
 
-        with open(new_hosts_file, "r") as f:
+        with open(new_blackhole_file, "r") as f:
             contents = f.read()
             self.assertEqual(contents, "foo")
 
@@ -1764,7 +1764,7 @@ class TestQueryYesOrNo(BaseStdout):
         for invalid_default in ["foo", "bar", "baz", 1, 2, 3]:
             self.assertRaises(ValueError, query_yes_no, "?", invalid_default)
 
-    @mock.patch("updateHostsFile.input", side_effect=["yes"] * 3)
+    @mock.patch("updateBlackholeFile.input", side_effect=["yes"] * 3)
     def test_valid_default(self, _):
         for valid_default, expected in [
             (None, "[y/n]"),
@@ -1778,7 +1778,7 @@ class TestQueryYesOrNo(BaseStdout):
 
             self.assertIn(expected, output)
 
-    @mock.patch("updateHostsFile.input", side_effect=([""] * 2))
+    @mock.patch("updateBlackholeFile.input", side_effect=([""] * 2))
     def test_use_valid_default(self, _):
         for valid_default in ["yes", "no"]:
             expected = valid_default == "yes"
@@ -1786,18 +1786,18 @@ class TestQueryYesOrNo(BaseStdout):
 
             self.assertEqual(actual, expected)
 
-    @mock.patch("updateHostsFile.input", side_effect=["no", "NO", "N", "n", "No", "nO"])
+    @mock.patch("updateBlackholeFile.input", side_effect=["no", "NO", "N", "n", "No", "nO"])
     def test_valid_no(self, _):
         self.assertFalse(query_yes_no("?", None))
 
     @mock.patch(
-        "updateHostsFile.input",
+        "updateBlackholeFile.input",
         side_effect=["yes", "YES", "Y", "yeS", "y", "YeS", "yES", "YEs"],
     )
     def test_valid_yes(self, _):
         self.assertTrue(query_yes_no("?", None))
 
-    @mock.patch("updateHostsFile.input", side_effect=["foo", "yes", "foo", "no"])
+    @mock.patch("updateBlackholeFile.input", side_effect=["foo", "yes", "foo", "no"])
     def test_invalid_then_valid(self, _):
         expected = "Please respond with 'yes' or 'no'"
 
@@ -2031,7 +2031,7 @@ class TestColorize(Base):
         self.text = "house"
         self.colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 
-    @mock.patch("updateHostsFile.supports_color", return_value=False)
+    @mock.patch("updateBlackholeFile.supports_color", return_value=False)
     def test_colorize_no_support(self, _):
         for color in self.colors:
             expected = self.text
@@ -2039,7 +2039,7 @@ class TestColorize(Base):
 
             self.assertEqual(actual, expected)
 
-    @mock.patch("updateHostsFile.supports_color", return_value=True)
+    @mock.patch("updateBlackholeFile.supports_color", return_value=True)
     def test_colorize_support(self, _):
         for color in self.colors:
             expected = color + self.text + Colors.ENDC
@@ -2053,7 +2053,7 @@ class TestPrintSuccess(BaseStdout):
         super(TestPrintSuccess, self).setUp()
         self.text = "house"
 
-    @mock.patch("updateHostsFile.supports_color", return_value=False)
+    @mock.patch("updateBlackholeFile.supports_color", return_value=False)
     def test_print_success_no_support(self, _):
         print_success(self.text)
 
@@ -2062,7 +2062,7 @@ class TestPrintSuccess(BaseStdout):
 
         self.assertEqual(actual, expected)
 
-    @mock.patch("updateHostsFile.supports_color", return_value=True)
+    @mock.patch("updateBlackholeFile.supports_color", return_value=True)
     def test_print_success_support(self, _):
         print_success(self.text)
 
@@ -2077,7 +2077,7 @@ class TestPrintFailure(BaseStdout):
         super(TestPrintFailure, self).setUp()
         self.text = "house"
 
-    @mock.patch("updateHostsFile.supports_color", return_value=False)
+    @mock.patch("updateBlackholeFile.supports_color", return_value=False)
     def test_print_failure_no_support(self, _):
         print_failure(self.text)
 
@@ -2086,7 +2086,7 @@ class TestPrintFailure(BaseStdout):
 
         self.assertEqual(actual, expected)
 
-    @mock.patch("updateHostsFile.supports_color", return_value=True)
+    @mock.patch("updateBlackholeFile.supports_color", return_value=True)
     def test_print_failure_support(self, _):
         print_failure(self.text)
 

@@ -1,13 +1,13 @@
 # Title: boss-net/blackhole with the fakenews and porn extensions
 #
-# This hosts file is a merged collection of hosts from reputable sources,
+# This blackhole file is a merged collection of blackhole from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
 # Date: 09 July 2023 20:26:06 (GMT)
 # Extensions added to this file: fakenews, porn
 # Number of unique domains: 54,154
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-porn/hosts
+# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-porn/blackhole
 # Project home page: https://github.com/boss-net/blackhole
 # Project releases: https://github.com/boss-net/blackhole/releases
 #
@@ -25,7 +25,7 @@ ff00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
-ff02::3 ip6-allhosts
+ff02::3 ip6-allblackhole
 0.0.0.0 0.0.0.0
 127.0.1.1 codespaces-04e42e
 127.0.0.53 codespaces-04e42e
@@ -44,7 +44,7 @@ ff02::3 ip6-allhosts
 
 # Start Badd-Boyz-Hosts
 
-# This hosts file is brought to you by Mitchell Krog
+# This blackhole file is brought to you by Mitchell Krog
 # Copyright: https://github.com/mitchellkrogza
 # Source: https://github.com/mitchellkrogza/Badd-Boyz-Hosts
 
@@ -64,7 +64,7 @@ ff02::3 ip6-allhosts
 # Please forward any additions, corrections or comments by logging an issue at
 # https://github.com/mitchellkrogza/Badd-Boyz-Hosts/issues
 
-# This list of hosts is compiled from server logs on my own servers
+# This list of blackhole is compiled from server logs on my own servers
 # and forms the basis of the bad referrers domain lists for
 # The Nginx Ultimate Bad Bot Blocker at: 
 # https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
@@ -77,17 +77,17 @@ ff02::3 ip6-allhosts
 ##### Version Information ##
 
 # Use this file to prevent your computer or server from connecting to selected
-# internet hosts. This is an easy and effective way to protect you from 
+# internet blackhole. This is an easy and effective way to protect you from 
 # many types of spyware, adware, malware, click-jacking and porn sites and reduces 
 # bandwidth use. 
 
-# The file should be named "hosts" NOT "hosts.txt"
+# The file should be named "blackhole" NOT "blackhole.txt"
 
-# For Linux based Operating systems place this file at "/etc/hosts"
+# For Linux based Operating systems place this file at "/etc/blackhole"
 
 # For Windows based systems this is placed either at
-# C:\windows\system32\drivers\etc\hosts
-# or C:\Windows\System32\drivers\etc\hosts
+# C:\windows\system32\drivers\etc\blackhole
+# or C:\Windows\System32\drivers\etc\blackhole
 
 
 # START HOSTS LIST ### DO NOT EDIT THIS LINE AT ALL ###
@@ -729,7 +729,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 freehealthpoints.com
 0.0.0.0 freehomosexual.com
 0.0.0.0 freehornygirls.com
-0.0.0.0 freehostservers.com
+0.0.0.0 freeblackholeervers.com
 0.0.0.0 freeindiangals.com
 0.0.0.0 freeuploader.ml
 0.0.0.0 futurouomo.it
@@ -1369,7 +1369,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.free-groupsex.com
 0.0.0.0 www.freehanbam.net
 0.0.0.0 www.freehornygirls.com
-0.0.0.0 www.freehostservers.com
+0.0.0.0 www.freeblackholeervers.com
 0.0.0.0 www.freeindiangals.com
 0.0.0.0 www.freeuploader.ml
 0.0.0.0 www.futurouomo.it
@@ -5156,7 +5156,7 @@ ff02::3 ip6-allhosts
 # Homepage: https://bigdargon.github.io/hostsVN/
 # GitHub: https://github.com/bigdargon/hostsVN
 # Report issues: https://github.com/bigdargon/hostsVN/issues
-# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/adult/hosts-VN
+# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/adult/blackhole-VN
 #
 # =====================================================
 
@@ -8781,7 +8781,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.assxplanet.com
 # Last Updated: 2021-10-05 21:46:15 +0200 (CEST) Build: 278
 ## Clefspeare13 pornhosts
-# This is a custom hosts file with all the porn sites I could find.
+# This is a custom blackhole file with all the porn sites I could find.
 #
 # Domains with no duplicates. Note that www.* versions of domains and
 # regular versions of the domain are resolved separately and might therefore
@@ -54013,7 +54013,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 zw-net.com
 0.0.0.0 zxz.defensoria-nsjp.gob.mx
 0.0.0.0 zzpornpics.com
-# Title: Snuff hosts
+# Title: Snuff blackhole
 
 0.0.0.0 bitcheese.net
 0.0.0.0 documentingreality.com
@@ -54321,7 +54321,7 @@ ff02::3 ip6-allhosts
 # blacklist
 #
 # The contents of this file (containing a listing of additional domains in
-# 'hosts' file format) are appended to the unified hosts file during the
+# 'blackhole' file format) are appended to the unified blackhole file during the
 # update process. For example, uncomment the following line to block
 # 'example.com':
 

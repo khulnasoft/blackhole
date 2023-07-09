@@ -3,7 +3,7 @@
 # Script by gfyoung
 # https://github.com/gfyoung
 #
-# This Python script will generate hosts files and update the readme file.
+# This Python script will generate blackhole files and update the readme file.
 
 from __future__ import print_function
 
@@ -25,23 +25,23 @@ def print_failure(msg):
     print("\033[91m" + msg + "\033[0m")
 
 
-def update_hosts_file(*flags):
+def update_blackhole_file(*flags):
     """
-    Wrapper around running updateHostsFile.py
+    Wrapper around running updateBlackholeFile.py
 
     Parameters
     ----------
     flags : varargs
-        Commandline flags to pass into updateHostsFile.py. For more info, run
+        Commandline flags to pass into updateBlackholeFile.py. For more info, run
         the following command in the terminal or command prompt:
 
         ```
-        python updateHostsFile.py -h
+        python updateBlackholeFile.py -h
         ```
     """
 
-    if subprocess.call([sys.executable, "updateHostsFile.py"] + list(flags)):
-        print_failure("Failed to update hosts file")
+    if subprocess.call([sys.executable, "updateBlackholeFile.py"] + list(flags)):
+        print_failure("Failed to update blackhole file")
 
 
 def update_readme_file():
@@ -58,7 +58,7 @@ def recursively_loop_extensions(extension, extensions, current_extensions):
     Helper function that recursively calls itself to prevent manually creating
     all possible combinations of extensions.
 
-    Will call update_hosts_file for all combinations of extensions
+    Will call update_blackhole_file for all combinations of extensions
     """
 
     c_extensions = extensions.copy()
@@ -68,10 +68,10 @@ def recursively_loop_extensions(extension, extensions, current_extensions):
     name = "-".join(c_current_extensions)
 
     params = ("-a", "-n", "-o", "alternates/"+name, "-e") + tuple(c_current_extensions)
-    update_hosts_file(*params)
+    update_blackhole_file(*params)
 
-    params = ("-a", "-n", "-s", "--nounifiedhosts", "-o", "alternates/"+name+"-only", "-e") + tuple(c_current_extensions)
-    update_hosts_file(*params)
+    params = ("-a", "-n", "-s", "--nounifiedblackhole", "-o", "alternates/"+name+"-only", "-e") + tuple(c_current_extensions)
+    update_blackhole_file(*params)
 
     while len(c_extensions) > 0:
         recursively_loop_extensions(c_extensions.pop(0), c_extensions, c_current_extensions)
@@ -79,17 +79,17 @@ def recursively_loop_extensions(extension, extensions, current_extensions):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Creates custom hosts "
-        "file from hosts stored in "
+        description="Creates custom blackhole "
+        "file from blackhole stored in "
         "data subfolders."
     )
     parser.parse_args()
 
-    # Update the unified hosts file
-    update_hosts_file("-a")
+    # Update the unified blackhole file
+    update_blackhole_file("-a")
 
     # List of extensions we want to generate, we will loop over them recursively to prevent manual definitions
-    # Only add new extensions to the end of the array, to avoid relocating existing hosts-files
+    # Only add new extensions to the end of the array, to avoid relocating existing blackhole-files
     extensions = ["fakenews", "gambling", "porn", "social"]
 
     while len(extensions) > 0:

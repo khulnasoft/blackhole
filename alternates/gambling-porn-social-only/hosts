@@ -1,14 +1,14 @@
 # Title: boss-net/blackhole extensions gambling, porn and social 
 #
-# This hosts file is a merged collection of hosts from reputable sources,
+# This blackhole file is a merged collection of blackhole from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
 # Date: 09 July 2023 20:26:11 (GMT)
-# The unified hosts file was not used while generating this file.
+# The unified blackhole file was not used while generating this file.
 # Extensions used to generate this file: gambling, porn, social
 # Number of unique domains: 59,257
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-porn-social-only/hosts
+# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-porn-social-only/blackhole
 # Project home page: https://github.com/boss-net/blackhole
 # Project releases: https://github.com/boss-net/blackhole/releases
 #
@@ -26,7 +26,7 @@
 # Homepage: https://bigdargon.github.io/hostsVN/
 # GitHub: https://github.com/bigdargon/hostsVN
 # Report issues: https://github.com/bigdargon/hostsVN/issues
-# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/gambling/hosts-VN
+# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/gambling/blackhole-VN
 #
 # =====================================================
 
@@ -4734,7 +4734,7 @@
 # <http://www.top100bookmakers.com/completelist.php>
 # <https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/anti-casino-and-betting-hosts-file.txt>
 # <https://www.reddit.com/r/GlobalOffensiveGamble/comments/3d5fmr/list_of_csgo_gambling_websites/>
-# Title: Gambling hosts
+# Title: Gambling blackhole
 # Updated March 12, 2023
 0.0.0.0 10bet.com
 0.0.0.0 10luxury39.com
@@ -7319,7 +7319,7 @@
 # Homepage: https://bigdargon.github.io/hostsVN/
 # GitHub: https://github.com/bigdargon/hostsVN
 # Report issues: https://github.com/bigdargon/hostsVN/issues
-# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/adult/hosts-VN
+# Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/adult/blackhole-VN
 #
 # =====================================================
 
@@ -10944,7 +10944,7 @@
 0.0.0.0 www.assxplanet.com
 # Last Updated: 2021-10-05 21:46:15 +0200 (CEST) Build: 278
 ## Clefspeare13 pornhosts
-# This is a custom hosts file with all the porn sites I could find.
+# This is a custom blackhole file with all the porn sites I could find.
 #
 # Domains with no duplicates. Note that www.* versions of domains and
 # regular versions of the domain are resolved separately and might therefore
@@ -56194,7 +56194,7 @@
 0.0.0.0 zw-net.com
 0.0.0.0 zxz.defensoria-nsjp.gob.mx
 0.0.0.0 zzpornpics.com
-# Title: Snuff hosts
+# Title: Snuff blackhole
 
 0.0.0.0 bitcheese.net
 0.0.0.0 documentingreality.com
@@ -56499,7 +56499,7 @@
 0.0.0.0 www2.giga-jp.com
 0.0.0.0 yamidas.yamiboard.com
 0.0.0.0 yamigama.com
-# Title: Social media hosts
+# Title: Social media blackhole
 # Updated: June 27, 2021
 
 # Google Plus
@@ -59377,7 +59377,7 @@
 # blacklist
 #
 # The contents of this file (containing a listing of additional domains in
-# 'hosts' file format) are appended to the unified hosts file during the
+# 'blackhole' file format) are appended to the unified blackhole file during the
 # update process. For example, uncomment the following line to block
 # 'example.com':
 
