@@ -1,13 +1,13 @@
 {
-  "src": {
-    "tagName": "v%s",
-    "commitArgs": "-S",
-    "tagArgs": "-S"
-  },
-  "github": {
-    "release": true
-  },
-  "npm": {
-    "publish": false
+    "src": {
+      "tagName": "v%s",
+      "commitArgs": "-S",
+      "tagArgs": "-S"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": false
+    }
   }
-}

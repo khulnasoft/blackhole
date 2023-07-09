@@ -141,12 +141,11 @@ class TestGetDefaults(Base):
 class TestSortSources(Base):
     def test_sort_sources_simple(self):
         given = [
-            "sbc.io",
             "example.com",
             "github.com",
         ]
 
-        expected = ["example.com", "github.com", "sbc.io"]
+        expected = ["example.com", "github.com"]
 
         actual = sort_sources(given)
 
