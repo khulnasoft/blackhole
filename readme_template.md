@@ -123,13 +123,13 @@ requirements, and a copy of the latest version of this repository.
 Build the Docker container from the root of this repo like this:
 
 ```sh
-docker build --no-cache . -t stevenblack-hosts
+docker build --no-cache . -t bossnet-hosts
 ```
 
 Then run your command as such:
 
 ```sh
-docker run --rm -it stevenblack-hosts updateHostsFile.py
+docker run --rm -it bossnet-hosts updateHostsFile.py
 ```
 
 > This will create the hosts file, and remove it with the container when done,
@@ -617,7 +617,7 @@ devices under a variety of operating systems.
 - [Control D](https://controld.com/free-dns)
   offers a public anycast network hosted mirror of the Unified (Adware + Malware) blocklist:
   - Legacy DNS: `76.76.2.35`, `76.76.10.35`, `2606:1a40::35`, `2606:1a40:1::35`
-  - DNS-over-HTTPS/TLS/DOQ: `https://freedns.controld.com/x-stevenblack`, `x-stevenblack.freedns.controld.com`
+  - DNS-over-HTTPS/TLS/DOQ: `https://freedns.controld.com/x-bossnet`, `x-bossnet.freedns.controld.com`
 
 ## Contribute
 
