@@ -116,5 +116,5 @@ def main():
                 out.write(line)
 
 
-if __name__ == "__master__":
-    master()
+if __name__ == "__main__":
+    main()
