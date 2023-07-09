@@ -2858,7 +2858,7 @@
 127.0.0.1 testflight.joinclubhouse.com
 
 # Dating sites
-# from https://github.com/StevenBlack/hosts/issues/2023
+# from https://github.com/boss-net/blackhole/issues/2023
 127.0.0.1 tinder.com
 127.0.0.1 bumble.com
 127.0.0.1 badoo.com
