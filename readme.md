@@ -172,13 +172,13 @@ requirements, and a copy of the latest version of this repository.
 Build the Docker container from the root of this repo like this:
 
 ```sh
-docker build --no-cache . -t stevenblack-hosts
+docker build --no-cache . -t boss-net-blackhole
 ```
 
 Then run your command as such:
 
 ```sh
-docker run --rm -it stevenblack-hosts updateHostsFile.py
+docker run --rm -it boss-net-blackhole updateHostsFile.py
 ```
 
 > This will create the hosts file, and remove it with the container when done,
