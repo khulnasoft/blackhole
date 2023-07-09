@@ -5,7 +5,7 @@
     nixosModule = { config, ... }:
       with nixpkgs.lib;
       let
-        cfg = config.networking.stevenBlackHosts;
+        cfg = config.networking.bossnetBlackHole;
         alternatesList = (if cfg.blockFakenews then [ "fakenews" ] else []) ++
                          (if cfg.blockGambling then [ "gambling" ] else []) ++
                          (if cfg.blockPorn then [ "porn" ] else []) ++
@@ -13,7 +13,7 @@
         alternatesPath = "alternates/" + builtins.concatStringsSep "-" alternatesList + "/";
       in
       {
-        options.networking.stevenBlackHosts = {
+        options.networking.bossnetBlackHole = {
           enable = mkEnableOption "Use Steven Black's hosts file as extra hosts.";
           blockFakenews = mkEnableOption "Additionally block fakenews hosts.";
           blockGambling = mkEnableOption "Additionally block gambling hosts.";

@@ -392,7 +392,7 @@ like this:
       system = "<architecture>";
       modules = [
         hosts.nixosModule {
-          networking.stevenBlackHosts.enable = true;
+          networking.bossnetBlackHole.enable = true;
         }
       ];
     };
@@ -404,7 +404,7 @@ The hosts extensions are also available with the following options:
 
 ```nix
 {
-  networking.stevenBlackHosts = {
+  networking.bossnetBlackHole = {
     blockFakenews = true;
     blockGambling = true;
     blockPorn = true;
