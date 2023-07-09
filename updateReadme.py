@@ -24,7 +24,7 @@ def main():
         "[link](https://raw.githubusercontent.com/boss-net/"
         "blackhole/master/${location}blackhole) | "
         "${fmtentries} | "
-        "[link](http://sbc.io/blackhole/${location}blackhole)"
+        "[link](http://boss-net.github.io/blackhole/${location}blackhole)"
     )
     with open(README_DATA_FILENAME, "r", encoding="utf-8", newline="\n") as f:
         data = json.load(f)
