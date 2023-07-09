@@ -441,7 +441,7 @@ like this:
       system = "<architecture>";
       modules = [
         hosts.nixosModule {
-          networking.stevenBlackHosts.enable = true;
+          networking.bossnetBlackHole.enable = true;
         }
       ];
     };
@@ -453,7 +453,7 @@ The hosts extensions are also available with the following options:
 
 ```nix
 {
-  networking.stevenBlackHosts = {
+  networking.bossnetBlackHole = {
     blockFakenews = true;
     blockGambling = true;
     blockPorn = true;
@@ -666,7 +666,7 @@ devices under a variety of operating systems.
 - [Control D](https://controld.com/free-dns)
   offers a public anycast network hosted mirror of the Unified (Adware + Malware) blocklist:
   - Legacy DNS: `76.76.2.35`, `76.76.10.35`, `2606:1a40::35`, `2606:1a40:1::35`
-  - DNS-over-HTTPS/TLS/DOQ: `https://freedns.controld.com/x-stevenblack`, `x-stevenblack.freedns.controld.com`
+  - DNS-over-HTTPS/TLS/DOQ: `https://freedns.controld.com/x-bossnet`, `x-bossnet.freedns.controld.com`
 
 ## Contribute
 
