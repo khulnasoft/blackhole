@@ -60,8 +60,8 @@ jobs:
       - name: Run lint
         run: flake8
 
-      - name: Run makeBlackhole.py
-        run: python makeBlackhole.py
+      - name: Run makeBlackHole.py
+        run: python makeBlackHole.py
 
       - name: Run tests
-        run: python testUpdateBlackholeFile.py
+        run: python testUpdateBlackHoleFile.py

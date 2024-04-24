@@ -21,9 +21,9 @@ alternates/social
 lists="
 data/Adguard-cname
 data/Badd-Boyz-Hosts
-data/KADblackhole
+data/KADhosts
 data/MetaMask
-data/StevenBlack
+data/KhulnaSoft
 data/URLHaus
 data/UncheckyAds
 data/adaway.org
@@ -32,9 +32,9 @@ data/add.Dead
 data/add.Risk
 data/add.Spam
 data/hostsVN
-data/minecraft-blackhole
+data/minecraft-hosts
 data/mvps.org
-data/shady-blackhole
+data/shady-hosts
 data/someonewhocares.org
 data/tiuxo
 data/yoyo.org
@@ -59,12 +59,12 @@ for item in $lists; do
     # echo $item $HASH_DATE
     IFS=" "
     split=(${HASH_DATE//,/ })
-    git checkout ${split[0]} ${item}/blackhole 1> /dev/null 2> /dev/null
-    domains=$(rh -q -m $item/blackhole)
+    git checkout ${split[0]} ${item}/hosts 1> /dev/null 2> /dev/null
+    domains=$(rh -q -m $item/hosts)
     echo  $item ${split[1]} ${domains}
     echo ${split[1]},${domains} >> ${item}/stats.out
     IFS='
 '
   done
-  git checkout HEAD^ ${item}/blackhole 1> /dev/null 2> /dev/null
+  git checkout HEAD^ ${item}/hosts 1> /dev/null 2> /dev/null
 done

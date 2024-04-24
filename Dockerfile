@@ -4,10 +4,10 @@ ENV IN_CONTAINER 1
 
 RUN apk add --no-cache git sudo
 
-COPY . /blackhole
+COPY . /hosts
 
-RUN pip install --no-cache-dir --upgrade -r /blackhole/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /hosts/requirements.txt
 
-ENV PATH $PATH:/blackhole
+ENV PATH $PATH:/hosts
 
-WORKDIR /blackhole
+WORKDIR /hosts

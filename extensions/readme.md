@@ -1,6 +1,6 @@
 # Extensions
 
-Use subfolders under this `extensions` folder to house data sources for extensions to the default unified blackhole file.
+Use subfolders under this `extensions` folder to house data sources for extensions to the default unified hosts file.
 
 Currently, this repo includes data sources for four extensions:
 
@@ -12,16 +12,16 @@ Currently, this repo includes data sources for four extensions:
 
 Here are some sample calls, which vary which extensions are included.
 
-**Using the `updateBlackholeFile.py` script**:
+**Using the `updateBlackHoleFile.py` script**:
 
-Create a blackhole file that includes domain blocking for porn, social media, and gambling.
+Create a hosts file that includes domain blocking for porn, social media, and gambling.
 
 ```sh
-python3 updateBlackholeFile.py --auto --extensions porn social gambling
+python3 updateBlackHoleFile.py --auto --extensions porn social gambling
 ```
 
 or, in short form:
 
 ```sh
-python3 updateBlackholeFile.py -a -e porn social gambling
+python3 updateBlackHoleFile.py -a -e porn social gambling
 ```

@@ -1,23 +1,19 @@
-# Title: boss-net/blackhole extension fakenews
+# Title: khulnasoft/blackhole extension fakenews
 #
-# This blackhole file is a merged collection of blackhole from reputable sources,
+# This hosts file is a merged collection of hosts from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
-# Date: 09 July 2023 20:26:02 (GMT)
-# The unified blackhole file was not used while generating this file.
+# Date: 24 April 2024 05:59:41 (GMT)
+# The unified hosts file was not used while generating this file.
 # Extensions used to generate this file: fakenews
 # Number of unique domains: 2,194
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-only/blackhole
-# Project home page: https://github.com/boss-net/blackhole
-# Project releases: https://github.com/boss-net/blackhole/releases
+# Fetch the latest version of this file: https://raw.githubusercontent.com/khulnasoft/blackhole/master/alternates/fakenews-only/hosts
+# Project home page: https://github.com/khulnasoft/blackhole
+# Project releases: https://github.com/khulnasoft/blackhole/releases
 #
 # ===============================================================
 
-# Custom host records are listed here.
-
-
-# End of custom host records.
 0.0.0.0 100percentfedup.com
 0.0.0.0 20minutenews.com
 0.0.0.0 21stcenturywire.com
@@ -2215,7 +2211,7 @@
 # blacklist
 #
 # The contents of this file (containing a listing of additional domains in
-# 'blackhole' file format) are appended to the unified blackhole file during the
+# 'hosts' file format) are appended to the unified hosts file during the
 # update process. For example, uncomment the following line to block
 # 'example.com':
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Script by Steven Black
-# https://github.com/boss-net
+# https://github.com/KhulnaSoft
 #
 # This Python script will update the readme files in this repo.
 
@@ -19,12 +19,12 @@ README_DATA_FILENAME = "readmeData.json"
 
 def main():
     s = Template(
-        "${description} | [Readme](https://github.com/boss-net/"
-        "blackhole/blob/master/${location}readme.md) | "
-        "[link](https://raw.githubusercontent.com/boss-net/"
-        "blackhole/master/${location}blackhole) | "
+        "${description} | [Readme](https://github.com/KhulnaSoft/"
+        "hosts/blob/master/${location}readme.md) | "
+        "[link](https://raw.githubusercontent.com/KhulnaSoft/"
+        "hosts/master/${location}hosts) | "
         "${fmtentries} | "
-        "[link](http://boss-net.github.io/blackhole/${location}blackhole)"
+        "[link](http://sbc.io/hosts/${location}hosts)"
     )
     with open(README_DATA_FILENAME, "r", encoding="utf-8", newline="\n") as f:
         data = json.load(f)
@@ -38,15 +38,15 @@ def main():
     for key in keys:
         data[key]["fmtentries"] = "{:,}".format(data[key]["entries"])
         if key == "base":
-            data[key]["description"] = "Unified blackhole = **(adware + malware)**"
+            data[key]["description"] = "Unified hosts = **(adware + malware)**"
         else:
-            if data[key]["no_unified_blackhole"]:
+            if data[key]["no_unified_hosts"]:
                 data[key]["description"] = (
                     "**" + key.replace("-only", "").replace("-", " + ") + "**"
                 )
             else:
                 data[key]["description"] = (
-                    "Unified blackhole **+ " + key.replace("-", " + ") + "**"
+                    "Unified hosts **+ " + key.replace("-", " + ") + "**"
                 )
 
         if "\\" in data[key]["location"]:
@@ -67,14 +67,14 @@ def main():
         "${name} |[link](${homeurl})"
         " | [raw](${url}) | ${license} | [issues](${issues})| ${description}"
     )
-    size_history_graph = "![Size history](https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole_file_size_history.png)"
+    size_history_graph = "![Size history](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/blackhole_file_size_history.png)"
     for key in keys:
         extensions = key.replace("-only", "").replace("-", ", ")
         extensions_str = "* Extensions: **" + extensions + "**."
-        if data[key]["no_unified_blackhole"]:
+        if data[key]["no_unified_hosts"]:
             extensions_header = "Limited to the extensions: " + extensions
         else:
-            extensions_header = "Unified blackhole file with " + extensions + " extensions"
+            extensions_header = "Unified hosts file with " + extensions + " extensions"
 
         source_rows = ""
         source_list = data[key]["sourcesdata"]

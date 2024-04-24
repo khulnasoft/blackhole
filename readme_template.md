@@ -1,121 +1,121 @@
 **Take Note!**
 
 With the exception of issues and PRs regarding changes to
-`blackhole/data/boss-net/blackhole`, all other issues regarding the content of the
-produced blackhole files should be made with the appropriate data source that
+`hosts/data/khulnasoft/blackhole`, all other issues regarding the content of the
+produced hosts files should be made with the appropriate data source that
 contributed the content in question. The contact information for all of the data
-sources can be found in the `blackhole/data/` directory.
+sources can be found in the `hosts/data/` directory.
 
 ---
 
-![Logo](https://raw.githubusercontent.com/boss-net/blackhole/master/.github/logo.png)
+![Logo](https://raw.githubusercontent.com/khulnasoft/blackhole/master/.github/logo.png)
 
-[![latest release](https://img.shields.io/github/release/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/releases)
-[![license](https://img.shields.io/github/license/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/blob/master/license.txt)
-[![repo size](https://img.shields.io/github/repo-size/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole)
-[![contributors](https://img.shields.io/github/contributors/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/graphs/contributors)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/boss-net/blackhole/ci.yml?branch=master)](https://github.com/boss-net/blackhole/actions/workflows/ci.yml?query=branch%3Amaster)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
-[![commits since last release](https://img.shields.io/github/commits-since/boss-net/blackhole/latest.svg)](https://github.com/boss-net/blackhole/commits/master)
-[![last commit](https://img.shields.io/github/last-commit/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/commits/master)
-[![commit activity](https://img.shields.io/github/commit-activity/y/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/commits/master)
+[![latest release](https://img.shields.io/github/release/khulnasoft/blackhole)](https://github.com/khulnasoft/blackhole/releases)
+[![license](https://img.shields.io/github/license/khulnasoft/blackhole)](https://github.com/khulnasoft/blackhole/blob/master/license.txt)
+[![repo size](https://img.shields.io/github/repo-size/khulnasoft/blackhole)](https://github.com/khulnasoft/blackhole)
+[![contributors](https://img.shields.io/github/contributors/khulnasoft/blackhole)](https://github.com/khulnasoft/blackhole/graphs/contributors)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/khulnasoft/blackhole/ci.yml?branch=master)](https://github.com/khulnasoft/blackhole/actions/workflows/ci.yml?query=branch%3Amaster)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/python/black)
+[![commits since last release](https://img.shields.io/github/commits-since/khulnasoft/blackhole/latest)](https://github.com/khulnasoft/blackhole/commits/master)
+[![last commit](https://img.shields.io/github/last-commit/khulnasoft/blackhole)](https://github.com/khulnasoft/blackhole/commits/master)
+[![commit activity](https://img.shields.io/github/commit-activity/y/khulnasoft/blackhole)](https://github.com/khulnasoft/blackhole/commits/master)
 
 # @EXTENSIONS_HEADER@
 
-This repository consolidates several reputable `blackhole` files, and merges them
-into a unified blackhole file with duplicates removed. A variety of tailored blackhole
+This repository consolidates several reputable `hosts` files, and merges them
+into a unified hosts file with duplicates removed. A variety of tailored hosts
 files are provided.
 
-**Therefore this repository is a blackhole file aggregator.**
+**Therefore this repository is a hosts file aggregator.**
 
-![Aggregator](https://raw.githubusercontent.com/boss-net/blackhole/master/aggregator.png)
+![Aggregator](https://raw.githubusercontent.com/khulnasoft/blackhole/master/aggregator.png)
 
 - Last updated: **@GEN_DATE@**.
 - Here's the
-  [raw blackhole file @EXTENSIONS_HEADER@](https://raw.githubusercontent.com/boss-net/blackhole/master/@SUBFOLDER@blackhole)
+  [raw hosts file @EXTENSIONS_HEADER@](https://raw.githubusercontent.com/khulnasoft/blackhole/master/@SUBFOLDER@hosts)
   containing @NUM_ENTRIES@ entries.
 
 @SIZEHISTORY@
 
-## List of all blackhole file variants
+## List of all hosts file variants
 
 This repository offers
-[31 different host file variants](https://github.com/boss-net/blackhole/tree/master/alternates),
-in addition to the base variant, with and without the unified blackhole included.
+[31 different host file variants](https://github.com/khulnasoft/blackhole/tree/master/alternates),
+in addition to the base variant, with and without the unified hosts included.
 
-The **Non GitHub mirror** is the link to use for some blackhole file managers like
-[Blackholeman for Windows](https://www.abelhadigital.com/blackholeman/) that don't work
+The **Non GitHub mirror** is the link to use for some hosts file managers like
+[Hostsman for Windows](https://www.abelhadigital.com/hostsman/) that don't work
 with GitHub download links.
 
-| Host file recipe | Readme | Raw blackhole | Unique domains | Non GitHub mirror |
+| Host file recipe | Readme | Raw hosts | Unique domains | Non GitHub mirror |
 | ---------------- | :----: | :-------: | :------------: | :---------------: |
 @TOCROWS@
 
-**Expectation**: These unified blackhole files should serve all devices, regardless
+**Expectation**: These unified hosts files should serve all devices, regardless
 of OS.
 
-## Sources of blackhole data unified in this variant
+## Sources of hosts data unified in this variant
 
-Updated `blackhole` files from the following locations are always unified and
+Updated `hosts` files from the following locations are always unified and
 included:
 
-| Host file source | Home page | Raw blackhole | License | Issues | Description |
+| Host file source | Home page | Raw hosts | License | Issues | Description |
 | ---------------- | :-------: | :-------: | :-----: | :----: | ----------- |
 @SOURCEROWS@
 
 ## Extensions
 
-The unified blackhole file is optionally extensible. Extensions are used to include
+The unified hosts file is optionally extensible. Extensions are used to include
 domains by category. Currently, we offer the following categories: `fakenews`,
 `social`, `gambling`, and `porn`.
 
-Extensions are optional, and can be combined in various ways with the base blackhole
+Extensions are optional, and can be combined in various ways with the base hosts
 file. The combined products are stored in the
-[`alternates`](https://github.com/boss-net/blackhole/tree/master/alternates)
+[`alternates`](https://github.com/khulnasoft/blackhole/tree/master/alternates)
 folder.
 
 Data for extensions are stored in the
-[`extensions`](https://github.com/boss-net/blackhole/tree/master/extensions)
+[`extensions`](https://github.com/khulnasoft/blackhole/tree/master/extensions)
 folder. You manage extensions by curating this folder tree, where you will find
 the data for `fakenews`, `social`, `gambling`, and `porn` extension data that we
 maintain and provide for you.
 
-## Generate your own unified blackhole file
+## Generate your own unified hosts file
 
-You have three options to generate your own blackhole file. You can use our
+You have three options to generate your own hosts file. You can use our
 container image, build your own image, or do it in your own environment. Option
 #1 is easiest if you have Linux with Docker installed.
 
 ### Option 1: Use our container image (Linux only)
 
-> This will replace your `/etc/blackhole`.
+> This will replace your `/etc/hosts`.
 
 We assume you have Docker available on your host. Just run the following
 command. Set extensions to your preference.
 
 ```sh
-docker run --pull always --rm -it -v /etc/blackhole:/etc/blackhole \
-ghcr.io/boss-net/blackhole:latest updateBlackholeFile.py --auto \
+docker run --pull always --rm -it -v /etc/hosts:/etc/hosts \
+ghcr.io/khulnasoft/hosts:latest updateBlackHoleFile.py --auto \
 --replace --extensions gambling porn
 ```
 
-If you want to add custom blackhole or a whitelist, create either or both files as
+If you want to add custom hosts or a whitelist, create either or both files as
 per [the instructions](#how-do-i-control-which-sources-are-unified) and add the
-following arguments _before_ `ghcr.io/boss-net/blackhole:latest` depending on
+following arguments _before_ `ghcr.io/khulnasoft/hosts:latest` depending on
 which you wish to use.
 
 ```sh
--v "path/to/myblackhole:/blackhole/myblackhole" \
--v "path/to/whitelist:/blackhole/whitelist" \
+-v "path/to/myhosts:/hosts/myhosts" \
+-v "path/to/whitelist:/hosts/whitelist" \
 ```
 
 You can rerun this exact command later to update based on the latest available
-blackhole (for example, add it to a weekly cron job).
+hosts (for example, add it to a weekly cron job).
 
 ### Option 2: Generate your own container image
 
 We provide the
-[Dockerfile](https://github.com/boss-net/blackhole/blob/master/Dockerfile) used
+[Dockerfile](https://github.com/khulnasoft/blackhole/blob/master/Dockerfile) used
 by the previous step, which you can use to create a container image with
 everything you need. The container will contain Python 3 and all its dependency
 requirements, and a copy of the latest version of this repository.
@@ -123,22 +123,22 @@ requirements, and a copy of the latest version of this repository.
 Build the Docker container from the root of this repo like this:
 
 ```sh
-docker build --no-cache . -t bossnet-blackhole
+docker build --no-cache . -t khulnasoft-hosts
 ```
 
 Then run your command as such:
 
 ```sh
-docker run --rm -it bossnet-blackhole updateBlackholeFile.py
+docker run --rm -it khulnasoft-hosts updateBlackHoleFile.py
 ```
 
-> This will create the blackhole file, and remove it with the container when done,
+> This will create the hosts file, and remove it with the container when done,
 > so not very useful. You can use the example in option #1 to add volumes so
 > files on your host are replaced.
 
 ### Option 3: Generate it in your own environment
 
-To generate your own amalgamated blackhole files you will need Python 3.6 or later.
+To generate your own amalgamated hosts files you will need Python 3.6 or later.
 
 First, install the dependencies with:
 
@@ -159,17 +159,17 @@ Spin up a free remote [Google Colab](https://colab.research.google.com/drive/1tY
 To **run unit tests**, in the top-level directory, run:
 
 ```sh
-python3 testUpdateBlackholeFile.py
+python3 testUpdateBlackHoleFile.py
 ```
 
-The `updateBlackholeFile.py` script will generate a unified blackhole file based on the
+The `updateBlackHoleFile.py` script will generate a unified hosts file based on the
 sources in the local `data/` subfolder. The script will prompt you whether it
 should fetch updated versions (from locations defined by the `update.json` text
-file in each source's folder). Otherwise, it will use the `blackhole` file that's
+file in each source's folder). Otherwise, it will use the `hosts` file that's
 already there.
 
 ```sh
-python3 updateBlackholeFile.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--extensions ext1 ext2 ext3]
+python3 updateBlackHoleFile.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--extensions ext1 ext2 ext3]
 ```
 
 #### Command line options
@@ -178,18 +178,18 @@ python3 updateBlackholeFile.py [--auto] [--replace] [--ip nnn.nnn.nnn.nnn] [--ex
 
 `--auto`, or `-a`: run the script without prompting. When `--auto` is invoked,
 
-- Blackhole data sources, including extensions, are updated.
+- Hosts data sources, including extensions, are updated.
 - No extensions are included by default. Use the `--extensions` or `-e` flag to
   include any you want.
-- Your active blackhole file is _not_ replaced unless you include the `--replace`
+- Your active hosts file is _not_ replaced unless you include the `--replace`
   flag.
 
-`--backup`, or `-b`: Make a backup of existing blackhole file(s) as you generate
+`--backup`, or `-b`: Make a backup of existing hosts file(s) as you generate
 over them.
 
 `--extensions <ext1> <ext2> <ext3>`, or `-e <ext1> <ext2> <ext3>`: the names of
 subfolders below the `extensions` folder containing additional category-specific
-blackhole files to include in the amalgamation. Example: `--extensions porn` or
+hosts files to include in the amalgamation. Example: `--extensions porn` or
 `-e social porn`.
 
 `--flush-dns-cache`, or `-f`: skip the prompt for flushing the DNS cache. Only
@@ -201,14 +201,14 @@ target. Default is `0.0.0.0`.
 `--keepdomaincomments`, or `-k`: `true` (default) or `false`, keep the comments
 that appear on the same line as domains. The default is `true`.
 
-`--noupdate`, or `-n`: skip fetching updates from blackhole data sources.
+`--noupdate`, or `-n`: skip fetching updates from hosts data sources.
 
 `--output <subfolder>`, or `-o <subfolder>`: place the generated source file in
 a subfolder. If the subfolder does not exist, it will be created.
 
-`--replace`, or `-r`: trigger replacing your active blackhole
+`--replace`, or `-r`: trigger replacing your active hosts
 
-`--skipstaticblackhole`, or `-s`: `false` (default) or `true`, omit the standard
+`--skipstatichosts`, or `-s`: `false` (default) or `true`, omit the standard
 section at the top, containing lines like `127.0.0.1 localhost`. This is useful
 for configuring proximate DNS services on the local network.
 
@@ -217,24 +217,24 @@ readmeData.json file used for generating readme.md files. This is useful if you
 are generating host files with additional whitelists or blacklists and want to
 keep your local checkout of this repo unmodified.
 
-`--nounifiedblackhole`: `false` (default) or `true`, do not include the unified blackhole
-file in the final blackhole file. Usually used together with `--extensions`.
+`--nounifiedhosts`: `false` (default) or `true`, do not include the unified hosts
+file in the final hosts file. Usually used together with `--extensions`.
 
-`--compress`, or `-c`: `false` (default) or `true`, _Compress_ the blackhole file
+`--compress`, or `-c`: `false` (default) or `true`, _Compress_ the hosts file
 ignoring non-necessary lines (empty lines and comments) and putting multiple
-domains in each line. Reducing the number of lines of the blackhole file improves
+domains in each line. Reducing the number of lines of the hosts file improves
 the performances under Windows (with DNS Client service enabled).
 
 `--minimise`, or `-m`: `false` (default) or `true`, like `--compress`, but puts
 each domain on a separate line. This is necessary because many implementations
-of URL blockers that rely on `blackhole` files do not conform to the standard which
-allows multiple blackhole on a single line.
+of URL blockers that rely on `hosts` files do not conform to the standard which
+allows multiple hosts on a single line.
 
 `--blacklist <blacklistfile>`, or `-x <blacklistfile>`: Append the given
-blacklist file in blackhole format to the generated blackhole file.
+blacklist file in hosts format to the generated hosts file.
 
 `--whitelist <whitelistfile>`, or `-w <whitelistfile>`: Use the given whitelist
-file to remove blackhole from the generated blackhole file.
+file to remove hosts from the generated hosts file.
 
 ## How do I control which sources are unified?
 
@@ -246,8 +246,8 @@ Add one or more _optional_ extensions, which originate from subfolders of the
 extension finds its updates.
 
 Create an _optional_ `blacklist` file. The contents of this file (containing a
-listing of additional domains in `blackhole` file format) are appended to the
-unified blackhole file during the update process. A sample `blacklist` is included,
+listing of additional domains in `hosts` file format) are appended to the
+unified hosts file during the update process. A sample `blacklist` is included,
 and may be modified as you need.
 
 - NOTE: The `blacklist` is not tracked by git, so any changes you make won't be
@@ -255,69 +255,69 @@ and may be modified as you need.
 
 ### How do I include my own custom domain mappings?
 
-If you have custom blackhole records, place them in file `myblackhole`. The contents of
-this file are prepended to the unified blackhole file during the update process.
+If you have custom hosts records, place them in file `myhosts`. The contents of
+this file are prepended to the unified hosts file during the update process.
 
-The `myblackhole` file is not tracked by git, so any changes you make won't be
+The `myhosts` file is not tracked by git, so any changes you make won't be
 overridden when you `git pull` this repo from `origin` in the future.
 
 ### How do I prevent domains from being included?
 
-The domains you list in the `whitelist` file are excluded from the final blackhole
+The domains you list in the `whitelist` file are excluded from the final hosts
 file.
 
 The `whitelist` uses partial matching. Therefore if you whitelist
 `google-analytics.com`, that domain and all its subdomains won't be merged into
-the final blackhole file.
+the final hosts file.
 
 The `whitelist` is not tracked by git, so any changes you make won't be
 overridden when you `git pull` this repo from `origin` in the future.
 
-## How can I contribute blackhole records?
+## How can I contribute hosts records?
 
 If you discover sketchy domains you feel should be included here, here are some
 ways to contribute them.
 
-### Option 1: contact one of our blackhole sources
+### Option 1: contact one of our hosts sources
 
 The best way to get new domains included is to submit an issue to any of the
 data providers whose home pages are
-[listed here](https://github.com/boss-net/blackhole#sources-of-blackhole-data-unified-in-this-variant).
+[listed here](https://github.com/khulnasoft/blackhole#sources-of-hosts-data-unified-in-this-variant).
 This is best because once you submit new domains, they will be curated and
 updated by the dedicated folks who maintain these sources.
 
 ### Option 2: Fork this repository, add your domains to Steven Black's personal data file, and submit a pull request
 
-Fork this blackhole this repo and add your links to
-[https://github.com/boss-net/blackhole/blob/master/data/boss-net/blackhole](https://github.com/boss-net/blackhole/blob/master/data/boss-net/blackhole).
+Fork this hosts this repo and add your links to
+[https://github.com/khulnasoft/blackhole/blob/master/data/khulnasoft/blackhole](https://github.com/khulnasoft/blackhole/blob/master/data/khulnasoft/blackhole).
 
 Then, submit a pull request.
 
 **WARNING**: this is less desirable than Option 1 because the ongoing curation
 falls on us. So this creates more work for us.
 
-### Option 3: create your own blackhole list as a repo on GitHub
+### Option 3: create your own hosts list as a repo on GitHub
 
 If you're able to curate your own collection of sketchy domains, then curate
-your own blackhole list. Then signal the existence of your repo as
-[a new issue](https://github.com/boss-net/blackhole/issues) and we may include
+your own hosts list. Then signal the existence of your repo as
+[a new issue](https://github.com/khulnasoft/blackhole/issues) and we may include
 your new repo into the collection of sources we pull whenever we create new
 versions.
 
-## What is a blackhole file?
+## What is a hosts file?
 
-A blackhole file, named `blackhole` (with no file extension), is a plain-text file used
+A hosts file, named `hosts` (with no file extension), is a plain-text file used
 by all operating systems to map hostnames to IP addresses.
 
-In most operating systems, the `blackhole` file is preferential to `DNS`. Therefore
-if a domain name is resolved by the `blackhole` file, the request never leaves your
+In most operating systems, the `hosts` file is preferential to `DNS`. Therefore
+if a domain name is resolved by the `hosts` file, the request never leaves your
 computer.
 
-Having a smart `blackhole` file goes a long way towards blocking malware, adware,
+Having a smart `hosts` file goes a long way towards blocking malware, adware,
 and other irritants.
 
 For example, to nullify requests to some doubleclick.net servers, adding these
-lines to your blackhole file will do it:
+lines to your hosts file will do it:
 
 ```text
 # block doubleClick's servers
@@ -345,54 +345,54 @@ running on the local PC.
 
 We tried that. Using `0` doesn't work universally.
 
-## Location of your blackhole file
+## Location of your hosts file
 
-To modify your current `blackhole` file, look for it in the following places and
+To modify your current `hosts` file, look for it in the following places and
 modify it with a text editor.
 
-- **macOS (until 10.14.x macOS Mojave), iOS, Android, Linux**: `/etc/blackhole`
+- **macOS (until 10.14.x macOS Mojave), iOS, Android, Linux**: `/etc/hosts`
   file.
-- **macOS Catalina:** `/private/etc/blackhole` file.
-- **Windows**: `%SystemRoot%\system32\drivers\etc\blackhole` file.
+- **macOS Catalina:** `/private/etc/hosts` file.
+- **Windows**: `%SystemRoot%\system32\drivers\etc\hosts` file.
 
 ## Gentoo
 
 Gentoo users may find
-[`sb-blackhole`](https://github.com/PF4Public/gentoo-overlay/tree/master/net-misc/sb-blackhole)
+[`sb-hosts`](https://github.com/PF4Public/gentoo-overlay/tree/master/net-misc/sb-hosts)
 in [::pf4public](https://github.com/PF4Public/gentoo-overlay) Gentoo overlay
 
 ## NixOS
 
-To install blackhole file on your machine add the following into your
+To install hosts file on your machine add the following into your
 `configuration.nix`:
 
 ```nix
 {
-  networking.extraBlackhole = let
-    blackholePath = https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole;
-    blackholeFile = builtins.fetchurl blackholePath;
-  in builtins.readFile "${blackholeFile}";
+  networking.extraHosts = let
+    hostsPath = https://raw.githubusercontent.com/khulnasoft/blackhole/master/hosts;
+    hostsFile = builtins.fetchurl hostsPath;
+  in builtins.readFile "${hostsFile}";
 }
 ```
 
-- NOTE: Change `blackholePath` if you need other versions of blackhole file.
+- NOTE: Change `hostsPath` if you need other versions of hosts file.
 - NOTE: The call to `fetchurl` is impure. Use `fetchFromGitHub` with the exact
   commit if you want to always get the same result.
 
 ### Nix Flake
 
-NixOS installations which are managed through _flakes_ can use the blackhole file
+NixOS installations which are managed through _flakes_ can use the hosts file
 like this:
 
 ```nix
 {
-  inputs.blackhole.url = github:boss-net/blackhole;
-  outputs = { self, nixpkgs, blackhole }: {
+  inputs.hosts.url = github:khulnasoft/blackhole;
+  outputs = { self, nixpkgs, hosts }: {
     nixosConfigurations.my-hostname = {
       system = "<architecture>";
       modules = [
-        blackhole.nixosModule {
-          networking.bossnetBlackHole.enable = true;
+        hosts.nixosModule {
+          networking.khulnasoftBlackHole.enable = true;
         }
       ];
     };
@@ -400,11 +400,11 @@ like this:
 }
 ```
 
-The blackhole extensions are also available with the following options:
+The hosts extensions are also available with the following options:
 
 ```nix
 {
-  networking.bossnetBlackHole = {
+  networking.khulnasoftBlackHole = {
     blockFakenews = true;
     blockGambling = true;
     blockPorn = true;
@@ -413,20 +413,20 @@ The blackhole extensions are also available with the following options:
 }
 ```
 
-## Updating blackhole file on Windows
+## Updating hosts file on Windows
 
-(NOTE: See also some third-party Blackhole managers, listed below.)
+(NOTE: See also some third-party Hosts managers, listed below.)
 
 On Linux and macOS, run the Python script. On Windows more work is required due
 to compatibility issues so it's preferable to run the batch file as follows:
 
 ```sh
-updateBlackholeWindows.bat
+updateBlackHoleWindows.bat
 ```
 
 This file **MUST** be run in command prompt with administrator privileges in the
-repository directory. In addition to updating the blackhole file, it can also
-replace the existing blackhole file, and reload the DNS cache. It goes without
+repository directory. In addition to updating the hosts file, it can also
+replace the existing hosts file, and reload the DNS cache. It goes without
 saying that for this to work, you must be connected to the internet.
 
 To open a command prompt as administrator in the repository's directory, do the
@@ -440,27 +440,29 @@ following:
 - **Windows 10**: Start Button → type `cmd` → right-click Command Prompt → "Run
   as Administrator"
 
-You can also refer to the "Third-Party Blackhole Managers" section for further
+You can also refer to the "Third-Party Hosts Managers" section for further
 recommended solutions from third parties.
 
-### Warning: Using this `blackhole` file in Windows may require disabling DNS Cache service
+### Warning: Using this `hosts` file in Windows may require disabling DNS Cache service
 
-Windows has issues with larger blackhole files. Recent changes in security within
+Windows has issues with larger hosts files. Recent changes in security within
 Windows 10 denies access to changing services via other tools except registry
 hacks. Use the `disable-dnscache-service-win.cmd` file to make proper changes to
 the Windows registry. You will need to reboot your device once that's done. See
 the
-[the comments within the `cmd` file](https://github.com/boss-net/blackhole/blob/master/disable-dnscache-service-win.bat)
+[the comments within the `cmd` file](https://github.com/khulnasoft/blackhole/blob/master/disable-dnscache-service-win.bat)
 for more details.
 
-## Reloading blackhole file
+Disabling the DNS Cache Service can cause issues with services and applications like *WSL* and it's possible to compress the hosts file and negate the need to disable the DNS caching service. You can try the *C++* Windows command line tool at [Hosts Compress - Windows](https://github.com/Lateralus138/hosts-compress-windows) (the recommended method) or the *PowerShell* compression script and check out the guide located at the [Hosts Compression Scripts](https://github.com/Lateralus138/hosts-compression-scripts) repository.
+
+## Reloading hosts file
 
 Your operating system will cache DNS lookups. You can either reboot or run the
-following commands to manually flush your DNS cache once the new blackhole file is
+following commands to manually flush your DNS cache once the new hosts file is
 in place.
 
 The Google Chrome browser may require manually cleaning up its DNS Cache on
-`chrome://net-internals/#dns` page to thereafter see the changes in your blackhole
+`chrome://net-internals/#dns` page to thereafter see the changes in your hosts
 file. See: <https://superuser.com/questions/723703>
 
 ### Windows
@@ -493,17 +495,17 @@ Open a Terminal and run with root privileges:
   sudo service nscd start
   ```
 
-  Then modify the `blackhole` line in your `/etc/nsswitch.conf` file to the
+  Then modify the `hosts` line in your `/etc/nsswitch.conf` file to the
   following:
 
   ```text
-  blackhole: cache files dns
+  hosts: cache files dns
   ```
 
 - **NixOS**: The `nscd.service` is automatically restarted when the option
-  `networking.extraBlackhole` was changed.
+  `networking.extraHosts` was changed.
 - **Others**: Consult
-  [this Wikipedia article](https://en.wikipedia.org/wiki/Blackhole_%28file%29#Location_in_the_file_system).
+  [this Wikipedia article](https://en.wikipedia.org/wiki/Hosts_%28file%29#Location_in_the_file_system).
 
 ### macOS
 
@@ -518,73 +520,73 @@ sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder
 
 This repository uses [release-it](https://github.com/release-it/release-it), an
 excellent CLI release tool for GitHub repos and npm packages, to automate
-creating [releases](https://github.com/boss-net/blackhole/releases). This is why
+creating [releases](https://github.com/khulnasoft/blackhole/releases). This is why
 the
-[package.json](https://github.com/boss-net/blackhole/blob/master/package.json)
+[package.json](https://github.com/khulnasoft/blackhole/blob/master/package.json)
 and
-[.release-it.json](https://github.com/boss-net/blackhole/blob/master/.release-it.json)
+[.release-it.json](https://github.com/khulnasoft/blackhole/blob/master/.release-it.json)
 files are bundled.
 
-## Goals of this unified blackhole file
+## Goals of this unified hosts file
 
 The goals of this repo are to:
 
-1. automatically combine high-quality lists of blackhole,
+1. automatically combine high-quality lists of hosts,
 2. provide situation-appropriate extensions,
 3. de-dupe the resultant combined list,
 4. and keep the resultant file reasonably sized.
 
-A high-quality source is defined here as one that is actively curated. A blackhole
+A high-quality source is defined here as one that is actively curated. A hosts
 source should be frequently updated by its maintainers with both additions and
-removals. The larger the blackhole file, the higher the level of curation is
+removals. The larger the hosts file, the higher the level of curation is
 expected.
 
-It is expected that this unified blackhole file will serve both desktop and mobile
+It is expected that this unified hosts file will serve both desktop and mobile
 devices under a variety of operating systems.
 
-## Third-Party Blackhole Managers
+## Third-Party Hosts Managers
 
-- [Unified Blackhole AutoUpdate](https://github.com/ScriptTiger/Unified-Blackhole-AutoUpdate "Unified Blackhole AutoUpdate")
-  (for Windows): The Unified Blackhole AutoUpdate package is purpose-built for this
-  unified blackhole project as well as in active development by community members.
+- [Unified Hosts AutoUpdate](https://github.com/ScriptTiger/Unified-Hosts-AutoUpdate "Unified Hosts AutoUpdate")
+  (for Windows): The Unified Hosts AutoUpdate package is purpose-built for this
+  unified hosts project as well as in active development by community members.
   You can install and uninstall any blacklist and keep it automatically up to
   date, and can be placed in a shared network location and deployed across an
   organization via group policies. And since it is in active development by
   community members, your bug reports, feature requests, and other feedback are
   most welcome.
-- [ViHoMa](https://github.com/cmabad/ViHoMa) is a Visual Blackhole file Manager,
+- [ViHoMa](https://github.com/cmabad/ViHoMa) is a Visual Hosts file Manager,
   written in Java, by Christian Martínez. Check it out!
 
 ## Interesting Applications
 
-- [Blackhole-BL](https://github.com/ScriptTiger/Blackhole-BL "Blackhole-BL") is a simple
-  tool to handle blackhole file black lists. It can remove comments, remove
+- [Hosts-BL](https://github.com/ScriptTiger/Hosts-BL "Hosts-BL") is a simple
+  tool to handle hosts file black lists. It can remove comments, remove
   duplicates, compress to 9 domains per line, add IPv6 entries. In addition, it
   can also convert black lists to multiple other black list formats compatible
   with other software, such as dnsmasq, DualServer, RPZ, Privoxy, and Unbound,
   to name a few.
 - [Host Minder](https://github.com/jeremehancock/hostminder#readme) is a simple
-  GUI that allows you to easily update your /etc/blackhole file to one of four
-  consolidated blackhole files from boss-net/blackhole. It is provided as a deb
+  GUI that allows you to easily update your /etc/hosts file to one of four
+  consolidated hosts files from khulnasoft/blackhole. It is provided as a deb
   package and comes pre-installed on [UbuntuCE](https://ubuntuce.com/).
 - [Maza ad blocking](https://github.com/tanrax/maza-ad-blocking) is a bash
   script that automatically updates host file. You can also update a fresh copy.
   And each time it generates a dnsmasq-compatible configuration file. Fast
   installation, compatible with MacOS, Linux and BSD.
 - [Hostile](https://github.com/feross/hostile) is a nifty command line utility
-  to easily add or remove domains from your blackhole file. If our blackhole files are
+  to easily add or remove domains from your hosts file. If our hosts files are
   too aggressive for you, you can use `hostile` to remove domains, or you can
   use `hostile` in a bash script to automate a post process each time you
-  download fresh versions of blackhole.
+  download fresh versions of hosts.
 - [macOS Scripting for Configuration, Backup and Restore](https://github.com/tiiiecherle/osx_install_config)
   helps customizing, re-installing and using macOS. It also provides a
-  [script](https://github.com/tiiiecherle/osx_install_config/blob/master/09_launchd/9b_run_on_boot/root/1_blackhole_file/launchd_and_script/blackhole_file_generator.sh)
-  to install and update the blackhole file using this project on macOS. In
+  [script](https://github.com/tiiiecherle/osx_install_config/blob/master/09_launchd/9b_run_on_boot/root/1_hosts_file/launchd_and_script/hosts_file_generator.sh)
+  to install and update the hosts file using this project on macOS. In
   combination with a
-  [launchd](https://github.com/tiiiecherle/osx_install_config/blob/master/09_launchd/9b_run_on_boot/root/1_blackhole_file/launchd_and_script/com.blackholefile.install_update.plist)
-  it updates the blackhole file every x days (default is 4). To install both,
+  [launchd](https://github.com/tiiiecherle/osx_install_config/blob/master/09_launchd/9b_run_on_boot/root/1_hosts_file/launchd_and_script/com.hostsfile.install_update.plist)
+  it updates the hosts file every x days (default is 4). To install both,
   download the GitHub repo and run the
-  [install script](https://github.com/tiiiecherle/osx_install_config/blob/master/09_launchd/9b_run_on_boot/root/1_blackhole_file/install_blackhole_file_generator_and_launchdservice.sh)
+  [install script](https://github.com/tiiiecherle/osx_install_config/blob/master/09_launchd/9b_run_on_boot/root/1_hosts_file/install_hosts_file_generator_and_launchdservice.sh)
   from the directory one level up.
 - [Pi-hole](https://pi-hole.net/) is a network-wide DHCP server and ad blocker
   that runs on [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi).
@@ -594,7 +596,7 @@ devices under a variety of operating systems.
   `/etc/bind/named.conf.blocked` file, sourced from here.
 - [Block ads, malware, and deploy parental controls via local DualServer DNS/DHCP server](https://scripttiger.github.io/dualserver/ "Block ads, malware, and deploy parental controls via local DualServer DNS/DHCP server")
   (for BSD, Windows & Linux): Set up a blacklist for everyone on your network
-  using the power of the unified blackhole reformatted for DualServer. And if you're
+  using the power of the unified hosts reformatted for DualServer. And if you're
   on Windows, this project also maintains an update script to make updating
   DualServer's blacklist even easier.
 - [Blocking ads and malwares with unbound](https://deadc0de.re/articles/unbound-blocking-ads.html "Blocking ads and malwares with unbound")
@@ -603,34 +605,36 @@ devices under a variety of operating systems.
   is a validating, recursive, and caching DNS resolver.
 - [dnsmasq conversion script](https://gist.github.com/erlepereira/c11f4f7a3f60cd2071e79018e895fc8a#file-dnsmasq-antimalware)
   This GitHub gist has a short shell script (bash, will work on any 'nix) and
-  uses `wget` & `awk` present in most distros, to fetch a specified blackhole file
+  uses `wget` & `awk` present in most distros, to fetch a specified hosts file
   and convert it to the format required by dnsmasq. Supports IPv4 and IPv6.
   Designed to be used as either a shell script, or can be dropped into
   `/etc/cron.weekly` (or wherever suits). The script is short and easily edited,
   also has a short document attached with notes on dnsmasq setup.
-- [BlackBlackhole - Command Line Installer/Updater](https://github.com/Lateralus138/blackblackhole)
-  This is a cross-platform command line utility to help install/update blackhole
+- [BlackHosts - Command Line Installer/Updater](https://github.com/Lateralus138/blackhosts)
+  This is a cross-platform command line utility to help install/update hosts
   files found at this repository.
+- [Hosts Compression Scripts](https://github.com/Lateralus138/hosts-compression-scripts) These are various scripts to help compress hosts files (by the author of BlackHosts).
+- [Hosts Compress - Windows](https://github.com/Lateralus138/hosts-compress-windows) This is a *C++* Windows command line tool to help compress hosts files (by the author of BlackHosts and Hosts Compression Scripts). This is highly recommended over the scripts as it is **exponentially faster**.
 - [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Combining-Blocklists)
   provides a tool to build block lists from local and remote lists in common
   formats.
 - [Control D](https://controld.com/free-dns)
   offers a public anycast network hosted mirror of the Unified (Adware + Malware) blocklist:
   - Legacy DNS: `76.76.2.35`, `76.76.10.35`, `2606:1a40::35`, `2606:1a40:1::35`
-  - DNS-over-HTTPS/TLS/DOQ: `https://freedns.controld.com/x-bossnet`, `x-bossnet.freedns.controld.com`
+  - DNS-over-HTTPS/TLS/DOQ: `https://freedns.controld.com/x-khulnasoft`, `x-khulnasoft.freedns.controld.com`
 
 ## Contribute
 
 Please read our
-[Contributing Guide](https://github.com/boss-net/blackhole/blob/master/contributing.md).
+[Contributing Guide](https://github.com/khulnasoft/blackhole/blob/master/contributing.md).
 Among other things, this explains how we organize files and folders in this
 repository.
 
-We are always interested in discovering well-curated sources of blackhole. If you
-find one, please open an [issue](https://github.com/boss-net/blackhole/issues) to
+We are always interested in discovering well-curated sources of hosts. If you
+find one, please open an [issue](https://github.com/khulnasoft/blackhole/issues) to
 draw our attention.
 
 Before you create or respond to any issue, please read our
-[code of conduct](https://github.com/boss-net/blackhole/blob/master/code_of_conduct.md).
+[code of conduct](https://github.com/khulnasoft/blackhole/blob/master/code_of_conduct.md).
 
 Logo by [@Tobaloidee](https://github.com/Tobaloidee) Thank you!.

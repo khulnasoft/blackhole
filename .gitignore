@@ -1,10 +1,11 @@
 .idea
 *.iml
-myblackhole
+myhosts
 blacklist
 whitelist
-blackhole-*
+hosts-*
 /web.config
 /__pycache__
 /node_modules/
 /package-lock.json
+/yarn.lock

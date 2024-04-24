@@ -30,13 +30,13 @@ Cell[BoxData[{
     RowBox[{"{", 
      RowBox[{
      "\"\<data/Adguard-cname/\>\"", ",", "\"\<data/Badd-Boyz-Hosts/\>\"", 
-      ",", "\"\<data/KADblackhole/\>\"", ",", "\"\<data/MetaMask/\>\"", ",", 
-      "\"\<data/StevenBlack/\>\"", ",", "\"\<data/URLHaus/\>\"", ",", 
+      ",", "\"\<data/KADhosts/\>\"", ",", "\"\<data/MetaMask/\>\"", ",", 
+      "\"\<data/KhulnaSoft/\>\"", ",", "\"\<data/URLHaus/\>\"", ",", 
       "\"\<data/UncheckyAds/\>\"", ",", "\"\<data/adaway.org/\>\"", ",", 
       "\"\<data/add.2o7Net/\>\"", ",", "\"\<data/add.Dead/\>\"", ",", 
       "\"\<data/add.Risk/\>\"", ",", "\"\<data/add.Spam/\>\"", ",", 
-      "\"\<data/hostsVN/\>\"", ",", "\"\<data/minecraft-blackhole/\>\"", ",", 
-      "\"\<data/mvps.org/\>\"", ",", "\"\<data/shady-blackhole/\>\"", ",", 
+      "\"\<data/hostsVN/\>\"", ",", "\"\<data/minecraft-hosts/\>\"", ",", 
+      "\"\<data/mvps.org/\>\"", ",", "\"\<data/shady-hosts/\>\"", ",", 
       "\"\<data/someonewhocares.org/\>\"", ",", "\"\<data/tiuxo/\>\"", ",", 
       "\"\<data/yoyo.org/\>\"", ",", "\"\<extensions/fakenews/\>\"", ",", 
       "\"\<extensions/gambling/\>\"", ",", 
@@ -1691,7 +1691,7 @@ yG4=
       TagBox[
        GridBox[{{
           StyleBox[
-          "\"data/KADblackhole/ domaicontribution history\"", 16, Bold, 
+          "\"data/KADhosts/ domaicontribution history\"", 16, Bold, 
            StripOnInput -> False]}, {
           StyleBox[
           "\"updated: Sat 30 Jul 2022 02:52:07 UTC\"", 12, StripOnInput -> 
@@ -2498,7 +2498,7 @@ H4Thjm0=
       TagBox[
        GridBox[{{
           StyleBox[
-          "\"data/StevenBlack/ domaicontribution history\"", 16, Bold, 
+          "\"data/KhulnaSoft/ domaicontribution history\"", 16, Bold, 
            StripOnInput -> False]}, {
           StyleBox[
           "\"updated: Sat 30 Jul 2022 02:52:08 UTC\"", 12, StripOnInput -> 
@@ -5595,7 +5595,7 @@ JJE=
      RowBox[{"PlotLabel", "\[Rule]", 
       TagBox[GridBox[{
          {
-          StyleBox["\<\"data/minecraft-blackhole/ domaicontribution history\"\>",
+          StyleBox["\<\"data/minecraft-hosts/ domaicontribution history\"\>",
            StripOnInput->False,
            FontSize->16,
            FontWeight->Bold]},
@@ -6427,7 +6427,7 @@ bzCbBuVvAPMLbi+D2QfmKzhsQDH/QtwWmH/A/Ad626D8hjIHAF+XUIs=
       TagBox[
        GridBox[{{
           StyleBox[
-          "\"data/shady-blackhole/ domaicontribution history\"", 16, Bold, 
+          "\"data/shady-hosts/ domaicontribution history\"", 16, Bold, 
            StripOnInput -> False]}, {
           StyleBox[
           "\"updated: Sat 30 Jul 2022 02:52:10 UTC\"", 12, StripOnInput -> 
@@ -11621,3 +11621,4 @@ Cell[466600, 11589, 149, 2, 30, "Input",ExpressionUUID->"e122a78a-e7ed-4042-9265
 }
 ]
 *)
+
