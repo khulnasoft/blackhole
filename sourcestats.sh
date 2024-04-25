@@ -23,7 +23,7 @@ data/Adguard-cname
 data/Badd-Boyz-Hosts
 data/KADblackhole
 data/MetaMask
-data/StevenBlack
+data/KhulnaSoft
 data/URLHaus
 data/UncheckyAds
 data/adaway.org

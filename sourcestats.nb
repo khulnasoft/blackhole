@@ -31,7 +31,7 @@ Cell[BoxData[{
      RowBox[{
      "\"\<data/Adguard-cname/\>\"", ",", "\"\<data/Badd-Boyz-Hosts/\>\"", 
       ",", "\"\<data/KADblackhole/\>\"", ",", "\"\<data/MetaMask/\>\"", ",", 
-      "\"\<data/StevenBlack/\>\"", ",", "\"\<data/URLHaus/\>\"", ",", 
+      "\"\<data/KhulnaSoft/\>\"", ",", "\"\<data/URLHaus/\>\"", ",", 
       "\"\<data/UncheckyAds/\>\"", ",", "\"\<data/adaway.org/\>\"", ",", 
       "\"\<data/add.2o7Net/\>\"", ",", "\"\<data/add.Dead/\>\"", ",", 
       "\"\<data/add.Risk/\>\"", ",", "\"\<data/add.Spam/\>\"", ",", 
@@ -2498,7 +2498,7 @@ H4Thjm0=
       TagBox[
        GridBox[{{
           StyleBox[
-          "\"data/StevenBlack/ domaicontribution history\"", 16, Bold, 
+          "\"data/KhulnaSoft/ domaicontribution history\"", 16, Bold, 
            StripOnInput -> False]}, {
           StyleBox[
           "\"updated: Sat 30 Jul 2022 02:52:08 UTC\"", 12, StripOnInput -> 

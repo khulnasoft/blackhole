@@ -1,16 +1,16 @@
-# Title: StevenBlack/hosts extensions fakenews and gambling 
+# Title: boss-net/blackhole extensions fakenews and gambling 
 #
-# This hosts file is a merged collection of hosts from reputable sources,
+# This blackhole file is a merged collection of blackhole from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
-# Date: 25 April 2024 14:22:14 (UTC)
-# The unified hosts file was not used while generating this file.
+# Date: 25 April 2024 23:47:25 (GMT)
+# The unified blackhole file was not used while generating this file.
 # Extensions used to generate this file: fakenews, gambling
 # Number of unique domains: 10,322
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-only/hosts
-# Project home page: https://github.com/StevenBlack/hosts
-# Project releases: https://github.com/StevenBlack/hosts/releases
+# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-only/blackhole
+# Project home page: https://github.com/boss-net/blackhole
+# Project releases: https://github.com/boss-net/blackhole/releases
 #
 # ===============================================================
 
@@ -10361,7 +10361,7 @@
 # blacklist
 #
 # The contents of this file (containing a listing of additional domains in
-# 'hosts' file format) are appended to the unified hosts file during the
+# 'blackhole' file format) are appended to the unified blackhole file during the
 # update process. For example, uncomment the following line to block
 # 'example.com':
 
