@@ -1803,7 +1803,6 @@
 127.0.0.1 amobee.com
 
 # [amplitude.com]
-127.0.0.1 amplitude.com
 127.0.0.1 api.amplitude.com
 127.0.0.1 api2.amplitude.com
 127.0.0.1 cdn.amplitude.com
@@ -10148,9 +10147,6 @@
 127.0.0.1 track.tappx.com
 127.0.0.1 imp.track.tappx.com
 
-# [tapresearch.com]
-127.0.0.1 www.tapresearch.com
-
 # [taps.io]
 127.0.0.1 api.taps.io
 
@@ -10897,10 +10893,6 @@
 
 # [vads.net.vn]
 127.0.0.1 vads.net.vn
-
-# [vaicore.site]
-127.0.0.1 co.vaicore.site
-127.0.0.1 int.vaicore.site
 
 # [vaicore.store]
 127.0.0.1 int.vaicore.store

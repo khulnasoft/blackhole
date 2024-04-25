@@ -1,16 +1,16 @@
-# Title: boss-net/blackhole extension social
+# Title: StevenBlack/hosts extension social
 #
-# This blackhole file is a merged collection of blackhole from reputable sources,
+# This hosts file is a merged collection of hosts from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
-# Date: 25 April 2024 22:44:38 (GMT)
-# The unified blackhole file was not used while generating this file.
+# Date: 25 April 2024 14:23:37 (UTC)
+# The unified hosts file was not used while generating this file.
 # Extensions used to generate this file: social
-# Number of unique domains: 3,222
+# Number of unique domains: 3,221
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/social-only/blackhole
-# Project home page: https://github.com/boss-net/blackhole
-# Project releases: https://github.com/boss-net/blackhole/releases
+# Fetch the latest version of this file: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts
+# Project home page: https://github.com/StevenBlack/hosts
+# Project releases: https://github.com/StevenBlack/hosts/releases
 #
 # ===============================================================
 
@@ -3244,7 +3244,6 @@
 0.0.0.0 share.snapchat.com
 0.0.0.0 shows.snapchat.com
 0.0.0.0 sks.snapchat.com
-0.0.0.0 snapchat-com
 0.0.0.0 snapchat.com
 0.0.0.0 staging-us-east1-aws.api.snapchat.com
 0.0.0.0 static.snapchat.com
@@ -3281,7 +3280,7 @@
 # blacklist
 #
 # The contents of this file (containing a listing of additional domains in
-# 'blackhole' file format) are appended to the unified blackhole file during the
+# 'hosts' file format) are appended to the unified hosts file during the
 # update process. For example, uncomment the following line to block
 # 'example.com':
 

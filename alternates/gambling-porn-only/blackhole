@@ -1,16 +1,16 @@
-# Title: boss-net/blackhole extensions gambling and porn 
+# Title: StevenBlack/hosts extensions gambling and porn 
 #
-# This blackhole file is a merged collection of blackhole from reputable sources,
+# This hosts file is a merged collection of hosts from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
-# Date: 25 April 2024 22:44:25 (GMT)
-# The unified blackhole file was not used while generating this file.
+# Date: 25 April 2024 14:23:06 (UTC)
+# The unified hosts file was not used while generating this file.
 # Extensions used to generate this file: gambling, porn
-# Number of unique domains: 92,003
+# Number of unique domains: 91,999
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-porn-only/blackhole
-# Project home page: https://github.com/boss-net/blackhole
-# Project releases: https://github.com/boss-net/blackhole/releases
+# Fetch the latest version of this file: https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling-porn-only/hosts
+# Project home page: https://github.com/StevenBlack/hosts
+# Project releases: https://github.com/StevenBlack/hosts/releases
 #
 # ===============================================================
 
@@ -15552,7 +15552,7 @@
 0.0.0.0 cast13.porngo.com
 0.0.0.0 cast14.porngo.com
 0.0.0.0 cast15.porngo.com
-0.0.0.0 cast.porngo.com #.
+0.0.0.0 cast.porngo.com
 0.0.0.0 cast.xxxfiles.com
 0.0.0.0 castingcouch-x.com
 0.0.0.0 castingcouchxfan.com
@@ -32814,7 +32814,6 @@
 0.0.0.0 www.blog-sexo-gratis.blogspot.com
 0.0.0.0 www.blogsexoverbal.blogspot.com
 0.0.0.0 www.blogs-list.com
-0.0.0.0 www.blogspot.com
 0.0.0.0 www.blog-thegoose.blogspot.com
 0.0.0.0 www.blogtothepeople.blogspot.com
 0.0.0.0 www.blogtravestis.blogspot.com
@@ -42882,7 +42881,6 @@
 0.0.0.0 4yourhardstuff.com
 0.0.0.0 50plusmilfs.com
 0.0.0.0 50yearoldsluts.com
-0.0.0.0 51.89.232.63
 0.0.0.0 520cc.tw
 0.0.0.0 52fikir.biz
 0.0.0.0 555.porn
@@ -42929,7 +42927,6 @@
 0.0.0.0 8ten.club
 0.0.0.0 8xxxhd.com
 0.0.0.0 911asians.com
-0.0.0.0 93.115.61.56
 0.0.0.0 94ero.com
 0.0.0.0 999hentai.to
 0.0.0.0 999hentai.tv
@@ -64028,7 +64025,6 @@
 0.0.0.0 gay.pornbb.org
 0.0.0.0 www.lpsg.com
 0.0.0.0 www.sexfetishforum.com
-0.0.0.0 85.17.187.83
 0.0.0.0 breeding.zone
 0.0.0.0 www.fmforums.co.uk
 0.0.0.0 coiledfist.org
@@ -92087,7 +92083,7 @@
 # blacklist
 #
 # The contents of this file (containing a listing of additional domains in
-# 'blackhole' file format) are appended to the unified blackhole file during the
+# 'hosts' file format) are appended to the unified hosts file during the
 # update process. For example, uncomment the following line to block
 # 'example.com':
 
