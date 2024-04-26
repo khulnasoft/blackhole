@@ -576,7 +576,7 @@ devices under a variety of operating systems.
 
 ## Third-Party Blackhole Managers
 
-- [Unified Blackhole AutoUpdate](https://github.com/ScriptTiger/Unified-Blackhole-AutoUpdate "Unified Blackhole AutoUpdate")
+- [Unified Blackhole AutoUpdate](https://github.com/khulnasoft-lab/Unified-Blackhole-AutoUpdate "Unified Blackhole AutoUpdate")
   (for Windows): The Unified Blackhole AutoUpdate package is purpose-built for this
   unified blackhole project as well as in active development by community members.
   You can install and uninstall any blacklist and keep it automatically up to
