@@ -1,57 +1,33 @@
-# Title: khulnasoft/blackhole extensions gambling and porn
-
+# Title: boss-net/blackhole extensions gambling and porn 
 #
-
 # This blackhole file is a merged collection of blackhole from reputable sources,
-
 # with a dash of crowd sourcing via GitHub
-
 #
-
 # Date: 09 October 2024 00:16:49 (GMT)
-
 # The unified blackhole file was not used while generating this file.
-
 # Extensions used to generate this file: gambling, porn
-
 # Number of unique domains: 71,408
-
 #
-
-# Fetch the latest version of this file: https://raw.githubusercontent.com/khulnasoft/blackhole/master/alternates/gambling-porn-only/blackhole
-
-# Project home page: https://github.com/khulnasoft/blackhole
-
-# Project releases: https://github.com/khulnasoft/blackhole/releases
-
+# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-porn-only/blackhole
+# Project home page: https://github.com/boss-net/blackhole
+# Project releases: https://github.com/boss-net/blackhole/releases
 #
-
 # ===============================================================
 
 # Custom host records are listed here.
 
+
 # End of custom host records.
-
 # Title: hostsVN Gambling
-
 # Last modified: 05 Oct 2024 22:50 UTC+7
-
 # Version: 2410052250
-
 # Blocked: 5,838 domains
-
 # Only include gambling domains (Vietnamese language)
-
 # Homepage: https://bigdargon.github.io/hostsVN/
-
 # GitHub: https://github.com/bigdargon/hostsVN
-
 # Report issues: https://github.com/bigdargon/hostsVN/issues
-
 # Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/gambling/hosts-VN
-
 #
-
 # =====================================================
 
 0.0.0.0 0000130.com
@@ -8529,27 +8505,16 @@
 0.0.0.0 www.pokerstars.bg
 0.0.0.0 everbet.bg
 0.0.0.0 slotino.bg
-
 # Title: hostsVN Adult
-
 # Last modified: 05 Oct 2024 22:50 UTC+7
-
 # Version: 2410052250
-
 # Blocked: 3,594 domains
-
 # Only include adult domains (Vietnamese language)
-
 # Homepage: https://bigdargon.github.io/hostsVN/
-
 # GitHub: https://github.com/bigdargon/hostsVN
-
 # Report issues: https://github.com/bigdargon/hostsVN/issues
-
 # Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/adult/hosts-VN
-
 #
-
 # =====================================================
 
 0.0.0.0 0006666.net
@@ -71143,7 +71108,6 @@
 0.0.0.0 bestsexpositions.com
 0.0.0.0 pervtube.net
 0.0.0.0 pornpig.tube
-
 # Title: Snuff hosts
 
 0.0.0.0 bitcheese.net
@@ -71488,17 +71452,11 @@
 0.0.0.0 www2.giga-jp.com
 0.0.0.0 yamidas.yamiboard.com
 0.0.0.0 yamigama.com
-
 # blacklist
-
 #
-
 # The contents of this file (containing a listing of additional domains in
-
 # 'blackhole' file format) are appended to the unified blackhole file during the
-
 # update process. For example, uncomment the following line to block
-
 # 'example.com':
 
 # 0.0.0.0 example.com
