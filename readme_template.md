@@ -48,7 +48,8 @@ The **Non GitHub mirror** is the link to use for some blackhole file managers li
 with GitHub download links.
 
 | Host file recipe | Readme | Raw blackhole | Unique domains | Non GitHub mirror |
-| ---------------- | :----: | :-------: | :------------: | :---------------: |
+| ---------------- | :----: | :-----------: | :------------: | :---------------: |
+
 @TOCROWS@
 
 **Expectation**: These unified blackhole files should serve all devices, regardless
@@ -60,7 +61,8 @@ Updated `blackhole` files from the following locations are always unified and
 included:
 
 | Host file source | Home page | Raw blackhole | License | Issues | Description |
-| ---------------- | :-------: | :-------: | :-----: | :----: | ----------- |
+| ---------------- | :-------: | :-----------: | :-----: | :----: | ----------- |
+
 @SOURCEROWS@
 
 ## Extensions
@@ -286,7 +288,7 @@ data providers whose home pages are
 This is best because once you submit new domains, they will be curated and
 updated by the dedicated folks who maintain these sources.
 
-### Option 2: Fork this repository, add your domains to Steven Black's personal data file, and submit a pull request
+### Option 2: Fork this repository, add your domains to KhulnaSoft's personal data file, and submit a pull request
 
 Fork this blackhole this repo and add your links to
 [https://github.com/boss-net/blackhole/blob/master/data/boss-net/blackhole](https://github.com/boss-net/blackhole/blob/master/data/boss-net/blackhole).

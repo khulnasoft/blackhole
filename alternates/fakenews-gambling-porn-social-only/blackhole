@@ -1,23 +1,37 @@
-# Title: boss-net/blackhole extensions fakenews, gambling, porn and social 
+# Title: boss-net/blackhole extensions fakenews, gambling, porn and social
+
 #
+
 # This blackhole file is a merged collection of blackhole from reputable sources,
+
 # with a dash of crowd sourcing via GitHub
+
 #
+
 # Date: 09 October 2024 00:16:40 (GMT)
+
 # The unified blackhole file was not used while generating this file.
+
 # Extensions used to generate this file: fakenews, gambling, porn, social
+
 # Number of unique domains: 76,823
+
 #
+
 # Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-porn-social-only/blackhole
+
 # Project home page: https://github.com/boss-net/blackhole
+
 # Project releases: https://github.com/boss-net/blackhole/releases
+
 #
+
 # ===============================================================
 
 # Custom host records are listed here.
 
-
 # End of custom host records.
+
 0.0.0.0 100percentfedup.com
 0.0.0.0 20minutenews.com
 0.0.0.0 21stcenturywire.com
@@ -2212,16 +2226,27 @@
 0.0.0.0 youtubecensorship.com
 0.0.0.0 yubasuttertimes.com
 0.0.0.0 zombie.news
+
 # Title: hostsVN Gambling
+
 # Last modified: 05 Oct 2024 22:50 UTC+7
+
 # Version: 2410052250
+
 # Blocked: 5,838 domains
+
 # Only include gambling domains (Vietnamese language)
+
 # Homepage: https://bigdargon.github.io/hostsVN/
+
 # GitHub: https://github.com/bigdargon/hostsVN
+
 # Report issues: https://github.com/bigdargon/hostsVN/issues
+
 # Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/gambling/hosts-VN
+
 #
+
 # =====================================================
 
 0.0.0.0 0000130.com
@@ -10699,16 +10724,27 @@
 0.0.0.0 www.pokerstars.bg
 0.0.0.0 everbet.bg
 0.0.0.0 slotino.bg
+
 # Title: hostsVN Adult
+
 # Last modified: 05 Oct 2024 22:50 UTC+7
+
 # Version: 2410052250
+
 # Blocked: 3,594 domains
+
 # Only include adult domains (Vietnamese language)
+
 # Homepage: https://bigdargon.github.io/hostsVN/
+
 # GitHub: https://github.com/bigdargon/hostsVN
+
 # Report issues: https://github.com/bigdargon/hostsVN/issues
+
 # Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/adult/hosts-VN
+
 #
+
 # =====================================================
 
 0.0.0.0 0006666.net
@@ -73302,6 +73338,7 @@
 0.0.0.0 bestsexpositions.com
 0.0.0.0 pervtube.net
 0.0.0.0 pornpig.tube
+
 # Title: Snuff hosts
 
 0.0.0.0 bitcheese.net
@@ -73646,11 +73683,15 @@
 0.0.0.0 www2.giga-jp.com
 0.0.0.0 yamidas.yamiboard.com
 0.0.0.0 yamigama.com
+
 # Title: Social media hosts
+
 # Direct URL: https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts
+
 # Updated: March 24, 2024
 
 # Facebook
+
 0.0.0.0 0-act.channel.facebook.com
 0.0.0.0 0-edge-chat.facebook.com
 0.0.0.0 0.beta.facebook.com
@@ -75405,6 +75446,7 @@
 0.0.0.0 zh-tw.facebook.com
 
 # Instagram
+
 0.0.0.0 a.ns.cdninstagram.com
 0.0.0.0 api.instagram.com
 0.0.0.0 b.ns.cdninstagram.com
@@ -75817,6 +75859,7 @@
 0.0.0.0 z-p42-static.cdninstagram.com
 
 # Whatsapp
+
 0.0.0.0 account.whatsapp.com
 0.0.0.0 alpha.whatsapp.com
 0.0.0.0 api.whatsapp.com
@@ -76001,10 +76044,12 @@
 0.0.0.0 wwwl.whatsapp.com
 
 # Threads
+
 0.0.0.0 threads.net
 0.0.0.0 www.threads.net
 
 # Twitter
+
 0.0.0.0 0.twitter.com
 0.0.0.0 2010.twitter.com
 0.0.0.0 2011.twitter.com
@@ -76180,6 +76225,7 @@
 0.0.0.0 x.com
 
 # LinkedIn
+
 0.0.0.0 addtoprofile.linkedin.com
 0.0.0.0 ads.linkedin.com
 0.0.0.0 ae.linkedin.com
@@ -76412,6 +76458,7 @@
 0.0.0.0 zh-tw.help.linkedin.com
 
 # MySpace
+
 0.0.0.0 a1-images.myspacecdn.com
 0.0.0.0 a1.ec-images.myspacecdn.com
 0.0.0.0 a2-images.myspacecdn.com
@@ -76469,6 +76516,7 @@
 0.0.0.0 x.myspacecdn.com
 
 # Pinterest
+
 0.0.0.0 about.pinterest.com
 0.0.0.0 accounts.pinterest.com
 0.0.0.0 ads.pinterest.com
@@ -76514,6 +76562,7 @@
 0.0.0.0 www.pinterest.fr
 
 # Tumblr
+
 0.0.0.0 24.media.tumblr.com
 0.0.0.0 25.media.tumblr.com
 0.0.0.0 28.media.tumblr.com
@@ -76544,6 +76593,7 @@
 0.0.0.0 www.tumblr.com
 
 # Reddit
+
 0.0.0.0 a.thumbs.redditmedia.com
 0.0.0.0 about.reddit.com
 0.0.0.0 accounts.reddit.com
@@ -76621,6 +76671,7 @@
 0.0.0.0 www.redditstatic.com
 
 # TikTok
+
 0.0.0.0 abtest-sg-tiktok.byteoversea.com
 0.0.0.0 abtest-va-tiktok.byteoversea.com
 0.0.0.0 ads.tiktok.com
@@ -76791,6 +76842,7 @@
 0.0.0.0 xlog.tiktokv.com.edgesuite.net
 
 # DateMeme
+
 0.0.0.0 datememe.com
 0.0.0.0 www.datememe.com
 0.0.0.0 admin.datememe.com
@@ -76815,6 +76867,7 @@
 0.0.0.0 zh-cn.datememe.com
 
 # clubhouse
+
 0.0.0.0 joinclubhouse.com
 0.0.0.0 www.joinclubhouse.com
 0.0.0.0 welcome.joinclubhouse.com
@@ -76825,7 +76878,9 @@
 0.0.0.0 testflight.joinclubhouse.com
 
 # Dating sites
-# from https://github.com/StevenBlack/hosts/issues/2023
+
+# from https://github.com/KhulnaSoft/blackhole/issues/2023
+
 0.0.0.0 tinder.com
 0.0.0.0 bumble.com
 0.0.0.0 badoo.com
@@ -76839,6 +76894,7 @@
 0.0.0.0 match.com
 
 # TikTok clone
+
 0.0.0.0 likee.video
 
 #Snapchat
@@ -76899,17 +76955,24 @@
 0.0.0.0 www.snapchat.com
 
 # Other
+
 0.0.0.0 pinpages.alwaysdata.net
 0.0.0.0 allotalk.com
 0.0.0.0 mbga.jp
 0.0.0.0 mixi.jp
 0.0.0.0 mixch.tv
 0.0.0.0 lobi.co
+
 # blacklist
+
 #
+
 # The contents of this file (containing a listing of additional domains in
+
 # 'blackhole' file format) are appended to the unified blackhole file during the
+
 # update process. For example, uncomment the following line to block
+
 # 'example.com':
 
 # 0.0.0.0 example.com

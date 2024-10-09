@@ -14,7 +14,7 @@
       in
       {
         options.networking.bossnetBlackHole = {
-          enable = mkEnableOption "Use Steven Black's blackhole file as extra blackhole.";
+          enable = mkEnableOption "Use KhulnaSoft's blackhole file as extra blackhole.";
           blockFakenews = mkEnableOption "Additionally block fakenews blackhole.";
           blockGambling = mkEnableOption "Additionally block gambling blackhole.";
           blockPorn = mkEnableOption "Additionally block porn blackhole.";

@@ -1,8 +1,11 @@
 # Title: Social media hosts
+
 # Direct URL: https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts
+
 # Updated: March 24, 2024
 
 # Facebook
+
 127.0.0.1 0-act.channel.facebook.com
 127.0.0.1 0-edge-chat.facebook.com
 127.0.0.1 0.beta.facebook.com
@@ -1757,6 +1760,7 @@
 127.0.0.1 zh-tw.facebook.com
 
 # Instagram
+
 127.0.0.1 a.ns.cdninstagram.com
 127.0.0.1 api.instagram.com
 127.0.0.1 b.ns.cdninstagram.com
@@ -2169,6 +2173,7 @@
 127.0.0.1 z-p42-static.cdninstagram.com
 
 # Whatsapp
+
 127.0.0.1 account.whatsapp.com
 127.0.0.1 alpha.whatsapp.com
 127.0.0.1 api.whatsapp.com
@@ -2353,10 +2358,12 @@
 127.0.0.1 wwwl.whatsapp.com
 
 # Threads
+
 127.0.0.1 threads.net
 127.0.0.1 www.threads.net
 
 # Twitter
+
 127.0.0.1 0.twitter.com
 127.0.0.1 2010.twitter.com
 127.0.0.1 2011.twitter.com
@@ -2532,6 +2539,7 @@
 127.0.0.1 x.com
 
 # LinkedIn
+
 127.0.0.1 addtoprofile.linkedin.com
 127.0.0.1 ads.linkedin.com
 127.0.0.1 ae.linkedin.com
@@ -2764,6 +2772,7 @@
 127.0.0.1 zh-tw.help.linkedin.com
 
 # MySpace
+
 127.0.0.1 a1-images.myspacecdn.com
 127.0.0.1 a1.ec-images.myspacecdn.com
 127.0.0.1 a2-images.myspacecdn.com
@@ -2821,6 +2830,7 @@
 127.0.0.1 x.myspacecdn.com
 
 # Pinterest
+
 127.0.0.1 about.pinterest.com
 127.0.0.1 accounts.pinterest.com
 127.0.0.1 ads.pinterest.com
@@ -2866,6 +2876,7 @@
 127.0.0.1 www.pinterest.fr
 
 # Tumblr
+
 127.0.0.1 24.media.tumblr.com
 127.0.0.1 25.media.tumblr.com
 127.0.0.1 28.media.tumblr.com
@@ -2896,6 +2907,7 @@
 127.0.0.1 www.tumblr.com
 
 # Reddit
+
 127.0.0.1 a.thumbs.redditmedia.com
 127.0.0.1 about.reddit.com
 127.0.0.1 accounts.reddit.com
@@ -2974,6 +2986,7 @@
 127.0.0.1 www.redditstatic.com
 
 # TikTok
+
 127.0.0.1 abtest-sg-tiktok.byteoversea.com
 127.0.0.1 abtest-va-tiktok.byteoversea.com
 127.0.0.1 ads.tiktok.com
@@ -3144,6 +3157,7 @@
 127.0.0.1 xlog.tiktokv.com.edgesuite.net
 
 # DateMeme
+
 127.0.0.1 datememe.com
 127.0.0.1 www.datememe.com
 127.0.0.1 admin.datememe.com
@@ -3168,6 +3182,7 @@
 127.0.0.1 zh-cn.datememe.com
 
 # clubhouse
+
 127.0.0.1 joinclubhouse.com
 127.0.0.1 www.joinclubhouse.com
 127.0.0.1 welcome.joinclubhouse.com
@@ -3178,7 +3193,9 @@
 127.0.0.1 testflight.joinclubhouse.com
 
 # Dating sites
-# from https://github.com/StevenBlack/hosts/issues/2023
+
+# from https://github.com/KhulnaSoft/blackhole/issues/2023
+
 127.0.0.1 tinder.com
 127.0.0.1 bumble.com
 127.0.0.1 badoo.com
@@ -3192,6 +3209,7 @@
 127.0.0.1 match.com
 
 # TikTok clone
+
 127.0.0.1 likee.video
 
 #Snapchat
@@ -3252,5 +3270,6 @@
 127.0.0.1 www.snapchat.com
 
 # Other
+
 127.0.0.1 pinpages.alwaysdata.net
 127.0.0.1 allotalk.com

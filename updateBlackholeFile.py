@@ -493,7 +493,7 @@ def prompt_for_move(final_file, **move_params):
 def sort_sources(sources):
     """
     Sorts the sources.
-    The idea is that all Steven Black's list, file or entries
+    The idea is that all KhulnaSoft's list, file or entries
     get on top and the rest sorted alphabetically.
 
     Parameters
@@ -507,7 +507,7 @@ def sort_sources(sources):
         key=lambda x: x.lower().replace("-", "").replace("_", "").replace(" ", ""),
     )
 
-    # Steven Black's repositories/files/lists should be on top!
+    # KhulnaSoft's repositories/files/lists should be on top!
     steven_black_positions = [
         x for x, y in enumerate(result) if "boss-net" in y.lower()
     ]

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Script by Steven Black
+# Script by KhulnaSoft
 # https://github.com/boss-net
 #
 # This Python script will update the readme files in this repo.
