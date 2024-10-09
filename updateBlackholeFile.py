@@ -1329,7 +1329,7 @@ def move_blackhole_file_into_place(final_file):
     Move the newly-created blackhole file into its correct location on the OS.
 
     For UNIX systems, the blackhole file is "etc/blackhole." On Windows, it's
-    "C:\Windows\System32\drivers\etc\blackhole."
+    "C:\\Windows\\System32\\drivers\\etc\\blackhole."
 
     For this move to work, you must have administrator privileges to do this.
     On UNIX systems, this means having "sudo" access, and on Windows, it

@@ -3,7 +3,7 @@
 # This blackhole file is a merged collection of blackhole from reputable sources,
 # with a dash of crowd sourcing via GitHub
 #
-# Date: 25 April 2024 23:47:52 (GMT)
+# Date: 09 October 2024 00:16:58 (GMT)
 # The unified blackhole file was not used while generating this file.
 # Extensions used to generate this file: social
 # Number of unique domains: 3,222
@@ -3198,7 +3198,7 @@
 0.0.0.0 testflight.joinclubhouse.com
 
 # Dating sites
-# from https://github.com/StevenBlack/hosts/issues/2023
+# from https://github.com/KhulnaSoft/hosts/issues/2023
 0.0.0.0 tinder.com
 0.0.0.0 bumble.com
 0.0.0.0 badoo.com
