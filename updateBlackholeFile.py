@@ -761,7 +761,7 @@ def update_all_sources(source_data_filename, host_filename):
 
         # we can pause updating any given blackhole source.
         # if the update.json "pause" key is missing, don't pause.
-        if update_data.get('pause', False):
+        if update_data.get("pause", False):
             continue
 
         update_url = update_data["url"]
@@ -1351,7 +1351,9 @@ def move_blackhole_file_into_place(final_file):
         return False
 
     if platform.system() == "Windows":
-        target_file = str(Path(os.getenv("SystemRoot")) / "system32" / "drivers" / "etc" / "blackhole")
+        target_file = str(
+            Path(os.getenv("SystemRoot")) / "system32" / "drivers" / "etc" / "blackhole"
+        )
     else:
         target_file = "/etc/blackhole"
 
@@ -1368,7 +1370,11 @@ def move_blackhole_file_into_place(final_file):
         except Exception:
             print_failure(f"Replacing content of {target_file} failed.")
             return False
-    elif platform.system() == "Linux" or platform.system() == "Windows" or platform.system() == "Darwin":
+    elif (
+        platform.system() == "Linux"
+        or platform.system() == "Windows"
+        or platform.system() == "Darwin"
+    ):
         print(
             f"Replacing {target_file} requires root privileges. You might need to enter your password."
         )

@@ -32,7 +32,12 @@ def main():
     keys = list(data.keys())
     # Sort by the number of en-dashes in the key
     # and then by the key string itself.
-    keys.sort(key=lambda item: (item.replace("-only", "").count("-"), item.replace("-only", "")))
+    keys.sort(
+        key=lambda item: (
+            item.replace("-only", "").count("-"),
+            item.replace("-only", ""),
+        )
+    )
 
     toc_rows = ""
     for key in keys:
@@ -74,7 +79,9 @@ def main():
         if data[key]["no_unified_blackhole"]:
             extensions_header = "Limited to the extensions: " + extensions
         else:
-            extensions_header = "Unified blackhole file with " + extensions + " extensions"
+            extensions_header = (
+                "Unified blackhole file with " + extensions + " extensions"
+            )
 
         source_rows = ""
         source_list = data[key]["sourcesdata"]
@@ -107,12 +114,9 @@ def main():
                 line = line.replace("@SOURCEROWS@", source_rows)
                 # insert the size graph on the home readme only, for now.
                 if key == "base":
-                    line = line.replace(
-                        "@SIZEHISTORY@", size_history_graph
-                    )
+                    line = line.replace("@SIZEHISTORY@", size_history_graph)
                 else:
-                    line = line.replace(
-                        "@SIZEHISTORY@", "![Size history](stats.png)")
+                    line = line.replace("@SIZEHISTORY@", "![Size history](stats.png)")
 
                 out.write(line)
 

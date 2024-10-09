@@ -67,14 +67,26 @@ def recursively_loop_extensions(extension, extensions, current_extensions):
 
     name = "-".join(c_current_extensions)
 
-    params = ("-a", "-n", "-o", "alternates/"+name, "-e") + tuple(c_current_extensions)
+    params = ("-a", "-n", "-o", "alternates/" + name, "-e") + tuple(
+        c_current_extensions
+    )
     update_blackhole_file(*params)
 
-    params = ("-a", "-n", "-s", "--nounifiedblackhole", "-o", "alternates/"+name+"-only", "-e") + tuple(c_current_extensions)
+    params = (
+        "-a",
+        "-n",
+        "-s",
+        "--nounifiedblackhole",
+        "-o",
+        "alternates/" + name + "-only",
+        "-e",
+    ) + tuple(c_current_extensions)
     update_blackhole_file(*params)
 
     while len(c_extensions) > 0:
-        recursively_loop_extensions(c_extensions.pop(0), c_extensions, c_current_extensions)
+        recursively_loop_extensions(
+            c_extensions.pop(0), c_extensions, c_current_extensions
+        )
 
 
 def main():

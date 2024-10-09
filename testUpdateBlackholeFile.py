@@ -809,7 +809,8 @@ class TestUpdateAllSources(BaseStdout):
     @mock.patch("updateBlackholeFile.recursive_glob", return_value=["foo", "bar"])
     @mock.patch("updateBlackholeFile.write_data", return_value=0)
     @mock.patch(
-        "updateBlackholeFile.get_file_by_url", side_effect=[Exception("fail"), "file_data"]
+        "updateBlackholeFile.get_file_by_url",
+        side_effect=[Exception("fail"), "file_data"],
     )
     def test_sources_fail_succeed(self, mock_get, mock_write, *_):
         update_all_sources(self.source_data_filename, self.host_filename)
@@ -991,7 +992,11 @@ class TestWriteOpeningHeader(BaseMockDir):
 
     def test_missing_keyword(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=False, nounifiedblackhole=False
+            extensions="",
+            outputsubfolder="",
+            numberofrules=5,
+            skipstaticblackhole=False,
+            nounifiedblackhole=False,
         )
 
         for k in kwargs.keys():
@@ -1004,7 +1009,11 @@ class TestWriteOpeningHeader(BaseMockDir):
 
     def test_basic(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=True, nounifiedblackhole=False
+            extensions="",
+            outputsubfolder="",
+            numberofrules=5,
+            skipstaticblackhole=True,
+            nounifiedblackhole=False,
         )
         write_opening_header(self.final_file, **kwargs)
 
@@ -1033,7 +1042,11 @@ class TestWriteOpeningHeader(BaseMockDir):
 
     def test_basic_include_static_blackhole(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=False, nounifiedblackhole=False
+            extensions="",
+            outputsubfolder="",
+            numberofrules=5,
+            skipstaticblackhole=False,
+            nounifiedblackhole=False,
         )
         with self.mock_property("platform.system") as obj:
             obj.return_value = "Windows"
@@ -1060,7 +1073,11 @@ class TestWriteOpeningHeader(BaseMockDir):
 
     def test_basic_include_static_blackhole_linux(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=False, nounifiedblackhole=False
+            extensions="",
+            outputsubfolder="",
+            numberofrules=5,
+            skipstaticblackhole=False,
+            nounifiedblackhole=False,
         )
         with self.mock_property("platform.system") as system:
             system.return_value = "Linux"
@@ -1168,7 +1185,11 @@ class TestWriteOpeningHeader(BaseMockDir):
             f.write("peter-piper-picked-a-pepper")
 
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules=5, skipstaticblackhole=True, nounifiedblackhole=False
+            extensions="",
+            outputsubfolder="",
+            numberofrules=5,
+            skipstaticblackhole=True,
+            nounifiedblackhole=False,
         )
 
         with self.mock_property("updateBlackholeFile.BASEDIR_PATH"):
@@ -1217,7 +1238,11 @@ class TestUpdateReadmeData(BaseMockDir):
 
     def test_missing_keyword(self):
         kwargs = dict(
-            extensions="", outputsubfolder="", numberofrules="", sourcesdata="", nounifiedblackhole=False
+            extensions="",
+            outputsubfolder="",
+            numberofrules="",
+            sourcesdata="",
+            nounifiedblackhole=False,
         )
 
         for k in kwargs.keys():
@@ -1233,7 +1258,11 @@ class TestUpdateReadmeData(BaseMockDir):
             json.dump({"foo": "bar"}, f)
 
         kwargs = dict(
-            extensions=None, outputsubfolder="foo", numberofrules=5, sourcesdata="blackhole", nounifiedblackhole=False
+            extensions=None,
+            outputsubfolder="foo",
+            numberofrules=5,
+            sourcesdata="blackhole",
+            nounifiedblackhole=False,
         )
         update_readme_data(self.readme_file, **kwargs)
 
@@ -1243,7 +1272,12 @@ class TestUpdateReadmeData(BaseMockDir):
             sep = self.sep
 
         expected = {
-            "base": {"location": "foo" + sep, 'no_unified_blackhole': False, "sourcesdata": "blackhole", "entries": 5},
+            "base": {
+                "location": "foo" + sep,
+                "no_unified_blackhole": False,
+                "sourcesdata": "blackhole",
+                "entries": 5,
+            },
             "foo": "bar",
         }
 
@@ -1256,7 +1290,11 @@ class TestUpdateReadmeData(BaseMockDir):
             json.dump({"base": "soprano"}, f)
 
         kwargs = dict(
-            extensions=None, outputsubfolder="foo", numberofrules=5, sourcesdata="blackhole", nounifiedblackhole=False
+            extensions=None,
+            outputsubfolder="foo",
+            numberofrules=5,
+            sourcesdata="blackhole",
+            nounifiedblackhole=False,
         )
         update_readme_data(self.readme_file, **kwargs)
 
@@ -1266,7 +1304,12 @@ class TestUpdateReadmeData(BaseMockDir):
             sep = self.sep
 
         expected = {
-            "base": {"location": "foo" + sep, 'no_unified_blackhole': False, "sourcesdata": "blackhole", "entries": 5},
+            "base": {
+                "location": "foo" + sep,
+                "no_unified_blackhole": False,
+                "sourcesdata": "blackhole",
+                "entries": 5,
+            },
         }
 
         with open(self.readme_file, "r") as f:
@@ -1292,7 +1335,12 @@ class TestUpdateReadmeData(BaseMockDir):
             sep = self.sep
 
         expected = {
-            "com-org": {"location": "foo" + sep, 'no_unified_blackhole': False, "sourcesdata": "blackhole", "entries": 5}
+            "com-org": {
+                "location": "foo" + sep,
+                "no_unified_blackhole": False,
+                "sourcesdata": "blackhole",
+                "entries": 5,
+            }
         }
 
         with open(self.readme_file, "r") as f:
@@ -1318,7 +1366,12 @@ class TestUpdateReadmeData(BaseMockDir):
             sep = self.sep
 
         expected = {
-            "com-org-only": {"location": "foo" + sep, 'no_unified_blackhole': True, "sourcesdata": "blackhole", "entries": 5}
+            "com-org-only": {
+                "location": "foo" + sep,
+                "no_unified_blackhole": True,
+                "sourcesdata": "blackhole",
+                "entries": 5,
+            }
         }
 
         with open(self.readme_file, "r") as f:
@@ -1328,7 +1381,9 @@ class TestUpdateReadmeData(BaseMockDir):
 
 class TestMoveBlackholeFile(BaseStdout):
     @mock.patch("os.path.abspath", side_effect=lambda f: f)
-    def test_move_blackhole_no_name(self, _):  # TODO: Create test which tries to move actual file
+    def test_move_blackhole_no_name(
+        self, _
+    ):  # TODO: Create test which tries to move actual file
         with self.mock_property("platform.system") as obj:
             obj.return_value = "foo"
 
@@ -1354,7 +1409,9 @@ class TestMoveBlackholeFile(BaseStdout):
 
     @mock.patch("os.path.abspath", side_effect=lambda f: f)
     @mock.patch("subprocess.call", return_value=0)
-    def test_move_blackhole_posix(self, *_):  # TODO: create test which tries to move an actual file
+    def test_move_blackhole_posix(
+        self, *_
+    ):  # TODO: create test which tries to move an actual file
         with self.mock_property("platform.system") as obj:
             obj.return_value = "Linux"
 
@@ -1663,9 +1720,7 @@ class DomainToIDNA(Base):
         # Test with multiple tabulations as separator of domain and space and
         # tabulation as separator or comments.
         for i, domain in enumerate(self.domains):
-            data = (b"0.0.0.0\t\t\t" + domain + b" \t # Hello World").decode(
-                "utf-8"
-            )
+            data = (b"0.0.0.0\t\t\t" + domain + b" \t # Hello World").decode("utf-8")
             expected = "0.0.0.0\t\t\t" + self.expected_domains[i] + " \t # Hello World"
 
             actual = domain_to_idna(data)
@@ -1749,7 +1804,7 @@ class TestWriteData(Base):
     def test_write_unicode(self):
         f = BytesIO()
 
-        data = u"foo"
+        data = "foo"
         write_data(f, data)
 
         expected = b"foo"
@@ -1785,7 +1840,9 @@ class TestQueryYesOrNo(BaseStdout):
 
             self.assertEqual(actual, expected)
 
-    @mock.patch("updateBlackholeFile.input", side_effect=["no", "NO", "N", "n", "No", "nO"])
+    @mock.patch(
+        "updateBlackholeFile.input", side_effect=["no", "NO", "N", "n", "No", "nO"]
+    )
     def test_valid_no(self, _):
         self.assertFalse(query_yes_no("?", None))
 
@@ -1949,7 +2006,7 @@ class TestPathJoinRobust(Base):
         actual = path_join_robust("path1")
         self.assertEqual(actual, expected)
 
-        actual = path_join_robust(u"path1")
+        actual = path_join_robust("path1")
         self.assertEqual(actual, expected)
 
     def test_join(self):
@@ -1962,7 +2019,7 @@ class TestPathJoinRobust(Base):
 
     def test_join_unicode(self):
         for i in range(1, 4):
-            paths = [u"pathNew"] * i
+            paths = ["pathNew"] * i
             expected = "path1" + (self.sep + "pathNew") * i
             actual = path_join_robust("path1", *paths)
 
