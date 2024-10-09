@@ -1,24 +1,24 @@
 **Take Note!**
 
 With the exception of issues and PRs regarding changes to
-`blackhole/data/boss-net/blackhole`, all other issues regarding the content of the
+`blackhole/data/khulnasoft/blackhole`, all other issues regarding the content of the
 produced blackhole files should be made with the appropriate data source that
 contributed the content in question. The contact information for all of the data
 sources can be found in the `blackhole/data/` directory.
 
 ---
 
-![Logo](https://raw.githubusercontent.com/boss-net/blackhole/master/.github/logo.png)
+![Logo](https://raw.githubusercontent.com/khulnasoft/blackhole/master/.github/logo.png)
 
-[![latest release](https://img.shields.io/github/release/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/releases)
-[![license](https://img.shields.io/github/license/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/blob/master/license.txt)
-[![repo size](https://img.shields.io/github/repo-size/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole)
-[![contributors](https://img.shields.io/github/contributors/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/graphs/contributors)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/boss-net/blackhole/ci.yml?branch=master)](https://github.com/boss-net/blackhole/actions/workflows/ci.yml?query=branch%3Amaster)
+[![latest release](https://img.shields.io/github/release/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/releases)
+[![license](https://img.shields.io/github/license/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/blob/master/license.txt)
+[![repo size](https://img.shields.io/github/repo-size/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole)
+[![contributors](https://img.shields.io/github/contributors/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/graphs/contributors)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/khulnasoft/blackhole/ci.yml?branch=master)](https://github.com/khulnasoft/blackhole/actions/workflows/ci.yml?query=branch%3Amaster)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
-[![commits since last release](https://img.shields.io/github/commits-since/boss-net/blackhole/latest.svg)](https://github.com/boss-net/blackhole/commits/master)
-[![last commit](https://img.shields.io/github/last-commit/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/commits/master)
-[![commit activity](https://img.shields.io/github/commit-activity/y/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/commits/master)
+[![commits since last release](https://img.shields.io/github/commits-since/khulnasoft/blackhole/latest.svg)](https://github.com/khulnasoft/blackhole/commits/master)
+[![last commit](https://img.shields.io/github/last-commit/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/commits/master)
+[![commit activity](https://img.shields.io/github/commit-activity/y/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/commits/master)
 
 # Unified blackhole file with porn extensions
 
@@ -28,56 +28,60 @@ files are provided.
 
 **Therefore this repository is a blackhole file aggregator.**
 
-![Aggregator](https://raw.githubusercontent.com/boss-net/blackhole/master/aggregator.png)
+![Aggregator](https://raw.githubusercontent.com/khulnasoft/blackhole/master/aggregator.png)
 
 - Last updated: **October 09 2024**.
 - Here's the
-  [raw blackhole file Unified blackhole file with porn extensions](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/porn/blackhole)
+  [raw blackhole file Unified blackhole file with porn extensions](https://raw.githubusercontent.com/khulnasoft/blackhole/master/alternates/porn/blackhole)
   containing 177,854 entries.
+
+![Size history](stats.png)
 
 ## List of all blackhole file variants
 
 This repository offers
-[31 different host file variants](https://github.com/boss-net/blackhole/tree/master/alternates),
+[31 different host file variants](https://github.com/khulnasoft/blackhole/tree/master/alternates),
 in addition to the base variant, with and without the unified blackhole included.
 
 The **Non GitHub mirror** is the link to use for some blackhole file managers like
 [Blackholeman for Windows](https://www.abelhadigital.com/blackholeman/) that don't work
 with GitHub download links.
 
-| Host file recipe                                            |                                                       Readme                                                        |                                                        Raw blackhole                                                        | Unique domains |                                          Non GitHub mirror                                          |
-| ----------------------------------------------------------- | :-----------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: | :------------: | :-------------------------------------------------------------------------------------------------: |
-| Unified blackhole = **(adware + malware)**                  |                        [Readme](https://github.com/boss-net/blackhole/blob/master/readme.md)                        |                        [link](https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole)                        |    115,497     |                        [link](http://boss-net.github.io/blackhole/blackhole)                        |
-| Unified blackhole **+ fakenews**                            |              [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews/readme.md)              |              [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews/blackhole)              |    117,691     |              [link](http://boss-net.github.io/blackhole/alternates/fakenews/blackhole)              |
-| **fakenews**                                                |           [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-only/readme.md)            |           [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-only/blackhole)            |     2,194      |           [link](http://boss-net.github.io/blackhole/alternates/fakenews-only/blackhole)            |
-| Unified blackhole **+ gambling**                            |              [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling/readme.md)              |              [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling/blackhole)              |    123,962     |              [link](http://boss-net.github.io/blackhole/alternates/gambling/blackhole)              |
-| **gambling**                                                |           [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling-only/readme.md)            |           [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-only/blackhole)            |     8,475      |           [link](http://boss-net.github.io/blackhole/alternates/gambling-only/blackhole)            |
-| Unified blackhole **+ porn**                                |                [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/porn/readme.md)                |                [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/porn/blackhole)                |    177,854     |                [link](http://boss-net.github.io/blackhole/alternates/porn/blackhole)                |
-| **porn**                                                    |             [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/porn-only/readme.md)              |             [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/porn-only/blackhole)              |     62,933     |             [link](http://boss-net.github.io/blackhole/alternates/porn-only/blackhole)              |
-| Unified blackhole **+ social**                              |               [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/social/readme.md)               |               [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/social/blackhole)               |    118,690     |               [link](http://boss-net.github.io/blackhole/alternates/social/blackhole)               |
-| **social**                                                  |            [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/social-only/readme.md)             |            [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/social-only/blackhole)             |     3,222      |            [link](http://boss-net.github.io/blackhole/alternates/social-only/blackhole)             |
-| Unified blackhole **+ fakenews + gambling**                 |         [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-gambling/readme.md)          |         [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling/blackhole)          |    126,156     |         [link](http://boss-net.github.io/blackhole/alternates/fakenews-gambling/blackhole)          |
-| **fakenews + gambling**                                     |       [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-gambling-only/readme.md)       |       [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-only/blackhole)       |     10,669     |       [link](http://boss-net.github.io/blackhole/alternates/fakenews-gambling-only/blackhole)       |
-| Unified blackhole **+ fakenews + porn**                     |           [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-porn/readme.md)            |           [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-porn/blackhole)            |    180,048     |           [link](http://boss-net.github.io/blackhole/alternates/fakenews-porn/blackhole)            |
-| **fakenews + porn**                                         |         [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-porn-only/readme.md)         |         [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-porn-only/blackhole)         |     65,127     |         [link](http://boss-net.github.io/blackhole/alternates/fakenews-porn-only/blackhole)         |
-| Unified blackhole **+ fakenews + social**                   |          [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-social/readme.md)           |          [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-social/blackhole)           |    120,884     |          [link](http://boss-net.github.io/blackhole/alternates/fakenews-social/blackhole)           |
-| **fakenews + social**                                       |        [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-social-only/readme.md)        |        [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-social-only/blackhole)        |     5,416      |        [link](http://boss-net.github.io/blackhole/alternates/fakenews-social-only/blackhole)        |
-| Unified blackhole **+ gambling + porn**                     |           [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling-porn/readme.md)            |           [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-porn/blackhole)            |    186,319     |           [link](http://boss-net.github.io/blackhole/alternates/gambling-porn/blackhole)            |
-| **gambling + porn**                                         |         [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling-porn-only/readme.md)         |         [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-porn-only/blackhole)         |     71,408     |         [link](http://boss-net.github.io/blackhole/alternates/gambling-porn-only/blackhole)         |
-| Unified blackhole **+ gambling + social**                   |          [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling-social/readme.md)           |          [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-social/blackhole)           |    127,155     |          [link](http://boss-net.github.io/blackhole/alternates/gambling-social/blackhole)           |
-| **gambling + social**                                       |        [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling-social-only/readme.md)        |        [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-social-only/blackhole)        |     11,697     |        [link](http://boss-net.github.io/blackhole/alternates/gambling-social-only/blackhole)        |
-| Unified blackhole **+ porn + social**                       |            [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/porn-social/readme.md)             |            [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/porn-social/blackhole)             |    181,046     |            [link](http://boss-net.github.io/blackhole/alternates/porn-social/blackhole)             |
-| **porn + social**                                           |          [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/porn-social-only/readme.md)          |          [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/porn-social-only/blackhole)          |     66,154     |          [link](http://boss-net.github.io/blackhole/alternates/porn-social-only/blackhole)          |
-| Unified blackhole **+ fakenews + gambling + porn**          |       [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-gambling-porn/readme.md)       |       [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-porn/blackhole)       |    188,513     |       [link](http://boss-net.github.io/blackhole/alternates/fakenews-gambling-porn/blackhole)       |
-| **fakenews + gambling + porn**                              |    [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-gambling-porn-only/readme.md)     |    [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-porn-only/blackhole)     |     73,602     |    [link](http://boss-net.github.io/blackhole/alternates/fakenews-gambling-porn-only/blackhole)     |
-| Unified blackhole **+ fakenews + gambling + social**        |      [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-gambling-social/readme.md)      |      [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-social/blackhole)      |    129,349     |      [link](http://boss-net.github.io/blackhole/alternates/fakenews-gambling-social/blackhole)      |
-| **fakenews + gambling + social**                            |   [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-gambling-social-only/readme.md)    |   [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-social-only/blackhole)    |     13,891     |   [link](http://boss-net.github.io/blackhole/alternates/fakenews-gambling-social-only/blackhole)    |
-| Unified blackhole **+ fakenews + porn + social**            |        [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-porn-social/readme.md)        |        [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-porn-social/blackhole)        |    183,240     |        [link](http://boss-net.github.io/blackhole/alternates/fakenews-porn-social/blackhole)        |
-| **fakenews + porn + social**                                |     [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-porn-social-only/readme.md)      |     [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-porn-social-only/blackhole)      |     68,348     |     [link](http://boss-net.github.io/blackhole/alternates/fakenews-porn-social-only/blackhole)      |
-| Unified blackhole **+ gambling + porn + social**            |        [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling-porn-social/readme.md)        |        [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-porn-social/blackhole)        |    189,511     |        [link](http://boss-net.github.io/blackhole/alternates/gambling-porn-social/blackhole)        |
-| **gambling + porn + social**                                |     [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/gambling-porn-social-only/readme.md)      |     [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/gambling-porn-social-only/blackhole)      |     74,629     |     [link](http://boss-net.github.io/blackhole/alternates/gambling-porn-social-only/blackhole)      |
-| Unified blackhole **+ fakenews + gambling + porn + social** |   [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-gambling-porn-social/readme.md)    |   [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-porn-social/blackhole)    |    191,705     |   [link](http://boss-net.github.io/blackhole/alternates/fakenews-gambling-porn-social/blackhole)    |
-| **fakenews + gambling + porn + social**                     | [Readme](https://github.com/boss-net/blackhole/blob/master/alternates/fakenews-gambling-porn-social-only/readme.md) | [link](https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-porn-social-only/blackhole) |     76,823     | [link](http://boss-net.github.io/blackhole/alternates/fakenews-gambling-porn-social-only/blackhole) |
+| Host file recipe | Readme | Raw blackhole | Unique domains | Non GitHub mirror |
+| ---------------- | :----: | :-----------: | :------------: | :---------------: |
+
+Unified blackhole = **(adware + malware)** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/blackhole) | 115,497 | [link](http://sbc.io/blackhole/blackhole)
+Unified blackhole **+ fakenews** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews/blackhole) | 117,691 | [link](http://sbc.io/blackhole/alternates/fakenews/blackhole)
+**fakenews** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-only/blackhole) | 2,194 | [link](http://sbc.io/blackhole/alternates/fakenews-only/blackhole)
+Unified blackhole **+ gambling** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/gambling/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/gambling/blackhole) | 123,962 | [link](http://sbc.io/blackhole/alternates/gambling/blackhole)
+**gambling** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/gambling-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/gambling-only/blackhole) | 8,475 | [link](http://sbc.io/blackhole/alternates/gambling-only/blackhole)
+Unified blackhole **+ porn** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/porn/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/porn/blackhole) | 177,854 | [link](http://sbc.io/blackhole/alternates/porn/blackhole)
+**porn** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/porn-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/porn-only/blackhole) | 62,933 | [link](http://sbc.io/blackhole/alternates/porn-only/blackhole)
+Unified blackhole **+ social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/social/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/social/blackhole) | 118,690 | [link](http://sbc.io/blackhole/alternates/social/blackhole)
+**social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/social-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/social-only/blackhole) | 3,222 | [link](http://sbc.io/blackhole/alternates/social-only/blackhole)
+Unified blackhole **+ fakenews + gambling** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-gambling/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-gambling/blackhole) | 126,156 | [link](http://sbc.io/blackhole/alternates/fakenews-gambling/blackhole)
+**fakenews + gambling** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-gambling-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-gambling-only/blackhole) | 10,669 | [link](http://sbc.io/blackhole/alternates/fakenews-gambling-only/blackhole)
+Unified blackhole **+ fakenews + porn** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-porn/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-porn/blackhole) | 180,048 | [link](http://sbc.io/blackhole/alternates/fakenews-porn/blackhole)
+**fakenews + porn** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-porn-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-porn-only/blackhole) | 65,127 | [link](http://sbc.io/blackhole/alternates/fakenews-porn-only/blackhole)
+Unified blackhole **+ fakenews + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-social/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-social/blackhole) | 120,884 | [link](http://sbc.io/blackhole/alternates/fakenews-social/blackhole)
+**fakenews + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-social-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-social-only/blackhole) | 5,416 | [link](http://sbc.io/blackhole/alternates/fakenews-social-only/blackhole)
+Unified blackhole **+ gambling + porn** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/gambling-porn/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/gambling-porn/blackhole) | 186,319 | [link](http://sbc.io/blackhole/alternates/gambling-porn/blackhole)
+**gambling + porn** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/gambling-porn-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/gambling-porn-only/blackhole) | 71,408 | [link](http://sbc.io/blackhole/alternates/gambling-porn-only/blackhole)
+Unified blackhole **+ gambling + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/gambling-social/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/gambling-social/blackhole) | 127,155 | [link](http://sbc.io/blackhole/alternates/gambling-social/blackhole)
+**gambling + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/gambling-social-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/gambling-social-only/blackhole) | 11,697 | [link](http://sbc.io/blackhole/alternates/gambling-social-only/blackhole)
+Unified blackhole **+ porn + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/porn-social/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/porn-social/blackhole) | 181,046 | [link](http://sbc.io/blackhole/alternates/porn-social/blackhole)
+**porn + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/porn-social-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/porn-social-only/blackhole) | 66,154 | [link](http://sbc.io/blackhole/alternates/porn-social-only/blackhole)
+Unified blackhole **+ fakenews + gambling + porn** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-gambling-porn/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-gambling-porn/blackhole) | 188,513 | [link](http://sbc.io/blackhole/alternates/fakenews-gambling-porn/blackhole)
+**fakenews + gambling + porn** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-gambling-porn-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-gambling-porn-only/blackhole) | 73,602 | [link](http://sbc.io/blackhole/alternates/fakenews-gambling-porn-only/blackhole)
+Unified blackhole **+ fakenews + gambling + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-gambling-social/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-gambling-social/blackhole) | 129,349 | [link](http://sbc.io/blackhole/alternates/fakenews-gambling-social/blackhole)
+**fakenews + gambling + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-gambling-social-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-gambling-social-only/blackhole) | 13,891 | [link](http://sbc.io/blackhole/alternates/fakenews-gambling-social-only/blackhole)
+Unified blackhole **+ fakenews + porn + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-porn-social/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-porn-social/blackhole) | 183,240 | [link](http://sbc.io/blackhole/alternates/fakenews-porn-social/blackhole)
+**fakenews + porn + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-porn-social-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-porn-social-only/blackhole) | 68,348 | [link](http://sbc.io/blackhole/alternates/fakenews-porn-social-only/blackhole)
+Unified blackhole **+ gambling + porn + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/gambling-porn-social/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/gambling-porn-social/blackhole) | 189,511 | [link](http://sbc.io/blackhole/alternates/gambling-porn-social/blackhole)
+**gambling + porn + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/gambling-porn-social-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/gambling-porn-social-only/blackhole) | 74,629 | [link](http://sbc.io/blackhole/alternates/gambling-porn-social-only/blackhole)
+Unified blackhole **+ fakenews + gambling + porn + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-gambling-porn-social/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-gambling-porn-social/blackhole) | 191,705 | [link](http://sbc.io/blackhole/alternates/fakenews-gambling-porn-social/blackhole)
+**fakenews + gambling + porn + social** | [Readme](https://github.com/KhulnaSoft/blackhole/blob/master/alternates/fakenews-gambling-porn-social-only/readme.md) | [link](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/alternates/fakenews-gambling-porn-social-only/blackhole) | 76,823 | [link](http://sbc.io/blackhole/alternates/fakenews-gambling-porn-social-only/blackhole)
+
 
 **Expectation**: These unified blackhole files should serve all devices, regardless
 of OS.
@@ -87,32 +91,34 @@ of OS.
 Updated `blackhole` files from the following locations are always unified and
 included:
 
-| Host file source                                              |                                       Home page                                       |                                              Raw blackhole                                              |             License             |                               Issues                               | Description                                                                                                                                                  |
-| ------------------------------------------------------------- | :-----------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: | :-----------------------------: | :----------------------------------------------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| AdAway                                                        |                              [link](https://adaway.org/)                              |            [raw](https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt)            |            CC BY 3.0            |    [issues](https://github.com/AdAway/adaway.github.io/issues)     | AdAway is an open source ad blocker for Android using the hosts file.                                                                                        |
-| add.2o7Net                                                    |                   [link](https://github.com/FadeMind/hosts.extras)                    |         [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts)          |               MIT               |     [issues](https://github.com/FadeMind/hosts.extras/issues)      | 2o7Net tracking sites based on [hostsfile.org](https://www.hostsfile.org/hosts.html) content.                                                                |
-| add.Dead                                                      |                   [link](https://github.com/FadeMind/hosts.extras)                    |          [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts)           |               MIT               |     [issues](https://github.com/FadeMind/hosts.extras/issues)      | Dead sites based on [hostsfile.org](https://www.hostsfile.org/hosts.html) content.                                                                           |
-| add.Risk                                                      |                   [link](https://github.com/FadeMind/hosts.extras)                    |          [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts)           |               MIT               |     [issues](https://github.com/FadeMind/hosts.extras/issues)      | Risk content sites based on [hostsfile.org](https://www.hostsfile.org/hosts.html) content.                                                                   |
-| add.Spam                                                      |                   [link](https://github.com/FadeMind/hosts.extras)                    |          [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts)           |               MIT               |     [issues](https://github.com/FadeMind/hosts.extras/issues)      | Spam sites based on [hostsfile.org](https://www.hostsfile.org/hosts.html) content.                                                                           |
-| Mitchell Krog's - Badd Boyz Hosts                             |               [link](https://github.com/mitchellkrogza/Badd-Boyz-Hosts)               |          [raw](https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts)           |               MIT               | [issues](https://github.com/mitchellkrogza/Badd-Boyz-Hosts/issues) | Sketchy domains and Bad Referrers from my Nginx and Apache Bad Bot and Spam Referrer Blockers                                                                |
-| hostsVN                                                       |                     [link](https://github.com/bigdargon/hostsVN)                      |            [raw](https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hosts-VN)            |               MIT               |       [issues](https://github.com/bigdargon/hostsVN/issues)        | Hosts block ads of Vietnamese                                                                                                                                |
-| KADhosts                                                      |                       [link](https://kadantiscam.netlify.app/)                        |         [raw](https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt)         |          CC BY-SA 4.0           |   [issues](https://github.com/PolishFiltersTeam/KADhosts/issues)   | Fraud/adware/scam websites.                                                                                                                                  |
-| MetaMask eth-phishing-detect                                  |                [link](https://github.com/MetaMask/eth-phishing-detect)                |       [raw](https://raw.githubusercontent.com/MetaMask/eth-phishing-detect/master/src/hosts.txt)        | DON'T BE A DICK PUBLIC LICENSE  |  [issues](https://github.com/MetaMask/eth-phishing-detect/issues)  | Phishing domains targeting Ethereum users.                                                                                                                   |
-| minecraft-hosts                                               |               [link](https://github.com/jamiemansfield/minecraft-hosts)               |    [raw](https://raw.githubusercontent.com/jamiemansfield/minecraft-hosts/master/lists/tracking.txt)    |             CC0-1.0             | [issues](https://github.com/jamiemansfield/minecraft-hosts/issues) | Minecraft related tracker hosts                                                                                                                              |
-| MVPS hosts file                                               |                         [link](https://winhelp2002.mvps.org/)                         |                              [raw](https://winhelp2002.mvps.org/hosts.txt)                              |         CC BY-NC-SA 4.0         |               [issues](mailto:winhelp2002@gmail.com)               | The purpose of this site is to provide the user with a high quality custom HOSTS file.                                                                       |
-| shady-hosts                                                   |                 [link](https://github.com/shreyasminocha/shady-hosts)                 |             [raw](https://raw.githubusercontent.com/shreyasminocha/shady-hosts/main/hosts)              |             CC0-1.0             |   [issues](https://github.com/shreyasminocha/shady-hosts/issues)   | Analytics, ad, and activity monitoring hosts                                                                                                                 |
-| Dan Pollock – [someonewhocares](https://someonewhocares.org/) |                      [link](https://someonewhocares.org/hosts/)                       |                           [raw](https://someonewhocares.org/hosts/zero/hosts)                           | non-commercial with attribution |             [issues](mailto:hosts@someonewhocares.org)             | How to make the internet not suck (as much).                                                                                                                 |
-| KhulnaSoft's ad-hoc list                                      | [link](https://github.com/KhulnaSoft/blackhole/blob/master/data/KhulnaSoft/blackhole) |     [raw](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/data/KhulnaSoft/blackhole)      |               MIT               |      [issues](https://github.com/KhulnaSoft/blackhole/issues)      | Additional sketch domains as I come across them.                                                                                                             |
-| Tiuxo hostlist - ads                                          |                        [link](https://github.com/tiuxo/hosts)                         |                     [raw](https://raw.githubusercontent.com/tiuxo/hosts/master/ads)                     |            CC BY 4.0            |          [issues](https://github.com/tiuxo/hosts/issues)           | Categorized hosts files for DNS based content blocking                                                                                                       |
-| UncheckyAds                                                   |                   [link](https://github.com/FadeMind/hosts.extras)                    |         [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts)         |               MIT               |     [issues](https://github.com/FadeMind/hosts.extras/issues)      | Windows installers ads sources sites based on https://unchecky.com/ content.                                                                                 |
-| URLHaus                                                       |                           [link](https://urlhaus.abuse.ch/)                           |                           [raw](https://urlhaus.abuse.ch/downloads/hostfile/)                           |               CC0               |                [issues](mailto:contactme@abuse.ch)                 | A project from [abuse.ch](https://abuse.ch/) with the goal of sharing malicious URLs.                                                                        |
-| yoyo.org                                                      |                        [link](https://pgl.yoyo.org/adservers/)                        | [raw](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0)  |                                 |                   [issues](mailto:pgl@yoyo.org)                    | Blocking with ad server and tracking server hostnames.                                                                                                       |
-| BigDargon's adult domain blocking hosts file                  |                     [link](https://github.com/bigdargon/hostsVN/)                     |       [raw](https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/adult/hosts-VN)       |               MIT               |       [issues](https://github.com/bigdargon/hostsVN/issues)        | Extension from the project hostsVN                                                                                                                           |
-| brijrajparmar27 - pornography                                 |                [link](https://github.com/brijrajparmar27/host-sources)                |         [raw](https://raw.githubusercontent.com/brijrajparmar27/host-sources/master/Porn/hosts)         |            CC BY 4.0            |  [issues](https://github.com/brijrajparmar27/host-sources/issues)  | hosts files for DNS based content blocking                                                                                                                   |
-| pornhosts -- a consolidated anti porn hosts file              |                   [link](https://github.com/Clefspeare13/pornhosts)                   | [raw](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/extensions/porn/clefspeare13/hosts) |               MIT               |     [issues](https://github.com/Clefspeare13/pornhosts/issues)     | This is an endeavour to find all porn domains and compile them into a single hosts to allow for easy blocking of porn on your local machine or on a network. |
-| Sinfonietta's porn blocking hosts file                        |                   [link](https://github.com/Sinfonietta/hostfiles)                    |         [raw](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts)         |               MIT               |     [issues](https://github.com/Sinfonietta/hostfiles/issues)      | A collection of category-specific host files.                                                                                                                |
-| Sinfonietta's snuff-site blocking hosts file                  |                   [link](https://github.com/Sinfonietta/hostfiles)                    |            [raw](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts)            |               MIT               |     [issues](https://github.com/Sinfonietta/hostfiles/issues)      | A collection of category-specific host files.                                                                                                                |
-| Tiuxo hostlist - pornography                                  |                        [link](https://github.com/tiuxo/hosts)                         |                    [raw](https://raw.githubusercontent.com/tiuxo/hosts/master/porn)                     |            CC BY 4.0            |          [issues](https://github.com/tiuxo/hosts/issues)           | Categorized hosts files for DNS based content blocking                                                                                                       |
+| Host file source | Home page | Raw blackhole | License | Issues | Description |
+| ---------------- | :-------: | :-----------: | :-----: | :----: | ----------- |
+
+AdAway |[link](https://adaway.org/) | [raw](https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt) | CC BY 3.0 | [issues](https://github.com/AdAway/adaway.github.io/issues)| AdAway is an open source ad blocker for Android using the hosts file.
+add.2o7Net |[link](https://github.com/FadeMind/hosts.extras) | [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts) | MIT | [issues](https://github.com/FadeMind/hosts.extras/issues)| 2o7Net tracking sites based on [hostsfile.org](https://www.hostsfile.org/hosts.html) content.
+add.Dead |[link](https://github.com/FadeMind/hosts.extras) | [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Dead/hosts) | MIT | [issues](https://github.com/FadeMind/hosts.extras/issues)| Dead sites based on [hostsfile.org](https://www.hostsfile.org/hosts.html) content.
+add.Risk |[link](https://github.com/FadeMind/hosts.extras) | [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts) | MIT | [issues](https://github.com/FadeMind/hosts.extras/issues)| Risk content sites based on [hostsfile.org](https://www.hostsfile.org/hosts.html) content.
+add.Spam |[link](https://github.com/FadeMind/hosts.extras) | [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Spam/hosts) | MIT | [issues](https://github.com/FadeMind/hosts.extras/issues)| Spam sites based on [hostsfile.org](https://www.hostsfile.org/hosts.html) content.
+Mitchell Krog's - Badd Boyz Hosts |[link](https://github.com/mitchellkrogza/Badd-Boyz-Hosts) | [raw](https://raw.githubusercontent.com/mitchellkrogza/Badd-Boyz-Hosts/master/hosts) | MIT | [issues](https://github.com/mitchellkrogza/Badd-Boyz-Hosts/issues)| Sketchy domains and Bad Referrers from my Nginx and Apache Bad Bot and Spam Referrer Blockers
+hostsVN |[link](https://github.com/bigdargon/hostsVN) | [raw](https://raw.githubusercontent.com/bigdargon/hostsVN/master/option/hosts-VN) | MIT | [issues](https://github.com/bigdargon/hostsVN/issues)| Hosts block ads of Vietnamese
+KADhosts |[link](https://kadantiscam.netlify.app/) | [raw](https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt) | CC BY-SA 4.0 | [issues](https://github.com/PolishFiltersTeam/KADhosts/issues)| Fraud/adware/scam websites.
+MetaMask eth-phishing-detect |[link](https://github.com/MetaMask/eth-phishing-detect) | [raw](https://raw.githubusercontent.com/MetaMask/eth-phishing-detect/master/src/hosts.txt) | DON'T BE A DICK PUBLIC LICENSE | [issues](https://github.com/MetaMask/eth-phishing-detect/issues)| Phishing domains targeting Ethereum users.
+minecraft-hosts |[link](https://github.com/jamiemansfield/minecraft-hosts) | [raw](https://raw.githubusercontent.com/jamiemansfield/minecraft-hosts/master/lists/tracking.txt) | CC0-1.0 | [issues](https://github.com/jamiemansfield/minecraft-hosts/issues)| Minecraft related tracker hosts
+MVPS hosts file |[link](https://winhelp2002.mvps.org/) | [raw](https://winhelp2002.mvps.org/hosts.txt) | CC BY-NC-SA 4.0 | [issues](mailto:winhelp2002@gmail.com)| The purpose of this site is to provide the user with a high quality custom HOSTS file.
+shady-hosts |[link](https://github.com/shreyasminocha/shady-hosts) | [raw](https://raw.githubusercontent.com/shreyasminocha/shady-hosts/main/hosts) | CC0-1.0 | [issues](https://github.com/shreyasminocha/shady-hosts/issues)| Analytics, ad, and activity monitoring hosts
+Dan Pollock – [someonewhocares](https://someonewhocares.org/) |[link](https://someonewhocares.org/hosts/) | [raw](https://someonewhocares.org/hosts/zero/hosts) | non-commercial with attribution | [issues](mailto:hosts@someonewhocares.org)| How to make the internet not suck (as much).
+KhulnaSoft's ad-hoc list |[link](https://github.com/KhulnaSoft/blackhole/blob/master/data/KhulnaSoft/blackhole) | [raw](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/data/KhulnaSoft/blackhole) | MIT | [issues](https://github.com/KhulnaSoft/blackhole/issues)| Additional sketch domains as I come across them.
+Tiuxo hostlist - ads |[link](https://github.com/tiuxo/hosts) | [raw](https://raw.githubusercontent.com/tiuxo/hosts/master/ads) | CC BY 4.0 | [issues](https://github.com/tiuxo/hosts/issues)| Categorized hosts files for DNS based content blocking
+UncheckyAds |[link](https://github.com/FadeMind/hosts.extras) | [raw](https://raw.githubusercontent.com/FadeMind/hosts.extras/master/UncheckyAds/hosts) | MIT | [issues](https://github.com/FadeMind/hosts.extras/issues)| Windows installers ads sources sites based on https://unchecky.com/ content.
+URLHaus |[link](https://urlhaus.abuse.ch/) | [raw](https://urlhaus.abuse.ch/downloads/hostfile/) | CC0 | [issues](mailto:contactme@abuse.ch)| A project from [abuse.ch](https://abuse.ch/) with the goal of sharing malicious URLs.
+yoyo.org |[link](https://pgl.yoyo.org/adservers/) | [raw](https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0) |  | [issues](mailto:pgl@yoyo.org)| Blocking with ad server and tracking server hostnames.
+BigDargon's adult domain blocking hosts file |[link](https://github.com/bigdargon/hostsVN/) | [raw](https://raw.githubusercontent.com/bigdargon/hostsVN/master/extensions/adult/hosts-VN) | MIT | [issues](https://github.com/bigdargon/hostsVN/issues)| Extension from the project hostsVN
+brijrajparmar27 - pornography |[link](https://github.com/brijrajparmar27/host-sources) | [raw](https://raw.githubusercontent.com/brijrajparmar27/host-sources/master/Porn/hosts) | CC BY 4.0 | [issues](https://github.com/brijrajparmar27/host-sources/issues)| hosts files for DNS based content blocking
+pornhosts -- a consolidated anti porn hosts file |[link](https://github.com/Clefspeare13/pornhosts) | [raw](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/extensions/porn/clefspeare13/hosts) | MIT | [issues](https://github.com/Clefspeare13/pornhosts/issues)| This is an endeavour to find all porn domains and compile them into a single hosts to allow for easy blocking of porn on your local machine or on a network.
+Sinfonietta's porn blocking hosts file |[link](https://github.com/Sinfonietta/hostfiles) | [raw](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/pornography-hosts) | MIT | [issues](https://github.com/Sinfonietta/hostfiles/issues)| A collection of category-specific host files.
+Sinfonietta's snuff-site blocking hosts file |[link](https://github.com/Sinfonietta/hostfiles) | [raw](https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/snuff-hosts) | MIT | [issues](https://github.com/Sinfonietta/hostfiles/issues)| A collection of category-specific host files.
+Tiuxo hostlist - pornography |[link](https://github.com/tiuxo/hosts) | [raw](https://raw.githubusercontent.com/tiuxo/hosts/master/porn) | CC BY 4.0 | [issues](https://github.com/tiuxo/hosts/issues)| Categorized hosts files for DNS based content blocking
+
 
 ## Extensions
 
@@ -122,11 +128,11 @@ domains by category. Currently, we offer the following categories: `fakenews`,
 
 Extensions are optional, and can be combined in various ways with the base blackhole
 file. The combined products are stored in the
-[`alternates`](https://github.com/boss-net/blackhole/tree/master/alternates)
+[`alternates`](https://github.com/khulnasoft/blackhole/tree/master/alternates)
 folder.
 
 Data for extensions are stored in the
-[`extensions`](https://github.com/boss-net/blackhole/tree/master/extensions)
+[`extensions`](https://github.com/khulnasoft/blackhole/tree/master/extensions)
 folder. You manage extensions by curating this folder tree, where you will find
 the data for `fakenews`, `social`, `gambling`, and `porn` extension data that we
 maintain and provide for you.
@@ -146,13 +152,13 @@ command. Set extensions to your preference.
 
 ```sh
 docker run --pull always --rm -it -v /etc/blackhole:/etc/blackhole \
-ghcr.io/boss-net/blackhole:latest updateBlackholeFile.py --auto \
+ghcr.io/khulnasoft/blackhole:latest updateBlackholeFile.py --auto \
 --replace --extensions gambling porn
 ```
 
 If you want to add custom blackhole or a whitelist, create either or both files as
 per [the instructions](#how-do-i-control-which-sources-are-unified) and add the
-following arguments _before_ `ghcr.io/boss-net/blackhole:latest` depending on
+following arguments _before_ `ghcr.io/khulnasoft/blackhole:latest` depending on
 which you wish to use.
 
 ```sh
@@ -166,7 +172,7 @@ blackhole (for example, add it to a weekly cron job).
 ### Option 2: Generate your own container image
 
 We provide the
-[Dockerfile](https://github.com/boss-net/blackhole/blob/master/Dockerfile) used
+[Dockerfile](https://github.com/khulnasoft/blackhole/blob/master/Dockerfile) used
 by the previous step, which you can use to create a container image with
 everything you need. The container will contain Python 3 and all its dependency
 requirements, and a copy of the latest version of this repository.
@@ -333,14 +339,14 @@ ways to contribute them.
 
 The best way to get new domains included is to submit an issue to any of the
 data providers whose home pages are
-[listed here](https://github.com/boss-net/blackhole#sources-of-blackhole-data-unified-in-this-variant).
+[listed here](https://github.com/khulnasoft/blackhole#sources-of-blackhole-data-unified-in-this-variant).
 This is best because once you submit new domains, they will be curated and
 updated by the dedicated folks who maintain these sources.
 
 ### Option 2: Fork this repository, add your domains to KhulnaSoft's personal data file, and submit a pull request
 
 Fork this blackhole this repo and add your links to
-[https://github.com/boss-net/blackhole/blob/master/data/boss-net/blackhole](https://github.com/boss-net/blackhole/blob/master/data/boss-net/blackhole).
+[https://github.com/khulnasoft/blackhole/blob/master/data/khulnasoft/blackhole](https://github.com/khulnasoft/blackhole/blob/master/data/khulnasoft/blackhole).
 
 Then, submit a pull request.
 
@@ -351,7 +357,7 @@ falls on us. So this creates more work for us.
 
 If you're able to curate your own collection of sketchy domains, then curate
 your own blackhole list. Then signal the existence of your repo as
-[a new issue](https://github.com/boss-net/blackhole/issues) and we may include
+[a new issue](https://github.com/khulnasoft/blackhole/issues) and we may include
 your new repo into the collection of sources we pull whenever we create new
 versions.
 
@@ -420,7 +426,7 @@ To install blackhole file on your machine add the following into your
 ```nix
 {
   networking.extraBlackhole = let
-    blackholePath = https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole;
+    blackholePath = https://raw.githubusercontent.com/khulnasoft/blackhole/master/blackhole;
     blackholeFile = builtins.fetchurl blackholePath;
   in builtins.readFile "${blackholeFile}";
 }
@@ -437,7 +443,7 @@ like this:
 
 ```nix
 {
-  inputs.blackhole.url = github:boss-net/blackhole;
+  inputs.blackhole.url = github:khulnasoft/blackhole;
   outputs = { self, nixpkgs, blackhole }: {
     nixosConfigurations.my-hostname = {
       system = "<architecture>";
@@ -501,7 +507,7 @@ Windows 10 denies access to changing services via other tools except registry
 hacks. Use the `disable-dnscache-service-win.cmd` file to make proper changes to
 the Windows registry. You will need to reboot your device once that's done. See
 the
-[the comments within the `cmd` file](https://github.com/boss-net/blackhole/blob/master/disable-dnscache-service-win.bat)
+[the comments within the `cmd` file](https://github.com/khulnasoft/blackhole/blob/master/disable-dnscache-service-win.bat)
 for more details.
 
 ## Reloading blackhole file
@@ -569,11 +575,11 @@ sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder
 
 This repository uses [release-it](https://github.com/release-it/release-it), an
 excellent CLI release tool for GitHub repos and npm packages, to automate
-creating [releases](https://github.com/boss-net/blackhole/releases). This is why
+creating [releases](https://github.com/khulnasoft/blackhole/releases). This is why
 the
-[package.json](https://github.com/boss-net/blackhole/blob/master/package.json)
+[package.json](https://github.com/khulnasoft/blackhole/blob/master/package.json)
 and
-[.release-it.json](https://github.com/boss-net/blackhole/blob/master/.release-it.json)
+[.release-it.json](https://github.com/khulnasoft/blackhole/blob/master/.release-it.json)
 files are bundled.
 
 ## Goals of this unified blackhole file
@@ -616,7 +622,7 @@ devices under a variety of operating systems.
   to name a few.
 - [Host Minder](https://github.com/jeremehancock/hostminder#readme) is a simple
   GUI that allows you to easily update your /etc/blackhole file to one of four
-  consolidated blackhole files from boss-net/blackhole. It is provided as a deb
+  consolidated blackhole files from khulnasoft/blackhole. It is provided as a deb
   package and comes pre-installed on [UbuntuCE](https://ubuntuce.com/).
 - [Maza ad blocking](https://github.com/tanrax/maza-ad-blocking) is a bash
   script that automatically updates host file. You can also update a fresh copy.
@@ -673,15 +679,15 @@ devices under a variety of operating systems.
 ## Contribute
 
 Please read our
-[Contributing Guide](https://github.com/boss-net/blackhole/blob/master/contributing.md).
+[Contributing Guide](https://github.com/khulnasoft/blackhole/blob/master/contributing.md).
 Among other things, this explains how we organize files and folders in this
 repository.
 
 We are always interested in discovering well-curated sources of blackhole. If you
-find one, please open an [issue](https://github.com/boss-net/blackhole/issues) to
+find one, please open an [issue](https://github.com/khulnasoft/blackhole/issues) to
 draw our attention.
 
 Before you create or respond to any issue, please read our
-[code of conduct](https://github.com/boss-net/blackhole/blob/master/code_of_conduct.md).
+[code of conduct](https://github.com/khulnasoft/blackhole/blob/master/code_of_conduct.md).
 
 Logo by [@Tobaloidee](https://github.com/Tobaloidee) Thank you!.

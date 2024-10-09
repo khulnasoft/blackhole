@@ -155,7 +155,7 @@ class TestSortSources(Base):
         given = [
             "data/KADblackhole/update.json",
             "data/someonewhocares.org/update.json",
-            "data/boss-net/update.json",
+            "data/khulnasoft/update.json",
             "data/adaway.org/update.json",
             "data/URLHaus/update.json",
             "data/UncheckyAds/update.json",
@@ -180,7 +180,7 @@ class TestSortSources(Base):
         ]
 
         expected = [
-            "data/boss-net/update.json",
+            "data/khulnasoft/update.json",
             "data/adaway.org/update.json",
             "data/add.2o7Net/update.json",
             "data/add.Dead/update.json",
@@ -1017,7 +1017,7 @@ class TestWriteOpeningHeader(BaseMockDir):
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
-            "Project home page: https://github.com/boss-net/blackhole",
+            "Project home page: https://github.com/khulnasoft/blackhole",
         ):
             self.assertIn(expected, contents)
 
@@ -1050,7 +1050,7 @@ class TestWriteOpeningHeader(BaseMockDir):
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
-            "Project home page: https://github.com/boss-net/blackhole",
+            "Project home page: https://github.com/khulnasoft/blackhole",
         ):
             self.assertIn(expected, contents)
 
@@ -1083,7 +1083,7 @@ class TestWriteOpeningHeader(BaseMockDir):
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
-            "Project home page: https://github.com/boss-net/blackhole",
+            "Project home page: https://github.com/khulnasoft/blackhole",
         ):
             self.assertIn(expected, contents)
 
@@ -1112,7 +1112,7 @@ class TestWriteOpeningHeader(BaseMockDir):
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
-            "Project home page: https://github.com/boss-net/blackhole",
+            "Project home page: https://github.com/khulnasoft/blackhole",
         ):
             self.assertIn(expected, contents)
 
@@ -1147,7 +1147,7 @@ class TestWriteOpeningHeader(BaseMockDir):
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
-            "Project home page: https://github.com/boss-net/blackhole",
+            "Project home page: https://github.com/khulnasoft/blackhole",
         ):
             self.assertIn(expected, contents)
 
@@ -1185,7 +1185,7 @@ class TestWriteOpeningHeader(BaseMockDir):
             "# with a dash of crowd sourcing via GitHub",
             "# Number of unique domains: {count}".format(count=kwargs["numberofrules"]),
             "Fetch the latest version of this file:",
-            "Project home page: https://github.com/boss-net/blackhole",
+            "Project home page: https://github.com/khulnasoft/blackhole",
         ):
             self.assertIn(expected, contents)
 

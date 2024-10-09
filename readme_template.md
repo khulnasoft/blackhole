@@ -1,24 +1,24 @@
 **Take Note!**
 
 With the exception of issues and PRs regarding changes to
-`blackhole/data/boss-net/blackhole`, all other issues regarding the content of the
+`blackhole/data/khulnasoft/blackhole`, all other issues regarding the content of the
 produced blackhole files should be made with the appropriate data source that
 contributed the content in question. The contact information for all of the data
 sources can be found in the `blackhole/data/` directory.
 
 ---
 
-![Logo](https://raw.githubusercontent.com/boss-net/blackhole/master/.github/logo.png)
+![Logo](https://raw.githubusercontent.com/khulnasoft/blackhole/master/.github/logo.png)
 
-[![latest release](https://img.shields.io/github/release/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/releases)
-[![license](https://img.shields.io/github/license/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/blob/master/license.txt)
-[![repo size](https://img.shields.io/github/repo-size/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole)
-[![contributors](https://img.shields.io/github/contributors/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/graphs/contributors)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/boss-net/blackhole/ci.yml?branch=master)](https://github.com/boss-net/blackhole/actions/workflows/ci.yml?query=branch%3Amaster)
+[![latest release](https://img.shields.io/github/release/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/releases)
+[![license](https://img.shields.io/github/license/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/blob/master/license.txt)
+[![repo size](https://img.shields.io/github/repo-size/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole)
+[![contributors](https://img.shields.io/github/contributors/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/graphs/contributors)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/khulnasoft/blackhole/ci.yml?branch=master)](https://github.com/khulnasoft/blackhole/actions/workflows/ci.yml?query=branch%3Amaster)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
-[![commits since last release](https://img.shields.io/github/commits-since/boss-net/blackhole/latest.svg)](https://github.com/boss-net/blackhole/commits/master)
-[![last commit](https://img.shields.io/github/last-commit/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/commits/master)
-[![commit activity](https://img.shields.io/github/commit-activity/y/boss-net/blackhole.svg)](https://github.com/boss-net/blackhole/commits/master)
+[![commits since last release](https://img.shields.io/github/commits-since/khulnasoft/blackhole/latest.svg)](https://github.com/khulnasoft/blackhole/commits/master)
+[![last commit](https://img.shields.io/github/last-commit/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/commits/master)
+[![commit activity](https://img.shields.io/github/commit-activity/y/khulnasoft/blackhole.svg)](https://github.com/khulnasoft/blackhole/commits/master)
 
 # @EXTENSIONS_HEADER@
 
@@ -28,11 +28,11 @@ files are provided.
 
 **Therefore this repository is a blackhole file aggregator.**
 
-![Aggregator](https://raw.githubusercontent.com/boss-net/blackhole/master/aggregator.png)
+![Aggregator](https://raw.githubusercontent.com/khulnasoft/blackhole/master/aggregator.png)
 
 - Last updated: **@GEN_DATE@**.
 - Here's the
-  [raw blackhole file @EXTENSIONS_HEADER@](https://raw.githubusercontent.com/boss-net/blackhole/master/@SUBFOLDER@blackhole)
+  [raw blackhole file @EXTENSIONS_HEADER@](https://raw.githubusercontent.com/khulnasoft/blackhole/master/@SUBFOLDER@blackhole)
   containing @NUM_ENTRIES@ entries.
 
 @SIZEHISTORY@
@@ -40,7 +40,7 @@ files are provided.
 ## List of all blackhole file variants
 
 This repository offers
-[31 different host file variants](https://github.com/boss-net/blackhole/tree/master/alternates),
+[31 different host file variants](https://github.com/khulnasoft/blackhole/tree/master/alternates),
 in addition to the base variant, with and without the unified blackhole included.
 
 The **Non GitHub mirror** is the link to use for some blackhole file managers like
@@ -73,11 +73,11 @@ domains by category. Currently, we offer the following categories: `fakenews`,
 
 Extensions are optional, and can be combined in various ways with the base blackhole
 file. The combined products are stored in the
-[`alternates`](https://github.com/boss-net/blackhole/tree/master/alternates)
+[`alternates`](https://github.com/khulnasoft/blackhole/tree/master/alternates)
 folder.
 
 Data for extensions are stored in the
-[`extensions`](https://github.com/boss-net/blackhole/tree/master/extensions)
+[`extensions`](https://github.com/khulnasoft/blackhole/tree/master/extensions)
 folder. You manage extensions by curating this folder tree, where you will find
 the data for `fakenews`, `social`, `gambling`, and `porn` extension data that we
 maintain and provide for you.
@@ -97,13 +97,13 @@ command. Set extensions to your preference.
 
 ```sh
 docker run --pull always --rm -it -v /etc/blackhole:/etc/blackhole \
-ghcr.io/boss-net/blackhole:latest updateBlackholeFile.py --auto \
+ghcr.io/khulnasoft/blackhole:latest updateBlackholeFile.py --auto \
 --replace --extensions gambling porn
 ```
 
 If you want to add custom blackhole or a whitelist, create either or both files as
 per [the instructions](#how-do-i-control-which-sources-are-unified) and add the
-following arguments _before_ `ghcr.io/boss-net/blackhole:latest` depending on
+following arguments _before_ `ghcr.io/khulnasoft/blackhole:latest` depending on
 which you wish to use.
 
 ```sh
@@ -117,7 +117,7 @@ blackhole (for example, add it to a weekly cron job).
 ### Option 2: Generate your own container image
 
 We provide the
-[Dockerfile](https://github.com/boss-net/blackhole/blob/master/Dockerfile) used
+[Dockerfile](https://github.com/khulnasoft/blackhole/blob/master/Dockerfile) used
 by the previous step, which you can use to create a container image with
 everything you need. The container will contain Python 3 and all its dependency
 requirements, and a copy of the latest version of this repository.
@@ -284,14 +284,14 @@ ways to contribute them.
 
 The best way to get new domains included is to submit an issue to any of the
 data providers whose home pages are
-[listed here](https://github.com/boss-net/blackhole#sources-of-blackhole-data-unified-in-this-variant).
+[listed here](https://github.com/khulnasoft/blackhole#sources-of-blackhole-data-unified-in-this-variant).
 This is best because once you submit new domains, they will be curated and
 updated by the dedicated folks who maintain these sources.
 
 ### Option 2: Fork this repository, add your domains to KhulnaSoft's personal data file, and submit a pull request
 
 Fork this blackhole this repo and add your links to
-[https://github.com/boss-net/blackhole/blob/master/data/boss-net/blackhole](https://github.com/boss-net/blackhole/blob/master/data/boss-net/blackhole).
+[https://github.com/khulnasoft/blackhole/blob/master/data/khulnasoft/blackhole](https://github.com/khulnasoft/blackhole/blob/master/data/khulnasoft/blackhole).
 
 Then, submit a pull request.
 
@@ -302,7 +302,7 @@ falls on us. So this creates more work for us.
 
 If you're able to curate your own collection of sketchy domains, then curate
 your own blackhole list. Then signal the existence of your repo as
-[a new issue](https://github.com/boss-net/blackhole/issues) and we may include
+[a new issue](https://github.com/khulnasoft/blackhole/issues) and we may include
 your new repo into the collection of sources we pull whenever we create new
 versions.
 
@@ -371,7 +371,7 @@ To install blackhole file on your machine add the following into your
 ```nix
 {
   networking.extraBlackhole = let
-    blackholePath = https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole;
+    blackholePath = https://raw.githubusercontent.com/khulnasoft/blackhole/master/blackhole;
     blackholeFile = builtins.fetchurl blackholePath;
   in builtins.readFile "${blackholeFile}";
 }
@@ -388,7 +388,7 @@ like this:
 
 ```nix
 {
-  inputs.blackhole.url = github:boss-net/blackhole;
+  inputs.blackhole.url = github:khulnasoft/blackhole;
   outputs = { self, nixpkgs, blackhole }: {
     nixosConfigurations.my-hostname = {
       system = "<architecture>";
@@ -452,7 +452,7 @@ Windows 10 denies access to changing services via other tools except registry
 hacks. Use the `disable-dnscache-service-win.cmd` file to make proper changes to
 the Windows registry. You will need to reboot your device once that's done. See
 the
-[the comments within the `cmd` file](https://github.com/boss-net/blackhole/blob/master/disable-dnscache-service-win.bat)
+[the comments within the `cmd` file](https://github.com/khulnasoft/blackhole/blob/master/disable-dnscache-service-win.bat)
 for more details.
 
 ## Reloading blackhole file
@@ -520,11 +520,11 @@ sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder
 
 This repository uses [release-it](https://github.com/release-it/release-it), an
 excellent CLI release tool for GitHub repos and npm packages, to automate
-creating [releases](https://github.com/boss-net/blackhole/releases). This is why
+creating [releases](https://github.com/khulnasoft/blackhole/releases). This is why
 the
-[package.json](https://github.com/boss-net/blackhole/blob/master/package.json)
+[package.json](https://github.com/khulnasoft/blackhole/blob/master/package.json)
 and
-[.release-it.json](https://github.com/boss-net/blackhole/blob/master/.release-it.json)
+[.release-it.json](https://github.com/khulnasoft/blackhole/blob/master/.release-it.json)
 files are bundled.
 
 ## Goals of this unified blackhole file
@@ -567,7 +567,7 @@ devices under a variety of operating systems.
   to name a few.
 - [Host Minder](https://github.com/jeremehancock/hostminder#readme) is a simple
   GUI that allows you to easily update your /etc/blackhole file to one of four
-  consolidated blackhole files from boss-net/blackhole. It is provided as a deb
+  consolidated blackhole files from khulnasoft/blackhole. It is provided as a deb
   package and comes pre-installed on [UbuntuCE](https://ubuntuce.com/).
 - [Maza ad blocking](https://github.com/tanrax/maza-ad-blocking) is a bash
   script that automatically updates host file. You can also update a fresh copy.
@@ -624,15 +624,15 @@ devices under a variety of operating systems.
 ## Contribute
 
 Please read our
-[Contributing Guide](https://github.com/boss-net/blackhole/blob/master/contributing.md).
+[Contributing Guide](https://github.com/khulnasoft/blackhole/blob/master/contributing.md).
 Among other things, this explains how we organize files and folders in this
 repository.
 
 We are always interested in discovering well-curated sources of blackhole. If you
-find one, please open an [issue](https://github.com/boss-net/blackhole/issues) to
+find one, please open an [issue](https://github.com/khulnasoft/blackhole/issues) to
 draw our attention.
 
 Before you create or respond to any issue, please read our
-[code of conduct](https://github.com/boss-net/blackhole/blob/master/code_of_conduct.md).
+[code of conduct](https://github.com/khulnasoft/blackhole/blob/master/code_of_conduct.md).
 
 Logo by [@Tobaloidee](https://github.com/Tobaloidee) Thank you!.

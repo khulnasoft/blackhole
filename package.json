@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/boss-net/blackhole.git"
+    "url": "git+https://github.com/khulnasoft/blackhole.git"
   },
   "keywords": [
     "python",
@@ -28,12 +28,12 @@
     "ransomware",
     "trojans"
   ],
-  "author": "Boss-Net (https://github.com/boss-net)",
+  "author": "Boss-Net (https://github.com/khulnasoft)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/boss-net/blackhole/issues"
+    "url": "https://github.com/khulnasoft/blackhole/issues"
   },
-  "homepage": "https://github.com/boss-net/blackhole#readme",
+  "homepage": "https://github.com/khulnasoft/blackhole#readme",
   "devDependencies": {
     "release-it": "^15.10.1"
   }

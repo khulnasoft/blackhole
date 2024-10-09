@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Script by KhulnaSoft
-# https://github.com/boss-net
+# https://github.com/KhulnaSoft
 #
 # This Python script will update the readme files in this repo.
 
@@ -19,12 +19,12 @@ README_DATA_FILENAME = "readmeData.json"
 
 def main():
     s = Template(
-        "${description} | [Readme](https://github.com/boss-net/"
+        "${description} | [Readme](https://github.com/KhulnaSoft/"
         "blackhole/blob/master/${location}readme.md) | "
-        "[link](https://raw.githubusercontent.com/boss-net/"
+        "[link](https://raw.githubusercontent.com/KhulnaSoft/"
         "blackhole/master/${location}blackhole) | "
         "${fmtentries} | "
-        "[link](http://boss-net.github.io/blackhole/${location}blackhole)"
+        "[link](http://sbc.io/blackhole/${location}blackhole)"
     )
     with open(README_DATA_FILENAME, "r", encoding="utf-8", newline="\n") as f:
         data = json.load(f)
@@ -67,7 +67,7 @@ def main():
         "${name} |[link](${homeurl})"
         " | [raw](${url}) | ${license} | [issues](${issues})| ${description}"
     )
-    size_history_graph = "![Size history](https://raw.githubusercontent.com/boss-net/blackhole/master/blackhole_file_size_history.png)"
+    size_history_graph = "![Size history](https://raw.githubusercontent.com/KhulnaSoft/blackhole/master/blackhole_file_size_history.png)"
     for key in keys:
         extensions = key.replace("-only", "").replace("-", ", ")
         extensions_str = "* Extensions: **" + extensions + "**."
@@ -111,7 +111,8 @@ def main():
                         "@SIZEHISTORY@", size_history_graph
                     )
                 else:
-                    line = line.replace("@SIZEHISTORY@", "")
+                    line = line.replace(
+                        "@SIZEHISTORY@", "![Size history](stats.png)")
 
                 out.write(line)
 

@@ -1,28 +1,38 @@
 #!/bin/sh
 
-products="
+lists="
 alternates/fakenews
 alternates/fakenews-gambling
+alternates/fakenews-gambling-only
 alternates/fakenews-gambling-porn
+alternates/fakenews-gambling-porn-only
 alternates/fakenews-gambling-porn-social
+alternates/fakenews-gambling-porn-social-only
 alternates/fakenews-gambling-social
+alternates/fakenews-gambling-social-only
+alternates/fakenews-only
 alternates/fakenews-porn
+alternates/fakenews-porn-only
 alternates/fakenews-porn-social
+alternates/fakenews-porn-social-only
 alternates/fakenews-social
+alternates/fakenews-social-only
 alternates/gambling
+alternates/gambling-only
 alternates/gambling-porn
+alternates/gambling-porn-only
 alternates/gambling-porn-social
+alternates/gambling-porn-social-only
 alternates/gambling-social
+alternates/gambling-social-only
 alternates/porn
+alternates/porn-only
 alternates/porn-social
+alternates/porn-social-only
 alternates/social
-"
-
-lists="
-data/Adguard-cname
+alternates/social-only
 data/Badd-Boyz-Hosts
-data/KADblackhole
-data/MetaMask
+data/KADhosts
 data/KhulnaSoft
 data/URLHaus
 data/UncheckyAds
@@ -32,19 +42,23 @@ data/add.Dead
 data/add.Risk
 data/add.Spam
 data/hostsVN
-data/minecraft-blackhole
+data/minecraft-hosts
 data/mvps.org
-data/shady-blackhole
 data/someonewhocares.org
 data/tiuxo
 data/yoyo.org
 extensions/fakenews
 extensions/gambling
+extensions/gambling/bigdargon
+extensions/gambling/sinfonietta
+extensions/porn
+extensions/porn/bigdargon
 extensions/porn/brijrajparmar27
 extensions/porn/clefspeare13
 extensions/porn/sinfonietta
 extensions/porn/sinfonietta-snuff
 extensions/porn/tiuxo
+extensions/social
 extensions/social/sinfonietta
 extensions/social/tiuxo
 "
@@ -53,7 +67,7 @@ IFS='
 '
 
 for item in $lists; do
-  echo -n "" > $item/stats.out
+  echo "" > $item/stats.out
 
   for HASH_DATE in $(git log --reverse --format="%t,%as" -- $item);  do
     # echo $item $HASH_DATE
