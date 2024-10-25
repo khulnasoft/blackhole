@@ -65,8 +65,5 @@ jobs:
       - name: Run makeBlackhole.py
         run: python makeBlackhole.py
 
-      - name: Update Blackhole File
-        run: python updateBlackholeFile.py
-
       - name: Run tests
         run: python testUpdateBlackholeFile.py
