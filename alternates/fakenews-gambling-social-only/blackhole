@@ -1,37 +1,23 @@
-# Title: boss-net/blackhole extensions fakenews, gambling and social
-
+# Title: khulnasoft/blackhole extensions fakenews, gambling and social 
 #
-
 # This blackhole file is a merged collection of blackhole from reputable sources,
-
 # with a dash of crowd sourcing via GitHub
-
 #
-
-# Date: 09 October 2024 00:16:41 (GMT)
-
+# Date: 25 October 2024 08:08:49 (GMT)
 # The unified blackhole file was not used while generating this file.
-
 # Extensions used to generate this file: fakenews, gambling, social
-
-# Number of unique domains: 13,891
-
+# Number of unique domains: 13,911
 #
-
-# Fetch the latest version of this file: https://raw.githubusercontent.com/boss-net/blackhole/master/alternates/fakenews-gambling-social-only/blackhole
-
-# Project home page: https://github.com/boss-net/blackhole
-
-# Project releases: https://github.com/boss-net/blackhole/releases
-
+# Fetch the latest version of this file: https://raw.githubusercontent.com/khulnasoft/blackhole/master/alternates/fakenews-gambling-social-only/blackhole
+# Project home page: https://github.com/khulnasoft/blackhole
+# Project releases: https://github.com/khulnasoft/blackhole/releases
 #
-
 # ===============================================================
 
 # Custom host records are listed here.
 
-# End of custom host records.
 
+# End of custom host records.
 0.0.0.0 100percentfedup.com
 0.0.0.0 20minutenews.com
 0.0.0.0 21stcenturywire.com
@@ -2226,27 +2212,16 @@
 0.0.0.0 youtubecensorship.com
 0.0.0.0 yubasuttertimes.com
 0.0.0.0 zombie.news
-
 # Title: hostsVN Gambling
-
-# Last modified: 05 Oct 2024 22:50 UTC+7
-
-# Version: 2410052250
-
-# Blocked: 5,838 domains
-
+# Last modified: 25 Oct 2024 10:02 UTC+7
+# Version: 2410251002
+# Blocked: 5,858 domains
 # Only include gambling domains (Vietnamese language)
-
 # Homepage: https://bigdargon.github.io/hostsVN/
-
 # GitHub: https://github.com/bigdargon/hostsVN
-
 # Report issues: https://github.com/bigdargon/hostsVN/issues
-
 # Download: https://github.com/bigdargon/hostsVN/raw/master/extensions/gambling/hosts-VN
-
 #
-
 # =====================================================
 
 0.0.0.0 0000130.com
@@ -2395,6 +2370,7 @@
 0.0.0.0 23winvn.com
 0.0.0.0 2826.bet
 0.0.0.0 29999y.com
+0.0.0.0 2q.team
 0.0.0.0 2x3x.com
 0.0.0.0 30winvn.com
 0.0.0.0 331725.com
@@ -2410,6 +2386,7 @@
 0.0.0.0 33betc.com
 0.0.0.0 33betf.com
 0.0.0.0 33betx.com
+0.0.0.0 33win.to
 0.0.0.0 33win7.com
 0.0.0.0 33win9.com
 0.0.0.0 33winz.com
@@ -2585,7 +2562,6 @@
 0.0.0.0 888b.in
 0.0.0.0 888b.moe
 0.0.0.0 888b.trade
-0.0.0.0 888b.xkiosx.xyz
 0.0.0.0 888betk8.net
 0.0.0.0 888bvn.vip
 0.0.0.0 888k8vn.com
@@ -2728,6 +2704,7 @@
 0.0.0.0 ad.gamequyong.xyz
 0.0.0.0 ad.gem88.win
 0.0.0.0 ad.giaitriwin79.club
+0.0.0.0 ad.hitgame.in
 0.0.0.0 ad.mibet.com
 0.0.0.0 ad.playhit.biz
 0.0.0.0 ad.qc789.vip
@@ -2736,6 +2713,7 @@
 0.0.0.0 ad.taihit.win
 0.0.0.0 ad.viprik.click
 0.0.0.0 ad.yo88.net
+0.0.0.0 ad.yo88.tv
 0.0.0.0 ad.yo88.win
 0.0.0.0 ad.yo88vn.com
 0.0.0.0 ad.yo88vn.vip
@@ -3071,6 +3049,7 @@
 0.0.0.0 bj39.com
 0.0.0.0 bj88.estate
 0.0.0.0 bj88.games
+0.0.0.0 bj88.im
 0.0.0.0 bj88.vision
 0.0.0.0 bj88vietnam.com
 0.0.0.0 bj88vn.com
@@ -3271,6 +3250,7 @@
 0.0.0.0 choithomo.com
 0.0.0.0 choivuaclub55k.info
 0.0.0.0 choiwin79.com
+0.0.0.0 choiwin79.in
 0.0.0.0 choiwin79.net
 0.0.0.0 choiwin79.pro
 0.0.0.0 choiyo88.co
@@ -3873,6 +3853,7 @@
 0.0.0.0 hb88vn.co
 0.0.0.0 hcm66.com
 0.0.0.0 hi.oppa888.com
+0.0.0.0 hi88.chat
 0.0.0.0 hi88.gd
 0.0.0.0 hi888.app
 0.0.0.0 hi88vip1.com
@@ -3892,6 +3873,7 @@
 0.0.0.0 hit68.net
 0.0.0.0 hitclub.top
 0.0.0.0 hitclub.win
+0.0.0.0 hitgame.in
 0.0.0.0 hitlub.fun
 0.0.0.0 hitlub.net
 0.0.0.0 hitpro.run
@@ -3930,7 +3912,8 @@
 0.0.0.0 i8bet.org
 0.0.0.0 i9-bet.com
 0.0.0.0 i9.bet
-0.0.0.0 i99902.com
+0.0.0.0 i9.hethongxacthuc.com
+0.0.0.0 i9.pro
 0.0.0.0 i99903.com
 0.0.0.0 i99904.com
 0.0.0.0 i99906.com
@@ -5414,6 +5397,7 @@
 0.0.0.0 keonhacai-fun88.com
 0.0.0.0 keonhacai3.com
 0.0.0.0 keotot.net
+0.0.0.0 khamphasampham.cc
 0.0.0.0 khuyenmaibw.com
 0.0.0.0 kidslovemartialartsomahane.com
 0.0.0.0 kimsa1116.com
@@ -5451,6 +5435,7 @@
 0.0.0.0 ko66.com
 0.0.0.0 ko66vip.casino
 0.0.0.0 ko66vip.club
+0.0.0.0 ks.bet
 0.0.0.0 kt88.pro
 0.0.0.0 ktokto.mobi
 0.0.0.0 ktoviet.com
@@ -5596,6 +5581,7 @@
 0.0.0.0 lt992.com
 0.0.0.0 lt995.com
 0.0.0.0 lt997.com
+0.0.0.0 lu88.co
 0.0.0.0 luciu.shop
 0.0.0.0 luck6.com
 0.0.0.0 luck8.com
@@ -5795,6 +5781,7 @@
 0.0.0.0 maubinh.club
 0.0.0.0 max10.pro
 0.0.0.0 max10.vin
+0.0.0.0 max88.com
 0.0.0.0 may88.club
 0.0.0.0 may88.com
 0.0.0.0 may88.fun
@@ -5908,11 +5895,15 @@
 0.0.0.0 nbet88.org
 0.0.0.0 nearom.com
 0.0.0.0 nemo.vin
+0.0.0.0 net88.ac
+0.0.0.0 net88.tv
 0.0.0.0 net88.vip
 0.0.0.0 new.vx88.com
 0.0.0.0 new88.ai
+0.0.0.0 new88.fo
 0.0.0.0 new88.love
 0.0.0.0 new88.tips
+0.0.0.0 new88.today
 0.0.0.0 new8803.com
 0.0.0.0 new8805.com
 0.0.0.0 new8808.vip
@@ -5986,6 +5977,7 @@
 0.0.0.0 one88.com
 0.0.0.0 one88.fun
 0.0.0.0 one88.me
+0.0.0.0 one88.pro
 0.0.0.0 one88.top
 0.0.0.0 one88.tv
 0.0.0.0 one88.uk
@@ -6199,6 +6191,7 @@
 0.0.0.0 qh322.com
 0.0.0.0 qh52.com
 0.0.0.0 qh91.com
+0.0.0.0 qh99.com
 0.0.0.0 qq101.com
 0.0.0.0 qq188.com
 0.0.0.0 qq288.com
@@ -6369,6 +6362,7 @@
 0.0.0.0 smart.8live.net
 0.0.0.0 smart.bcb80.com
 0.0.0.0 smartpay.lode88.vip
+0.0.0.0 soc88.com
 0.0.0.0 soc88.uk
 0.0.0.0 soc99.com
 0.0.0.0 sock.dabet.club
@@ -6699,6 +6693,7 @@
 0.0.0.0 thangiwin.org
 0.0.0.0 thangtien188bet.com
 0.0.0.0 thangto.one
+0.0.0.0 thanhnien.khamphasampham.cc
 0.0.0.0 thantai68.com
 0.0.0.0 thao88.com
 0.0.0.0 thao888.com
@@ -7218,6 +7213,7 @@
 0.0.0.0 web.top88.vip
 0.0.0.0 web.topzo.com
 0.0.0.0 web.vicplay.io
+0.0.0.0 web.yo88.tv
 0.0.0.0 web.zo.game
 0.0.0.0 web.zowinvn.vip
 0.0.0.0 webdev.vietbet.eu
@@ -7599,7 +7595,6 @@
 0.0.0.0 www.hi88vip0.com
 0.0.0.0 www.hi88vip8.com
 0.0.0.0 www.i8bet.org
-0.0.0.0 www.i99902.com
 0.0.0.0 www.i99903.com
 0.0.0.0 www.i99904.com
 0.0.0.0 www.i99906.com
@@ -7996,7 +7991,6 @@
 0.0.0.0 xidach.8day66.com
 0.0.0.0 xingtou888.com
 0.0.0.0 xinloiduocchua.co
-0.0.0.0 xkiosx.xyz
 0.0.0.0 xljs2.com
 0.0.0.0 xn--hi-ji6caa.com
 0.0.0.0 xo68.gamehot88.fun
@@ -8045,6 +8039,7 @@
 0.0.0.0 ynpccc.com
 0.0.0.0 yo789.fun
 0.0.0.0 yo88.net
+0.0.0.0 yo88.tv
 0.0.0.0 yo88.win
 0.0.0.0 yo88vn.com
 0.0.0.0 yo88vn.us
@@ -10724,15 +10719,11 @@
 0.0.0.0 www.pokerstars.bg
 0.0.0.0 everbet.bg
 0.0.0.0 slotino.bg
-
 # Title: Social media hosts
-
 # Direct URL: https://raw.githubusercontent.com/Sinfonietta/hostfiles/master/social-hosts
-
 # Updated: March 24, 2024
 
 # Facebook
-
 0.0.0.0 0-act.channel.facebook.com
 0.0.0.0 0-edge-chat.facebook.com
 0.0.0.0 0.beta.facebook.com
@@ -12487,7 +12478,6 @@
 0.0.0.0 zh-tw.facebook.com
 
 # Instagram
-
 0.0.0.0 a.ns.cdninstagram.com
 0.0.0.0 api.instagram.com
 0.0.0.0 b.ns.cdninstagram.com
@@ -12900,7 +12890,6 @@
 0.0.0.0 z-p42-static.cdninstagram.com
 
 # Whatsapp
-
 0.0.0.0 account.whatsapp.com
 0.0.0.0 alpha.whatsapp.com
 0.0.0.0 api.whatsapp.com
@@ -13085,12 +13074,10 @@
 0.0.0.0 wwwl.whatsapp.com
 
 # Threads
-
 0.0.0.0 threads.net
 0.0.0.0 www.threads.net
 
 # Twitter
-
 0.0.0.0 0.twitter.com
 0.0.0.0 2010.twitter.com
 0.0.0.0 2011.twitter.com
@@ -13266,7 +13253,6 @@
 0.0.0.0 x.com
 
 # LinkedIn
-
 0.0.0.0 addtoprofile.linkedin.com
 0.0.0.0 ads.linkedin.com
 0.0.0.0 ae.linkedin.com
@@ -13499,7 +13485,6 @@
 0.0.0.0 zh-tw.help.linkedin.com
 
 # MySpace
-
 0.0.0.0 a1-images.myspacecdn.com
 0.0.0.0 a1.ec-images.myspacecdn.com
 0.0.0.0 a2-images.myspacecdn.com
@@ -13557,7 +13542,6 @@
 0.0.0.0 x.myspacecdn.com
 
 # Pinterest
-
 0.0.0.0 about.pinterest.com
 0.0.0.0 accounts.pinterest.com
 0.0.0.0 ads.pinterest.com
@@ -13603,7 +13587,6 @@
 0.0.0.0 www.pinterest.fr
 
 # Tumblr
-
 0.0.0.0 24.media.tumblr.com
 0.0.0.0 25.media.tumblr.com
 0.0.0.0 28.media.tumblr.com
@@ -13634,7 +13617,6 @@
 0.0.0.0 www.tumblr.com
 
 # Reddit
-
 0.0.0.0 a.thumbs.redditmedia.com
 0.0.0.0 about.reddit.com
 0.0.0.0 accounts.reddit.com
@@ -13713,7 +13695,6 @@
 0.0.0.0 www.redditstatic.com
 
 # TikTok
-
 0.0.0.0 abtest-sg-tiktok.byteoversea.com
 0.0.0.0 abtest-va-tiktok.byteoversea.com
 0.0.0.0 ads.tiktok.com
@@ -13884,7 +13865,6 @@
 0.0.0.0 xlog.tiktokv.com.edgesuite.net
 
 # DateMeme
-
 0.0.0.0 datememe.com
 0.0.0.0 www.datememe.com
 0.0.0.0 admin.datememe.com
@@ -13909,7 +13889,6 @@
 0.0.0.0 zh-cn.datememe.com
 
 # clubhouse
-
 0.0.0.0 joinclubhouse.com
 0.0.0.0 www.joinclubhouse.com
 0.0.0.0 welcome.joinclubhouse.com
@@ -13920,9 +13899,7 @@
 0.0.0.0 testflight.joinclubhouse.com
 
 # Dating sites
-
-# from https://github.com/KhulnaSoft/blackhole/issues/2023
-
+# from https://github.com/StevenBlack/hosts/issues/2023
 0.0.0.0 tinder.com
 0.0.0.0 bumble.com
 0.0.0.0 badoo.com
@@ -13936,7 +13913,6 @@
 0.0.0.0 match.com
 
 # TikTok clone
-
 0.0.0.0 likee.video
 
 #Snapchat
@@ -13997,24 +13973,17 @@
 0.0.0.0 www.snapchat.com
 
 # Other
-
 0.0.0.0 pinpages.alwaysdata.net
 0.0.0.0 allotalk.com
 0.0.0.0 mbga.jp
 0.0.0.0 mixi.jp
 0.0.0.0 mixch.tv
 0.0.0.0 lobi.co
-
 # blacklist
-
 #
-
 # The contents of this file (containing a listing of additional domains in
-
 # 'blackhole' file format) are appended to the unified blackhole file during the
-
 # update process. For example, uncomment the following line to block
-
 # 'example.com':
 
 # 0.0.0.0 example.com

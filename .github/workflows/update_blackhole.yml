@@ -1,0 +1,30 @@
+# .github/workflows/update_blackhole.yml
+
+name: Update Blackhole File Daily
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Runs every day at 2:00 AM UTC
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update-blackhole-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Run Blackhole Update
+        run: |
+          docker run --pull always --rm -v "${{ github.workspace }}/blackhole_output:/etc/blackhole" \
+          ghcr.io/khulnasoft/blackhole:latest updateBlackholeFile.py --auto --replace --extensions gambling porn
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          cd blackhole_output
+          git add .
+          git commit -m "Daily update of blackhole file with extensions gambling, porn"
+          git push
