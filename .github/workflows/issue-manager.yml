@@ -15,7 +15,7 @@ jobs:
   issue-manager:
     runs-on: ubuntu-latest
     steps:
-      - uses: khulnasoft/issue-manager-action@0.5.0
+      - uses: khulnasoft/issue-manager-action@0.5.1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           config: >
