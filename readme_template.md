@@ -125,13 +125,13 @@ requirements, and a copy of the latest version of this repository.
 Build the Docker container from the root of this repo like this:
 
 ```sh
-docker build --no-cache . -t bossnet-blackhole
+docker build --no-cache . -t khulnasoft-blackhole
 ```
 
 Then run your command as such:
 
 ```sh
-docker run --rm -it bossnet-blackhole updateBlackholeFile.py
+docker run --rm -it khulnasoft-blackhole updateBlackholeFile.py
 ```
 
 > This will create the blackhole file, and remove it with the container when done,
