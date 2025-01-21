@@ -1428,7 +1428,6 @@
 0.0.0.0 cross-promos.tuanguwen.com
 0.0.0.0 word-res.tuanguwen.com
 0.0.0.0 word-v1.tuanguwen.com
-0.0.0.0 castoola.tv.lan
 0.0.0.0 tvpage.com
 0.0.0.0 a.tvpage.com
 0.0.0.0 api.tvpage.com
@@ -2777,7 +2776,7 @@
 0.0.0.0 tracker.nitropay.com
 
 # Added August 30, 2024
-0.0.0.0 grid-bidder.criteo
+0.0.0.0 grid-bidder.criteo.com
 0.0.0.0 a-ring.msedge.net
 0.0.0.0 k-ring.msedge.net
 0.0.0.0 hb.yellowblue.io
@@ -2830,3 +2829,155 @@
 
 # Added October 13, 2024
 0.0.0.0 region1.google-analytics.com
+0.0.0.0 starshipstart.com
+
+# Added October 17, 2024
+0.0.0.0 delivery-schedule.com
+0.0.0.0 rustdesk.io
+0.0.0.0 rustdesk.pl
+0.0.0.0 rustdesk.co.nz
+0.0.0.0 rustdesk.secure-box.de
+
+# Added October 28, 2024
+0.0.0.0 tiny.centralacp.com
+
+# Added October 31, 2024
+0.0.0.0 j3lbpcd9.r.us-east-1.awstrack.me
+
+# Added December 1, 2024
+0.0.0.0 canada.postscanadafil.top
+
+# Added December 4, 2024
+0.0.0.0 html-load.com
+
+0.0.0.0 vs-api.voodoo-tech.io
+0.0.0.0 vg-aws-ad-track-sdk-us-east-1a.mtgglobals.com
+0.0.0.0 logger2.playablefactory.app
+0.0.0.0 o-sdk.mediation.unity3d.com
+0.0.0.0 events.ads.vungle.com
+0.0.0.0 o.isx.unity3d.com
+0.0.0.0 gw.mediation.unity3d.com
+0.0.0.0 noti-us.adsmoloco.com
+0.0.0.0 o.iads.unity3d.com
+0.0.0.0 w.isx.unity3d.com
+0.0.0.0 adn-collector.voodoo-tech.io
+0.0.0.0 vg-aws-ad-track-sdk-us-east-1b.mtgglobals.com
+0.0.0.0 cdn-adn-https-new.mtgglobals.com
+0.0.0.0 net-vg-cdn.mtgglobals.com
+0.0.0.0 vg-aws-cdn-us-east-1a-hb-bid-feedback.mtgglobals.com
+0.0.0.0 o-iab-imp-counters.mediation.unity3d.com
+0.0.0.0 o-iab-notifications.mediation.unity3d.com
+0.0.0.0 ae.iads.unity3d.com
+0.0.0.0 gw-rv.iads.unity3d.com
+0.0.0.0 icon-uap.iads.unity3d.com
+0.0.0.0 img-dyn-uap.iads.unity3d.com
+0.0.0.0 vid-uap.iads.unity3d.com
+0.0.0.0 vg-ali-ad-track-sdk.mtgglobals.com
+0.0.0.0 l1.audiomob.com
+0.0.0.0 o-adq.mediation.unity3d.com
+0.0.0.0 gateway.unityads.unity3d.com
+0.0.0.0 scar.unityads.unity3d.com
+
+# Added December 16, 2024
+0.0.0.0 ofbel.com
+
+# Added December 18, 2024
+0.0.0.0 candeliverypostca.com
+
+# Added December 20, 2024
+0.0.0.0 ads.heytapmobi.com
+0.0.0.0 ads.heytapmobile.com
+0.0.0.0 ads.oppomobile.com
+0.0.0.0 adx-f.ads.heytapmobi.com
+0.0.0.0 adx-f.ads.heytapmobile.com
+0.0.0.0 adx-id.ads.heytapmobi.com
+0.0.0.0 adx-id.ads.heytapmobile.com
+0.0.0.0 adx-id.ads.oppomobile.com
+0.0.0.0 adx-in.ads.heytapmobi.com
+0.0.0.0 adx-in.ads.heytapmobile.com
+0.0.0.0 adx-in.ads.oppomobile.com
+0.0.0.0 adx-kh.ads.heytapmobile.com
+0.0.0.0 adx-mm.ads.heytapmobile.com
+0.0.0.0 adx-my.ads.heytapmobile.com
+0.0.0.0 adx-ph.ads.heytapmobile.com
+0.0.0.0 adx-sg.ads.heytapmobi.com
+0.0.0.0 adx-sg.ads.heytapmobile.com
+0.0.0.0 adx-th.ads.heytapmobile.com
+0.0.0.0 adx-tw.ads.heytapmobile.com
+0.0.0.0 adx-vn.ads.heytapmobile.com
+0.0.0.0 adx.ads.heytapmobi.com
+0.0.0.0 b1-data.ads.heytapmobi.com
+0.0.0.0 b2-data.ads.heytapmobi.com
+0.0.0.0 bdapi-id.ads.heytapmobi.com
+0.0.0.0 bdapi-id.ads.heytapmobile.com
+0.0.0.0 bdapi-id.ads.oppomobile.com
+0.0.0.0 bdapi-in.ads.heytapmobi.com
+0.0.0.0 bdapi-in.ads.heytapmobile.com
+0.0.0.0 bdapi-in.ads.oppomobile.com
+0.0.0.0 bdapi.ads.heytapmobi.com
+0.0.0.0 bjdata.ads.oppomobile.com
+0.0.0.0 ck.ads.heytapmobi.com
+0.0.0.0 ck.ads.oppomobile.com
+0.0.0.0 cl-data-f.ads.heytapmobi.com
+0.0.0.0 cl-data-f.ads.heytapmobile.com
+0.0.0.0 cl-data-id.ads.heytapmobi.com
+0.0.0.0 cl-data-id.ads.heytapmobile.com
+0.0.0.0 cl-data-in.ads.heytapmobi.com
+0.0.0.0 cl-data-in.ads.heytapmobile.com
+0.0.0.0 cl-data-my.ads.heytapmobile.com
+0.0.0.0 cl-data-sg.ads.heytapmobi.com
+0.0.0.0 cl-data-sg.ads.heytapmobile.com
+0.0.0.0 cl-data-vn.ads.heytapmobile.com
+0.0.0.0 cl-data.ads.heytapmobi.com
+0.0.0.0 darvin-ec.ads.heytapmobi.com
+0.0.0.0 data-f.ads.oppomobile.com
+0.0.0.0 data-in.ads.oppomobile.com
+0.0.0.0 data.ads.heytapmobi.com
+0.0.0.0 dataf.ads.oppomobile.com
+0.0.0.0 sapi.ads.oppomobile.com
+0.0.0.0 sms-sg.ads.heytapmobile.com
+0.0.0.0 sms.ads.heytapmobi.com
+0.0.0.0 sms.ads.oppomobile.com
+0.0.0.0 ssp-adx.ads.heytapmobi.com
+0.0.0.0 stg-data-f.ads.heytapmobi.com
+0.0.0.0 stg-data-f.ads.heytapmobile.com
+0.0.0.0 stg-data-id.ads.heytapmobi.com
+0.0.0.0 stg-data-id.ads.heytapmobile.com
+0.0.0.0 stg-data-in.ads.heytapmobi.com
+0.0.0.0 stg-data-in.ads.heytapmobile.com
+0.0.0.0 stg-data-kh.ads.heytapmobile.com
+0.0.0.0 stg-data-mm.ads.heytapmobile.com
+0.0.0.0 stg-data-my.ads.heytapmobile.com
+0.0.0.0 stg-data-ph.ads.heytapmobile.com
+0.0.0.0 stg-data-ru.ads.heytapmobile.com
+0.0.0.0 stg-data-sg.ads.heytapmobi.com
+0.0.0.0 stg-data-sg.ads.heytapmobile.com
+0.0.0.0 stg-data-th.ads.heytapmobile.com
+0.0.0.0 stg-data-tw.ads.heytapmobile.com
+0.0.0.0 stg-data-vn.ads.heytapmobile.com
+0.0.0.0 stg-data.ads.heytapmobi.com
+0.0.0.0 t-id.ads.heytapmobile.com
+0.0.0.0 t-in.ads.heytapmobile.com
+0.0.0.0 uapi.ads.heytapmobi.com
+0.0.0.0 wifi.ads.oppomobile.com
+
+0.0.0.0 ts.amazon-adsystem.com
+0.0.0.0 tracker.zmaticoo.com
+0.0.0.0 i-adq.mediation.unity3d.com
+0.0.0.0 i-sdk.mediation.unity3d.com
+0.0.0.0 cdn.iads.unity3d.com
+0.0.0.0 a-iad3.1rx.io
+0.0.0.0 cdn.zmaticoo.com
+0.0.0.0 o209266.ingest.us.sentry.io
+0.0.0.0 zmaticoo.funsdata.com
+0.0.0.0 sdk-api.maticooads.com
+0.0.0.0 sts.applovin.com
+0.0.0.0 check-tcp.rayjump.com
+0.0.0.0 configure-tcp.rayjump.com
+0.0.0.0 lazy-tcp.rayjump.com
+0.0.0.0 policy-tcp.rayjump.com
+0.0.0.0 observe-tcp.mtgglobals.com
+0.0.0.0 configure-tcp-android.mtgglobals.com
+0.0.0.0 cdn-adn-https.mtgglobals.com
+0.0.0.0 hybird.mtgglobals.com
+0.0.0.0 api.revenuads.com
